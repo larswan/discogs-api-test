@@ -14,19 +14,50 @@ Access Token URL <https://api.discogs.com/oauth/access_token>
 npm install disconnect
 ```
 
+## Basic Search
+
+Search for a release:
+
 ```js
 fetch(`https://api.discogs.com/database/search?q=${band}&key=${consumerKey}&secret=${consumerSecret}`);
 ```
 
-Returns a long array of all options.
+Returns a long array of all options. To only get master releases make type=master.
 
-I need to get the extrartists field. Might only be available through searching by master id.
-
-Need to search this:
-<https://www.discogs.com/developers#page:database,header:database-release>
-<https://www.discogs.com/forum/thread/401632>
+## Search by type
 
 [Query Params](https://www.discogs.com/developers#page:database,header:database-search)
 /database/search?q={query}&{?type,title,release_title,credit,artist,anv,label,genre,style,country,year,format,catno,barcode,track,submitter,contributor}
 
-Nirvana master_id: 13814
+## Search masters by id
+
+Search by "Nevermind" by master id: <https://api.discogs.com/masters/13814>
+
+Returns:
+
+```js
+artists[ {
+    id: num,
+    name: "Nirvana",
+    role: "",
+    tracks: "",
+}],
+tracklist[{
+    title: "Something In The Way",
+    extraartists: [
+        {
+            id: num,
+            name: "Kirk Canning",
+            role: "Cello",
+            tracks: "",
+        }
+    ]
+    }]
+year: num,
+```
+
+## Hmm
+
+Need to search this:
+<https://www.discogs.com/developers#page:database,header:database-release>
+<https://www.discogs.com/forum/thread/401632>

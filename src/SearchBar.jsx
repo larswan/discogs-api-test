@@ -15,12 +15,12 @@ const SearchBar = () => {
     // search for a master by id
     useEffect(()=>{
         if(data){
-            queryMaster(data[selectedIndex].master_id)
+            queryByMasterId(data[selectedIndex].master_id)
             console.log(data[selectedIndex].master_id)
         }
     },[selectedIndex])
 
-    const queryMaster = async (masterId) => {
+    const queryByMasterId = async (masterId) => {
         try {
             let req = await fetch(`https://api.discogs.com/masters/${masterId}`)
             let res = await req.json();
@@ -38,7 +38,7 @@ const SearchBar = () => {
             let res = await req.json();
             setData(res.results)
             setSelectedIndex(0)
-            // console.log(res);
+            console.log(res);
         } catch (error) {
             console.error('Error fetching search by title:', error);
         }
