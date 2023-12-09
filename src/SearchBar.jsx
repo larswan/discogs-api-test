@@ -9,26 +9,44 @@ const SearchBar = () => {
     const [searchQuery, setSearchQuery] = useState("")
     const [data, setData] = useState()
     const [selectedIndex, setSelectedIndex] = useState(0)
+    const [requestType, setRequestType] = useState("master")
+    const [selectedMaster, setSelectedMaster] = useState({})
 
-    // useEffect(()=>{
-    //     console.log("Data: ")
-    //     console.log(data)
-    // },[data])
+    // search for a master by id
+    useEffect(()=>{
+        if(data){
+            queryMaster(data[selectedIndex].master_id)
+            console.log(data[selectedIndex].master_id)
+        }
+    },[selectedIndex])
 
-    const request = async (query) => {
+    const queryMaster = async (masterId) => {
         try {
-            let req = await fetch(`https://api.discogs.com/database/search?q=${query}&key=${consumerKey}&secret=${consumerSecret}`);
+            let req = await fetch(`https://api.discogs.com/masters/${masterId}`)
+            let res = await req.json();
+            console.log("Successful search for master by id: ")
+            console.log(res)
+            setSelectedMaster(res)
+            setSelectedIndex(0)
+        } catch(error) {
+            console.error('Error fetching master by id: ', error)
+        }
+    }
+
+    const searchForMaster = async (query) => {
+        try {
+            let req = await fetch(`https://api.discogs.com/database/search?q=${query}&type=${requestType}&key=${consumerKey}&secret=${consumerSecret}`);
             let res = await req.json();
             setData(res.results)
             // console.log(res);
         } catch (error) {
-            console.error('Error fetching data:', error);
+            console.error('Error fetching search by title:', error);
         }
     };
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        request(searchQuery)
+        searchForMaster(searchQuery)
         setSearchQuery("")
     }
 
@@ -36,12 +54,12 @@ const SearchBar = () => {
         <div>
             <form onSubmit={e => handleSubmit(e)}>
                 <input type="text" placeholder="enter search..." value={searchQuery} onChange={e => setSearchQuery(e.target.value)}></input>
-                <button type="submit">Search</button>
+                <button type="submit">Search {requestType}</button>
             </form>
 
             {!data ? null :
                 <div>
-                    <Display data={data} selectedIndex={selectedIndex}/>
+                    <Display selectedMaster={selectedMaster} selectedIndex={selectedIndex}/>
                     <IndexBar data={data} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} />
                 </div>
             }

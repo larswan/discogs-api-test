@@ -1,13 +1,13 @@
-const Display = ({data, currentIndex}) => {
+const Display = ({ selectedMaster, currentIndex}) => {
     
-    data.map((piece, index)=>{
-        if(piece.type == "master") console.log(piece)
-    })
+    // data.map((piece, index)=>{
+    //     if(piece.type == "master") console.log(piece)
+    // })
 
     return(
         <div className="bandDataContainer">
-            {/* <img className="artistImage" src={data[currentIndex].cover_image} />
-            <h1 className="artistName">{data[currentIndex].title}</h1> */}
+            {/* <img className="artistImage" src={selectedMaster.cover_image} /> */}
+            <h1 className="artistName">{selectedMaster.title}</h1>
         </div>
     )
 }

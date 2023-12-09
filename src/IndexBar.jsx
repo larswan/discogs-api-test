@@ -1,15 +1,26 @@
 const IndexBar = ({data, selectedIndex, setSelectedIndex}) =>{
-    console.log(data)
+    // console.log(data)
+
+    const handleClick = (index) => {
+
+        setSelectedIndex(index)
+        console.log(index)
+        console.log(data[index])
+
+    }
 
     return(
-        <div className="indexBar">
-            {data.map((currentIndex, index) => {
-                if (currentIndex.type == "master")
-                    return (
-                        <div className="indexBox" key={index} onClick={() => { setSelectedIndex(index) }}>{index}</div>
-                    )
+        // <div className="indexBar">
+        <ul >
+            
+            {data.map((element, index) => {
+                if (element.type == "master")
+                return (
+                    <li className={`indexBox ${index === selectedIndex ? 'chosenIndex' : ''}`} key={index} onClick={() => { handleClick(index)}}>{element.title}</li>
+            )
             })}
-        </div>
+        </ul>
+        // </div>
     )
 }
 

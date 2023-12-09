@@ -48,18 +48,26 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
 
-  .indexBox {
-    background-color: $secondaryColor;
-    color: $primaryColor;
-    border-radius: 100%;
-    width: 20px;
-    height: 20px;
-    margin: 4px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
+  
+}
+.indexBox {
+  color: $secondaryColor;
+  background-color: $primaryColor;
+  font-size: .5rem;
+  // border-radius: 100%;
+  // width: 20px;
+  // height: 20px;
+  // margin: 4px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+}
+.chosenIndex {
+  background-color: $secondaryColor;
+  color: $primaryColor;
+  font-weight: bold;
 }
 

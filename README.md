@@ -23,7 +23,10 @@ Returns a long array of all options.
 I need to get the extrartists field. Might only be available through searching by master id.
 
 Need to search this:
-
 <https://www.discogs.com/developers#page:database,header:database-release>
-
 <https://www.discogs.com/forum/thread/401632>
+
+[Query Params](https://www.discogs.com/developers#page:database,header:database-search)
+/database/search?q={query}&{?type,title,release_title,credit,artist,anv,label,genre,style,country,year,format,catno,barcode,track,submitter,contributor}
+
+Nirvana master_id: 13814
