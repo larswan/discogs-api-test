@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
-import './App.css';
-import ArtistSearch from './ArtistSearch';
+// import ArtistSearch from './ArtistSearch';
+import SearchBar from './SearchBar';
 
 function App() {
 
   return(
     <>
-      <ArtistSearch/>
+      <SearchBar />
+      {/* <ArtistSearch/> */}
     </>
   )
 }
