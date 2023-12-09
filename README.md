@@ -12,7 +12,7 @@ Access Token URL <https://api.discogs.com/oauth/access_token>
 
 [X] String to url function
 [X] Highlight tracks with additional artists
-[O] Show extraartists
+[X] Show extraartists
 [O] Make list of extraasrtist roles
 [O] Query by artist id and role
 
