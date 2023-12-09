@@ -27,17 +27,17 @@ const SearchBar = () => {
             console.log("Successful search for master by id: ")
             console.log(res)
             setSelectedMaster(res)
-            setSelectedIndex(0)
         } catch(error) {
             console.error('Error fetching master by id: ', error)
         }
     }
-
+    
     const searchForMaster = async (query) => {
         try {
             let req = await fetch(`https://api.discogs.com/database/search?q=${query}&type=${requestType}&key=${consumerKey}&secret=${consumerSecret}`);
             let res = await req.json();
             setData(res.results)
+            setSelectedIndex(0)
             // console.log(res);
         } catch (error) {
             console.error('Error fetching search by title:', error);
