@@ -10,28 +10,63 @@ $secondaryColor: rgba(255, 255, 255, 0.87);
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: $primaryColor;
-
 }
 
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  // padding: 2rem;
   text-align: center;
 }
 
-
-body {
+.bodyContainer {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  flex-direction: row;
   min-height: 100vh;
 }
 
 h1 {
   font-size: 3em;
   line-height: 1;
+}
+
+.leftSide  {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: $primaryColor;
+  color: $secondaryColor;
+  align-items: center;
+  padding: 2rem;
+
+  .displayContainer {
+    display: flex;
+    flex-direction: column;
+
+    .track {
+      margin: .1em;
+  
+      // highlight tracks that have info on contributors
+      &.hasExtraArtists {
+        border-radius: 5px;
+        background-color: $secondaryColor;
+        color: $primaryColor;
+      }
+      &::marker {
+        color: $secondaryColor;
+      }
+
+      .extraArtistsList {
+        font-size: .5em;
+      }
+
+    }
+  }
+}
+
+.rightSide {
+  flex: 1;
 }
 
 .artistImage {
@@ -46,9 +81,7 @@ h1 {
 .indexBar {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-
-  
+  flex-wrap: wrap;  
 }
 .indexBox {
   color: $secondaryColor;
