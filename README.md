@@ -2,30 +2,46 @@
 
 This is a project for testing out the Discog API to help me refine the scope of a larger project I want to use it on.
 
+## Test Case
+
+Turn Me Away (Get Munny): extraartists: [name: "Stephen Bruner", role: Bass, id: 1573878]
+vs Thundercat (id: 1800656)
+Want to get Thundercat and Stephen Bruner results
+
+## Links
+
 [API Docs](https://www.discogs.com/developers)
+
 [Node Module](https://github.com/bartve/disconnect)
-Request Token URL <https://api.discogs.com/oauth/request_token>
-Authorize URL <https://www.discogs.com/oauth/authorize>
-Access Token URL <https://api.discogs.com/oauth/access_token>
+
+[Request Token URL](https://api.discogs.com/oauth/request_token)
+
+[Authorize URL](https://www.discogs.com/oauth/authorize)
+
+[Access Token URL](https://api.discogs.com/oauth/access_token)
 
 ## Checklist
 
 [X] String to url function
-[X] Highlight tracks with additional artists
-[X] Show extraartists
-[O] Make list of extraasrtist roles
-[O] Query by artist id and role
 
-```bash
-npm install disconnect
-```
+[X] Highlight tracks with additional artists
+
+[X] Show extraartists
+
+[O] Is search credit="Stephen Bruner" the same as artists/id/releases
+
+- Search credit = stephen bruner type: release/master (both 502 items)
+
+[O] Make list of extraasrtist roles
 
 ## Basic Search
+
+[Params](https://www.discogs.com/developers/#page:database,header:database-search)
 
 Search for a release:
 
 ```js
-fetch(`https://api.discogs.com/database/search?q=${band}&key=${consumerKey}&secret=${consumerSecret}`);
+fetch(`https://api.discogs.com/database/search?q=${query}&type=${type}&key=${consumerKey}&secret=${consumerSecret}`);
 ```
 
 Returns a long array of all options. To only get master releases make type=master.
@@ -56,14 +72,57 @@ tracklist[{
             name: "Kirk Canning",
             role: "Cello",
             tracks: "",
+        },
+        {
+            anv: "Page", // whats this? Only rarely appears
+            id: 180585,
+            join: ""
+            name: "Jimmy Page",
+            resource_url: "https://api.discogs.com/artists/180585", fetch JSON {
+                name, 
+                id, 
+                resource_url: "current address..",
+                uri: (discogs profile), 
+                releases_url: "https://api.discogs.com/artists/180585/releases", // the big one
+                images: [
+                    {
+                        "type": "primary",
+                        "uri": "", // idk why these are blank
+                        "resource_url": "", // also blank
+                        "uri150": "",
+                        "width": 600,
+                        "height": 400
+                    },
+                ]
+                realname: "James Patrick Page",
+                profile: "short bio description", 
+                urls: [links to wiki etc], 
+                namevariations: [array of diff spellings], 
+                aliases: [
+                        {
+                            "id": 846559, // different id, good place to look
+                            "name": "S. Flavius Mercurius",
+                            "resource_url": "https://api.discogs.com/artists/846559"
+                        }
+                ]
+                groups: [
+                        {
+                            "id": 220763,
+                            "name": "The Honeydrippers",
+                            "resource_url": "https://api.discogs.com/artists/220763", // All this stuff ^^
+                            "active": true
+                        },
+                    ] }
+            role: "Written-By",
+            tracks: "",
         }
     ]
     }]
 year: num,
 ```
 
-## Hmm
+## Artist Releases
 
-Need to search this:
-<https://www.discogs.com/developers#page:database,header:database-release>
-<https://www.discogs.com/forum/thread/401632>
+GET /artists/{artist_id}/releases{?sort,sort_order}
+
+[Example Thundercat Releases Ascending by Year](https://api.discogs.com/artists/1800656/releases?sort=year&sort_order=asc`;)

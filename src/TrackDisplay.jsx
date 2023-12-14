@@ -8,7 +8,7 @@ const TrackDisplay = ({track}) => {
         <li onClick={()=>setShowExtraArtists(!showExtraArtists)} className={"track " + (track.extraartists ? "hasExtraArtists" : "")}>
             {track.title}
             {
-                track.extraartists && showExtraArtists ? (
+                track.extraartists || showExtraArtists ? (
                     <ul className="extraArtistsList">
                             {
                                 track.extraartists.map((artist, i)=> {

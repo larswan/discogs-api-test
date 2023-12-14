@@ -59,6 +59,12 @@ h1 {
 
       .extraArtistsList {
         font-size: .5em;
+
+        .extraArtistItem {
+          font-weight: bolder;
+          margin: 5px;
+          cursor: pointer;
+        }
       }
 
     }

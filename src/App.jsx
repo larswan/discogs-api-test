@@ -1,13 +1,12 @@
 import { useState, useEffect } from 'react';
-// import ArtistSearch from './ArtistSearch';
 import SearchBar from './SearchBar';
+import SmallTester from './SmallTester';
 
 function App() {
 
   return(
     <>
       <SearchBar />
-      {/* <ArtistSearch/> */}
     </>
   )
 }

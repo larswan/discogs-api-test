@@ -2,10 +2,8 @@ import { useState, useEffect } from "react";
 import Display from "./Display";
 import IndexBar from "./IndexBar";
 import stringToQuery from "./stringToQuery";
-import checkRateLimit from "./checkRateLimit";
-
-const consumerKey = import.meta.env.VITE_DISCOGS_CONSUMER_KEY;
-const consumerSecret = import.meta.env.VITE_DISCOGS_CONSUMER_SECRET;
+import { queryByMasterId } from "./requestFunctions/queryByMasterId";
+import { searchForMasterByName } from "./requestFunctions/searchForMasterByName";
 
 const SearchBar = () => {
     const [searchQuery, setSearchQuery] = useState("")
@@ -14,47 +12,33 @@ const SearchBar = () => {
     const [requestType, setRequestType] = useState("master")
     const [selectedMaster, setSelectedMaster] = useState()
 
-    // search for a master by id
+    // Search for a master by ID
     useEffect(()=>{
         if(data){
-            queryByMasterId(data[selectedIndex].master_id)
+            queryMaster(data[selectedIndex].master_id)
         }
-    },[selectedIndex])
+    },[selectedIndex, data])
 
-    // Console master object after each search
-    useEffect(()=>{
-        // console.log(selectedMaster)
-    },[selectedMaster])
-
-    const queryByMasterId = async (masterId) => {
-        try {
-            let req = await fetch(`https://api.discogs.com/masters/${masterId}`)
-            let res = await req.json();
-            console.log("Successful search for master by id: ")
-            console.log(res)
-            setSelectedMaster(res)
-        } catch(error) {
-            console.error('Error fetching master by id: ', error)
-        }
+    const queryMaster = async (masterId) => {
+        queryByMasterId(masterId)
+            .then((result) => {
+                setSelectedMaster(result)
+            })
+            .catch((error) => {
+                console.error('Error in queryByMasterId');
+            });
     }
     
+    // Search for master releases by name
     const searchForMaster = async (query) => {
         try {
-            let req = await fetch(`https://api.discogs.com/database/search?q=${stringToQuery(query)}&type=${requestType}&key=${consumerKey}&secret=${consumerSecret}`, {
-                headers: {
-                    'User-Agent': 'YourCustomUserAgent/1.0 +http://yourwebsite.com',
-                },
-            });            let res = await req.json();
-            setData(res.results)
-            console.log("Search results: ")
-            console.log(res.results);
-
-            
-            // Search by master id for the first result, since virtual dom wont update selectedIndex in time
-            queryByMasterId(res.results[0].master_id)
-            setSelectedIndex(0)
+            const res = await searchForMasterByName(query);
+            if (res.pagination.items > 0) setData(res.results)
+            else window.alert("Bad search term")
+        ;
         } catch (error) {
-            console.error('Error fetching search by title:', error);
+            console.error("Error in searchForMasterByName:", error);
+            // Handle the error appropriately
         }
     };
 
