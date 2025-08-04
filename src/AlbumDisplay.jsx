@@ -1,0 +1,75 @@
+import { useState, useEffect } from "react";
+import TrackDisplay from "./TrackDisplay";
+import { queryByMasterId } from "./requestFunctions/queryByMasterId";
+
+const AlbumDisplay = ({ album, onBack }) => {
+  const [albumDetails, setAlbumDetails] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchAlbumDetails = async () => {
+      if (album.master_id) {
+        try {
+          setLoading(true);
+          const details = await queryByMasterId(album.master_id);
+          setAlbumDetails(details);
+        } catch (error) {
+          console.error("Error fetching album details:", error);
+        } finally {
+          setLoading(false);
+        }
+      }
+    };
+
+    fetchAlbumDetails();
+  }, [album]);
+
+  if (loading) {
+    return (
+      <div className="albumDisplay">
+        <div className="loading">Loading album details...</div>
+      </div>
+    );
+  }
+
+  if (!albumDetails) {
+    return (
+      <div className="albumDisplay">
+        <div className="error">Could not load album details</div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="albumDisplay">
+      <div className="albumHeader">
+        <button className="backButton" onClick={onBack}>
+          ← Back to Search
+        </button>
+        <div className="albumInfo">
+          <img
+            src={album.cover_image}
+            alt={albumDetails.title}
+            className="albumCover"
+          />
+          <div className="albumText">
+            <h1>{albumDetails.title}</h1>
+            <h2>{albumDetails.artists?.[0]?.name}</h2>
+            <p>{albumDetails.year}</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="trackList">
+        <h3>Tracks</h3>
+        <ol>
+          {albumDetails.tracklist?.map((track, index) => (
+            <TrackDisplay track={track} key={index} />
+          ))}
+        </ol>
+      </div>
+    </div>
+  );
+};
+
+export default AlbumDisplay;

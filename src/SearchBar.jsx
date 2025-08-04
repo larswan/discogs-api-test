@@ -1,77 +1,58 @@
-import { useState, useEffect } from "react";
-import Display from "./Display";
-import IndexBar from "./IndexBar";
+import { useState } from "react";
 import stringToQuery from "./stringToQuery";
-import { queryByMasterId } from "./requestFunctions/queryByMasterId";
 import { searchForMasterByName } from "./requestFunctions/searchForMasterByName";
 
-const SearchBar = () => {
-    const [searchQuery, setSearchQuery] = useState("")
-    const [data, setData] = useState()
-    const [selectedIndex, setSelectedIndex] = useState(0)
-    const [requestType, setRequestType] = useState("master")
-    const [selectedMaster, setSelectedMaster] = useState()
+const SearchBar = ({
+  setSearchResults,
+  setShowSearchResults,
+  showSearchResults,
+}) => {
+  const [searchQuery, setSearchQuery] = useState("");
+  const [loading, setLoading] = useState(false);
 
-    // Search for a master by ID
-    useEffect(()=>{
-        if(data){
-            queryMaster(data[selectedIndex].master_id)
-        }
-    },[selectedIndex, data])
-
-    const queryMaster = async (masterId) => {
-        queryByMasterId(masterId)
-            .then((result) => {
-                setSelectedMaster(result)
-            })
-            .catch((error) => {
-                console.error('Error in queryByMasterId');
-            });
+  // Search for master releases by name
+  const searchForMaster = async (query) => {
+    try {
+      setLoading(true);
+      const res = await searchForMasterByName(query);
+      if (res.pagination.items > 0) {
+        setSearchResults(res.results);
+        setShowSearchResults(true);
+      } else {
+        window.alert("No results found for that search term");
+      }
+    } catch (error) {
+      console.error("Error in searchForMasterByName:", error);
+      window.alert("Error searching. Please try again.");
+    } finally {
+      setLoading(false);
     }
-    
-    // Search for master releases by name
-    const searchForMaster = async (query) => {
-        try {
-            const res = await searchForMasterByName(query);
-            if (res.pagination.items > 0) setData(res.results)
-            else window.alert("Bad search term")
-        ;
-        } catch (error) {
-            console.error("Error in searchForMasterByName:", error);
-            // Handle the error appropriately
-        }
-    };
+  };
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        searchForMaster(searchQuery)
-        setSearchQuery("")
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      searchForMaster(searchQuery);
+      setSearchQuery("");
     }
+  };
 
-    return(
-        <div className="bodyContainer">
-            <div className="leftSide">
-                {
-                    !selectedMaster ? null : <Display data={data} selectedMaster={selectedMaster} selectedIndex={selectedIndex} />
-                }
-            </div>
+  return (
+    <div className="searchBar">
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="Search for an album..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className="searchInput"
+        />
+        <button type="submit" disabled={loading} className="searchButton">
+          {loading ? "Searching..." : "Search"}
+        </button>
+      </form>
+    </div>
+  );
+};
 
-            <div className="rightSide">
-
-                <form onSubmit={e => handleSubmit(e)}>
-                    <input type="text" placeholder="enter search..." value={searchQuery} onChange={e => setSearchQuery(e.target.value)}></input>
-                    <button type="submit">Search {requestType}</button>
-                </form>
-
-                {!data ? null :
-                    <div>
-                        
-                        <IndexBar data={data} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} />
-                    </div>
-                }
-            </div>
-        </div>
-    )
-}
-
-export default SearchBar
+export default SearchBar;

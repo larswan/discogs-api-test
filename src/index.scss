@@ -13,100 +13,291 @@ $secondaryColor: rgba(255, 255, 255, 0.87);
 }
 
 #root {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
-  // padding: 2rem;
   text-align: center;
 }
 
-.bodyContainer {
-  margin: 0;
-  display: flex;
-  flex-direction: row;
+.app {
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3em;
-  line-height: 1;
-}
-
-.leftSide  {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  background-color: $primaryColor;
-  color: $secondaryColor;
-  align-items: center;
+}
+
+// Search Bar Styles
+.searchBar {
   padding: 2rem;
+  background-color: $primaryColor;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
-  .displayContainer {
+  form {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
 
-    .track {
-      margin: .1em;
-  
-      // highlight tracks that have info on contributors
-      &.hasExtraArtists {
-        border-radius: 5px;
-        background-color: $secondaryColor;
-        color: $primaryColor;
-      }
-      &::marker {
-        color: $secondaryColor;
-      }
+  .searchInput {
+    flex: 1;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $secondaryColor;
 
-      .extraArtistsList {
-        font-size: .5em;
+    &:focus {
+      outline: none;
+      border-color: $secondaryColor;
+    }
 
-        .extraArtistItem {
-          font-weight: bolder;
-          margin: 5px;
-          cursor: pointer;
-        }
-      }
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
 
+  .searchButton {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: $secondaryColor;
+    color: $primaryColor;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover:not(:disabled) {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
     }
   }
 }
 
-.rightSide {
+// Search Results Styles
+.searchResults {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .searchResult {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .searchResultImage {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .searchResultInfo {
+      text-align: left;
+
+      h3 {
+        font-size: 1.2rem;
+        margin: 0 0 0.5rem 0;
+        color: $secondaryColor;
+      }
+
+      p {
+        font-size: 0.9rem;
+        margin: 0.25rem 0;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+}
+
+// Album Display Styles
+.albumDisplay {
   flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+
+  .loading,
+  .error {
+    text-align: center;
+    padding: 4rem;
+    font-size: 1.5rem;
+  }
+
+  .albumHeader {
+    margin-bottom: 3rem;
+
+    .backButton {
+      background: none;
+      border: 2px solid $secondaryColor;
+      color: $secondaryColor;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $secondaryColor;
+        color: $primaryColor;
+      }
+    }
+
+    .albumInfo {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      .albumCover {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      }
+
+      .albumText {
+        text-align: left;
+
+        h1 {
+          font-size: 3rem;
+          margin: 0 0 1rem 0;
+          color: $secondaryColor;
+        }
+
+        h2 {
+          font-size: 2rem;
+          margin: 0 0 0.5rem 0;
+          color: rgba(255, 255, 255, 0.8);
+        }
+
+        p {
+          font-size: 1.5rem;
+          color: rgba(255, 255, 255, 0.6);
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .trackList {
+    text-align: left;
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: $secondaryColor;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 1rem;
+    }
+
+    ol {
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding: 1rem;
+        margin: 0.5rem 0;
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        &.hasExtraArtists {
+          background-color: rgba(255, 255, 255, 0.15);
+          border-color: rgba(255, 255, 255, 0.3);
+
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+          }
+        }
+
+        .extraArtistsList {
+          margin-top: 1rem;
+          padding-left: 2rem;
+
+          .extraArtistItem {
+            padding: 0.5rem;
+            margin: 0.25rem 0;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+
+            &:hover {
+              background-color: rgba(255, 255, 255, 0.2);
+              transform: translateX(5px);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-.artistImage {
-  max-height: 16rem;
-  padding: 1rem;
-}
+// Responsive Design
+@media (max-width: 768px) {
+  .searchBar {
+    padding: 1rem;
 
-.artistName {
-  font-size: 1rem;
-}
+    form {
+      flex-direction: column;
+    }
+  }
 
-.indexBar {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;  
-}
-.indexBox {
-  color: $secondaryColor;
-  background-color: $primaryColor;
-  font-size: .5rem;
-  // border-radius: 100%;
-  // width: 20px;
-  // height: 20px;
-  // margin: 4px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+  .searchResults {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
 
-}
-.chosenIndex {
-  background-color: $secondaryColor;
-  color: $primaryColor;
-  font-weight: bold;
-}
+  .albumDisplay {
+    padding: 1rem;
 
+    .albumHeader .albumInfo {
+      flex-direction: column;
+      text-align: center;
+
+      .albumCover {
+        width: 200px;
+        height: 200px;
+      }
+
+      .albumText {
+        text-align: center;
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        h2 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
