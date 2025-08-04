@@ -16,34 +16,36 @@ $secondaryColor: rgba(255, 255, 255, 0.87);
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 // Search Bar Styles
 .searchBar {
-  padding: 2rem;
+  padding: 1rem;
   background-color: $primaryColor;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
   form {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    max-width: 600px;
+    gap: 0.5rem;
+    max-width: 400px;
     margin: 0 auto;
   }
 
   .searchInput {
     flex: 1;
-    padding: 1rem;
-    font-size: 1.2rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
     border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
+    border-radius: 6px;
     background-color: rgba(255, 255, 255, 0.1);
     color: $secondaryColor;
 
@@ -58,14 +60,15 @@ $secondaryColor: rgba(255, 255, 255, 0.87);
   }
 
   .searchButton {
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
     background-color: $secondaryColor;
     color: $primaryColor;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
+    white-space: nowrap;
 
     &:hover:not(:disabled) {
       background-color: rgba(255, 255, 255, 0.9);
@@ -78,50 +81,68 @@ $secondaryColor: rgba(255, 255, 255, 0.87);
   }
 }
 
+// Search Results Header
+.searchResultsHeader {
+  padding: 1rem 2rem;
+  text-align: center;
+  color: $secondaryColor;
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 // Search Results Styles
 .searchResults {
-  padding: 2rem;
+  padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 
   .searchResult {
     background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    padding: 1rem;
+    border-radius: 8px;
+    padding: 0.75rem;
     cursor: pointer;
     transition: all 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
 
     &:hover {
       background-color: rgba(255, 255, 255, 0.1);
       transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     }
 
     .searchResultImage {
       width: 100%;
-      height: 200px;
+      height: 150px;
       object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 1rem;
+      border-radius: 6px;
+      margin-bottom: 0.75rem;
     }
 
     .searchResultInfo {
       text-align: left;
 
       h3 {
-        font-size: 1.2rem;
-        margin: 0 0 0.5rem 0;
+        font-size: 1rem;
+        margin: 0 0 0.25rem 0;
         color: $secondaryColor;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
 
       p {
-        font-size: 0.9rem;
-        margin: 0.25rem 0;
+        font-size: 0.8rem;
+        margin: 0.125rem 0;
         color: rgba(255, 255, 255, 0.7);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
     }
   }
@@ -130,30 +151,32 @@ $secondaryColor: rgba(255, 255, 255, 0.87);
 // Album Display Styles
 .albumDisplay {
   flex: 1;
-  padding: 2rem;
+  padding: 1rem;
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 
   .loading,
   .error {
     text-align: center;
-    padding: 4rem;
+    padding: 4rem 1rem;
     font-size: 1.5rem;
   }
 
   .albumHeader {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 
     .backButton {
       background: none;
       border: 2px solid $secondaryColor;
       color: $secondaryColor;
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
       cursor: pointer;
-      font-size: 1rem;
-      margin-bottom: 2rem;
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
       transition: all 0.3s ease;
 
       &:hover {
@@ -165,33 +188,41 @@ $secondaryColor: rgba(255, 255, 255, 0.87);
     .albumInfo {
       display: flex;
       align-items: center;
-      gap: 2rem;
+      gap: 1.5rem;
+      flex-wrap: wrap;
 
       .albumCover {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
         object-fit: cover;
-        border-radius: 12px;
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        flex-shrink: 0;
       }
 
       .albumText {
         text-align: left;
+        flex: 1;
+        min-width: 0;
 
         h1 {
-          font-size: 3rem;
-          margin: 0 0 1rem 0;
+          font-size: 2rem;
+          margin: 0 0 0.5rem 0;
           color: $secondaryColor;
+          word-wrap: break-word;
+          overflow-wrap: break-word;
         }
 
         h2 {
-          font-size: 2rem;
-          margin: 0 0 0.5rem 0;
+          font-size: 1.5rem;
+          margin: 0 0 0.25rem 0;
           color: rgba(255, 255, 255, 0.8);
+          word-wrap: break-word;
+          overflow-wrap: break-word;
         }
 
         p {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           color: rgba(255, 255, 255, 0.6);
           margin: 0;
         }
@@ -203,11 +234,11 @@ $secondaryColor: rgba(255, 255, 255, 0.87);
     text-align: left;
 
     h3 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
       color: $secondaryColor;
       border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-      padding-bottom: 1rem;
+      padding-bottom: 0.5rem;
     }
 
     ol {
@@ -215,13 +246,15 @@ $secondaryColor: rgba(255, 255, 255, 0.87);
       padding: 0;
 
       li {
-        padding: 1rem;
-        margin: 0.5rem 0;
-        border-radius: 8px;
+        padding: 0.75rem;
+        margin: 0.25rem 0;
+        border-radius: 6px;
         background-color: rgba(255, 255, 255, 0.05);
         border: 1px solid rgba(255, 255, 255, 0.1);
         cursor: pointer;
         transition: all 0.3s ease;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
 
         &:hover {
           background-color: rgba(255, 255, 255, 0.1);
@@ -237,21 +270,23 @@ $secondaryColor: rgba(255, 255, 255, 0.87);
         }
 
         .extraArtistsList {
-          margin-top: 1rem;
-          padding-left: 2rem;
+          margin-top: 0.75rem;
+          padding-left: 1rem;
 
           .extraArtistItem {
-            padding: 0.5rem;
-            margin: 0.25rem 0;
+            padding: 0.25rem 0.5rem;
+            margin: 0.125rem 0;
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 4px;
             cursor: pointer;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             transition: all 0.3s ease;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
 
             &:hover {
               background-color: rgba(255, 255, 255, 0.2);
-              transform: translateX(5px);
+              transform: translateX(3px);
             }
           }
         }
@@ -263,41 +298,67 @@ $secondaryColor: rgba(255, 255, 255, 0.87);
 // Responsive Design
 @media (max-width: 768px) {
   .searchBar {
-    padding: 1rem;
+    padding: 0.75rem;
 
     form {
       flex-direction: column;
+      max-width: 300px;
     }
   }
 
+  .searchResultsHeader {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+
   .searchResults {
-    grid-template-columns: 1fr;
-    padding: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding: 0.75rem;
+    gap: 0.75rem;
   }
 
   .albumDisplay {
-    padding: 1rem;
+    padding: 0.75rem;
 
     .albumHeader .albumInfo {
       flex-direction: column;
       text-align: center;
 
       .albumCover {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
       }
 
       .albumText {
         text-align: center;
 
         h1 {
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
 
         h2 {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-size: 1rem;
         }
       }
     }
+
+    .trackList h3 {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .searchResults {
+    grid-template-columns: 1fr;
+  }
+
+  .albumDisplay .albumHeader .albumInfo .albumCover {
+    width: 120px;
+    height: 120px;
   }
 }

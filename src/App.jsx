@@ -6,6 +6,7 @@ function App() {
   const [selectedAlbum, setSelectedAlbum] = useState(null);
   const [searchResults, setSearchResults] = useState([]);
   const [showSearchResults, setShowSearchResults] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
 
   return (
     <div className="app">
@@ -13,32 +14,38 @@ function App() {
         setSearchResults={setSearchResults}
         setShowSearchResults={setShowSearchResults}
         showSearchResults={showSearchResults}
+        setSearchQuery={setSearchQuery}
       />
 
       {showSearchResults && searchResults.length > 0 && (
-        <div className="searchResults">
-          {searchResults.map((result, index) => (
-            <div
-              key={index}
-              className="searchResult"
-              onClick={() => {
-                setSelectedAlbum(result);
-                setShowSearchResults(false);
-              }}
-            >
-              <img
-                src={result.cover_image}
-                alt={result.title}
-                className="searchResultImage"
-              />
-              <div className="searchResultInfo">
-                <h3>{result.title}</h3>
-                <p>{result.artists?.[0]?.name || "Unknown Artist"}</p>
-                <p>{result.year}</p>
+        <>
+          <div className="searchResultsHeader">
+            Showing results for "{searchQuery}"
+          </div>
+          <div className="searchResults">
+            {searchResults.map((result, index) => (
+              <div
+                key={index}
+                className="searchResult"
+                onClick={() => {
+                  setSelectedAlbum(result);
+                  setShowSearchResults(false);
+                }}
+              >
+                <img
+                  src={result.cover_image}
+                  alt={result.title}
+                  className="searchResultImage"
+                />
+                <div className="searchResultInfo">
+                  <h3>{result.title}</h3>
+                  <p>{result.artists?.[0]?.name || "Unknown Artist"}</p>
+                  <p>{result.year}</p>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </>
       )}
 
       {selectedAlbum && (

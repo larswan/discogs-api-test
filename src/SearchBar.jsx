@@ -6,8 +6,9 @@ const SearchBar = ({
   setSearchResults,
   setShowSearchResults,
   showSearchResults,
+  setSearchQuery,
 }) => {
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchInput, setSearchInput] = useState("");
   const [loading, setLoading] = useState(false);
 
   // Search for master releases by name
@@ -18,6 +19,7 @@ const SearchBar = ({
       if (res.pagination.items > 0) {
         setSearchResults(res.results);
         setShowSearchResults(true);
+        setSearchQuery(query); // Pass the search query to parent
       } else {
         window.alert("No results found for that search term");
       }
@@ -31,9 +33,9 @@ const SearchBar = ({
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (searchQuery.trim()) {
-      searchForMaster(searchQuery);
-      setSearchQuery("");
+    if (searchInput.trim()) {
+      searchForMaster(searchInput);
+      setSearchInput("");
     }
   };
 
@@ -43,8 +45,8 @@ const SearchBar = ({
         <input
           type="text"
           placeholder="Search for an album..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
+          value={searchInput}
+          onChange={(e) => setSearchInput(e.target.value)}
           className="searchInput"
         />
         <button type="submit" disabled={loading} className="searchButton">
