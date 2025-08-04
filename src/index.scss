@@ -382,6 +382,15 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
           }
         }
 
+        &.noCredits {
+          background-color: #f5f5f5;
+          cursor: default;
+
+          &:hover {
+            background-color: #f5f5f5;
+          }
+        }
+
         .trackHeader {
           display: flex;
           align-items: center;
@@ -433,6 +442,12 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
                 font-size: 0.7rem;
                 font-weight: bold;
               }
+            }
+
+            .noCreditsText {
+              color: $textSecondaryColor;
+              font-size: 0.8rem;
+              font-style: italic;
             }
           }
 
@@ -541,6 +556,10 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
             background-color: $secondaryColorDark;
             color: $primaryColorDark;
           }
+        }
+
+        .trackIcons .noCreditsText {
+          color: $textSecondaryColorDark;
         }
 
         .dropdownArrow {

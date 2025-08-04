@@ -59,7 +59,7 @@ const TrackDisplay = ({ track }) => {
   return (
     <li
       onClick={handleClick}
-      className={hasExtraArtists ? "hasExtraArtists" : ""}
+      className={hasExtraArtists ? "hasExtraArtists" : "noCredits"}
     >
       <div className="trackHeader">
         <span className="trackPosition">{track.position}</span>
@@ -68,7 +68,7 @@ const TrackDisplay = ({ track }) => {
           <span className="trackTitle">{track.title}</span>
         </div>
 
-        {hasExtraArtists && (
+        {hasExtraArtists ? (
           <div className="trackIcons">
             {categories.writing.length > 0 && (
               <div className="iconGroup">
@@ -88,6 +88,10 @@ const TrackDisplay = ({ track }) => {
                 <span className="count">{categories.instruments.length}</span>
               </div>
             )}
+          </div>
+        ) : (
+          <div className="trackIcons">
+            <span className="noCreditsText">No listed credits</span>
           </div>
         )}
 
