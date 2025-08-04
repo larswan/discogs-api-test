@@ -38,9 +38,22 @@ function App() {
                   className="searchResultImage"
                 />
                 <div className="searchResultInfo">
-                  <h3>{result.title}</h3>
-                  <p>{result.artists?.[0]?.name || "Unknown Artist"}</p>
-                  <p>{result.year}</p>
+                  {(() => {
+                    const titleParts = result.title.split(" - ");
+                    const artistName =
+                      titleParts.length > 1 ? titleParts[0] : "Unknown Artist";
+                    const albumTitle =
+                      titleParts.length > 1
+                        ? titleParts.slice(1).join(" - ")
+                        : result.title;
+                    return (
+                      <>
+                        <h3>{albumTitle}</h3>
+                        <p>{artistName}</p>
+                        <p>{result.year}</p>
+                      </>
+                    );
+                  })()}
                 </div>
               </div>
             ))}
