@@ -1,0 +1,67 @@
+{
+  "pagination": {
+    "page": 1,
+    "pages": 1,
+    "per_page": 50,
+    "items": 1,
+    "urls": {}
+  },
+  "results": [
+    {
+      "id": 123456,
+      "master_id": 789012,
+      "master_url": "https://api.discogs.com/masters/789012",
+      "resource_url": "https://api.discogs.com/releases/123456",
+      "thumb": "https://img.discogs.com/thumb.jpg",
+      "cover_image": "https://img.discogs.com/cover.jpg",
+      "title": "Sample Album Title",
+      "year": 2020,
+      "formats": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": ["LP", "Album"]
+        }
+      ],
+      "labels": [
+        {
+          "name": "Sample Label",
+          "catno": "LABEL001",
+          "entity_type": "1",
+          "entity_type_name": "Label",
+          "id": 12345,
+          "resource_url": "https://api.discogs.com/labels/12345"
+        }
+      ],
+      "artists": [
+        {
+          "name": "Sample Artist",
+          "anv": "",
+          "join": "",
+          "role": "",
+          "tracks": "",
+          "id": 67890,
+          "resource_url": "https://api.discogs.com/artists/67890"
+        }
+      ],
+      "genres": ["Rock", "Alternative"],
+      "styles": ["Indie Rock", "Alternative Rock"],
+      "country": "US",
+      "released": "2020-01-01",
+      "notes": "Sample album notes",
+      "data_quality": "Correct",
+      "community": {
+        "want": 15,
+        "have": 45
+      },
+      "format_quantity": 1,
+      "formats": [
+        {
+          "name": "Vinyl",
+          "qty": "1",
+          "descriptions": ["LP", "Album"]
+        }
+      ]
+    }
+  ]
+}
