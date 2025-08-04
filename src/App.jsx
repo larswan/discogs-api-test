@@ -66,6 +66,7 @@ function App() {
       {selectedAlbum && (
         <AlbumDisplay
           album={selectedAlbum}
+          searchQuery={searchQuery}
           onBack={() => {
             setSelectedAlbum(null);
             setShowSearchResults(true);

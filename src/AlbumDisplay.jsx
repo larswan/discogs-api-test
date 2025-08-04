@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import TrackDisplay from "./TrackDisplay";
 import { queryByMasterId } from "./requestFunctions/queryByMasterId";
 
-const AlbumDisplay = ({ album, onBack }) => {
+const AlbumDisplay = ({ album, onBack, searchQuery }) => {
   const [albumDetails, setAlbumDetails] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -44,7 +44,11 @@ const AlbumDisplay = ({ album, onBack }) => {
     <div className="albumDisplay">
       <div className="albumHeader">
         <button className="backButton" onClick={onBack}>
-          ← Back to Search
+          ← Back to "
+          {searchQuery.length > 150
+            ? searchQuery.substring(0, 150) + "..."
+            : searchQuery}
+          "
         </button>
         <div className="albumInfo">
           <img

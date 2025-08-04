@@ -155,1572 +155,1474 @@
         "want": 380767,
         "have": 249282
       }
-    },
-    {
-      "country": "Europe",
-      "year": "1990",
-      "format": ["CD", "Compilation", "Remastered", "Box Set"],
-      "label": [
-        "Atlantic",
-        "Atlantic Recording Corporation",
-        "Time Warner",
-        "Atlantic Recording Corporation",
-        "WEA International Inc.",
-        "Atlantic Recording Corporation",
-        "WEA International Inc.",
-        "Sterling Sound",
-        "Atlantic Studios",
-        "Sterling Sound",
-        "Sterling Sound"
-      ],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Hard Rock", "Blues Rock"],
-      "id": 66072,
-      "barcode": [
-        "0 7567-82144-2 4",
-        "075678214424",
-        "756782144-2/1.2 RS",
-        "756782144-2/2 RSA",
-        "756782144-2/3 RSA",
-        "756782144-2/4 RSA",
-        "BIEM / GEMA",
-        "LC 0121",
-        "WE 888",
-        "CA 886",
-        "42"
-      ],
-      "master_id": 66072,
-      "master_url": "https://api.discogs.com/masters/66072",
-      "uri": "/master/66072-Led-Zeppelin-Led-Zeppelin",
-      "catno": "7567-82144-2",
-      "title": "Led Zeppelin - Led Zeppelin",
-      "thumb": "https://i.discogs.com/0FL4c3bs7Up7igAfMALti_F8mQHI1a07HBBFnfMCuy4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzI1/MjItMTI1MDYxNTEx/NC5qcGVn.jpeg",
-      "cover_image": "https://i.discogs.com/4PkQoqRaemWC1fVFITjiiqhT8P7AXppHoM8U_ZWCErw/rs:fit/g:sm/q:90/h:301/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzI1/MjItMTI1MDYxNTEx/NC5qcGVn.jpeg",
-      "resource_url": "https://api.discogs.com/masters/66072",
-      "community": {
-        "want": 2745,
-        "have": 13391
-      }
-    },
-    {
-      "country": "US",
-      "year": "2006",
-      "format": [
-        "Vinyl",
-        "12\"",
-        "45 RPM",
-        "Single Sided",
-        "Album",
-        "Reissue",
-        "Stereo",
-        "Vinyl",
-        "12\"",
-        "45 RPM",
-        "Single Sided",
-        "Album",
-        "Reissue",
-        "Stereo",
-        "Vinyl",
-        "12\"",
-        "45 RPM",
-        "Single Sided",
-        "Album",
-        "Reissue",
-        "Stereo",
-        "Vinyl",
-        "12\"",
-        "45 RPM",
-        "Single Sided",
-        "Album",
-        "Reissue",
-        "Stereo",
-        "Vinyl",
-        "12\"",
-        "45 RPM",
-        "Single Sided",
-        "Album",
-        "Reissue",
-        "Stereo",
-        "Vinyl",
-        "12\"",
-        "45 RPM",
-        "Single Sided",
-        "Album",
-        "Reissue",
-        "Stereo",
-        "Vinyl",
-        "12\"",
-        "45 RPM",
-        "Single Sided",
-        "Album",
-        "Reissue",
-        "Stereo",
-        "Vinyl",
-        "12\"",
-        "45 RPM",
-        "Single Sided",
-        "Album",
-        "Reissue",
-        "Stereo",
-        "Vinyl",
-        "12\"",
-        "45 RPM",
-        "Single Sided",
-        "Album",
-        "Reissue",
-        "Stereo",
-        "Vinyl",
-        "12\"",
-        "45 RPM",
-        "Single Sided",
-        "Album",
-        "Reissue",
-        "Stereo",
-        "Box Set",
-        "Compilation"
-      ],
-      "label": [
-        "Atlantic",
-        "Classic Records",
-        "45 Series",
-        "Classic Records",
-        "Classic Records",
-        "Atlantic Recording Corporation",
-        "Superhype Music, Inc.",
-        "Atlantic",
-        "Atlantic",
-        "Milky Way",
-        "Conrad Music"
-      ],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Hard Rock", "Arena Rock", "Blues Rock"],
-      "id": 3370798,
-      "barcode": ["ASCAP", "BMI"],
-      "master_id": 3370798,
-      "master_url": "https://api.discogs.com/masters/3370798",
-      "uri": "/master/3370798-Led-Zeppelin-Led-Zeppelin",
-      "catno": "RTH 3001-45",
-      "title": "Led Zeppelin - Led Zeppelin",
-      "thumb": "https://i.discogs.com/bKFS2h4Aga-ay8mimnV4U76SwK8cr3jwdyLTxIevyXA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4ODI0/MzEtMTQyMDI3NTQz/Mi04MjQ0LmpwZWc.jpeg",
-      "cover_image": "https://i.discogs.com/kYC1B_ZCKOIsfJEx-W_woHYpJqgbYjhGe_rP_EFwZ6c/rs:fit/g:sm/q:90/h:183/w:200/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4ODI0/MzEtMTQyMDI3NTQz/Mi04MjQ0LmpwZWc.jpeg",
-      "resource_url": "https://api.discogs.com/masters/3370798",
-      "community": {
-        "want": 1971,
-        "have": 171
-      }
-    },
-    {
-      "country": "US",
-      "year": "1990",
-      "format": [
-        "Vinyl",
-        "LP",
-        "Album",
-        "Limited Edition",
-        "Special Edition",
-        "Stereo"
-      ],
-      "label": [
-        "I.R.S. Records",
-        "I.R.S. Records",
-        "Specialty Records Corporation"
-      ],
-      "type": "master",
-      "genre": ["Rock", "Reggae"],
-      "style": ["Parody", "Reggae-Pop"],
-      "id": 97745,
-      "barcode": [
-        "0 2207-13048-1 8",
-        "E A S T",
-        "XII 3048 A-DMM SP I-I Precision",
-        "XII 3048 B-DMM SP I-I Precision"
-      ],
-      "master_id": 97745,
-      "master_url": "https://api.discogs.com/masters/97745",
-      "uri": "/master/97745-Dread-Zeppelin-Un-Led-Ed",
-      "catno": "X1-13048",
-      "title": "Dread Zeppelin - Un-Led-Ed",
-      "thumb": "https://i.discogs.com/OnYw883MuMIfagrlIFUAWlqZhuRJ8PV77T4yFfZNd4I/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyMTk0/MDItMTMyMTMwNTc5/Mi5qcGVn.jpeg",
-      "cover_image": "https://i.discogs.com/I3snBwwFV4x-5Qbm4hjQbKMjSeZ-x9fuNfzpx8ZVLxY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyMTk0/MDItMTMyMTMwNTc5/Mi5qcGVn.jpeg",
-      "resource_url": "https://api.discogs.com/masters/97745",
-      "community": {
-        "want": 1041,
-        "have": 4656
-      }
-    },
-    {
-      "country": "UK",
-      "year": "1999",
-      "format": ["CD", "Maxi-Single"],
-      "label": [
-        "Higher Ground",
-        "Sony Music Entertainment (UK) Ltd.",
-        "Sony Music Entertainment (UK) Ltd.",
-        "Chrysalis Music Ltd.",
-        "Sony Music",
-        "Plaid Bubble",
-        "Sony Music",
-        "DADC"
-      ],
-      "type": "master",
-      "genre": ["Electronic"],
-      "style": ["Electro", "Downtempo"],
-      "id": 21036,
-      "barcode": [
-        "5 099766 789828",
-        "MCPS/BIEM/SDRM",
-        "LC 0162",
-        "Sony Music IFPI L554 S0100290363-0101 34 A1",
-        "IFPI L554",
-        "IFPI 943A"
-      ],
-      "master_id": 21036,
-      "master_url": "https://api.discogs.com/masters/21036",
-      "uri": "/master/21036-Tipper-LED-Down",
-      "catno": "HIGHS23CD",
-      "title": "Tipper - LED Down",
-      "thumb": "https://i.discogs.com/OS5r55VUzztv6IQJzTMC3MD3QdWiU2w1sj97oNP3Ihg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMDYw/Mi0xMTkxNTgyNDYy/LmpwZWc.jpeg",
-      "cover_image": "https://i.discogs.com/Lvt0xEpnJxaAVkimP8e8OdQqZnnMNfREBpL-nMegWJE/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMDYw/Mi0xMTkxNTgyNDYy/LmpwZWc.jpeg",
-      "resource_url": "https://api.discogs.com/masters/21036",
-      "community": {
-        "want": 520,
-        "have": 681
-      }
-    },
-    {
-      "country": "US",
-      "year": "1999",
-      "format": ["CD", "Compilation", "Enhanced"],
-      "label": [
-        "Atlantic",
-        "Atlantic Recording Corporation",
-        "Atlantic Recording Corporation",
-        "WEA International Inc.",
-        "WEA International Inc.",
-        "Superhype Publishing Inc.",
-        "WB Music Corp.",
-        "Satori",
-        "WEA Mfg. Olyphant"
-      ],
-      "type": "master",
-      "genre": ["Rock", "Blues"],
-      "style": ["Classic Rock", "Blues Rock"],
-      "id": 4683,
-      "barcode": [
-        "0 7567-83268-2 0",
-        "075678326820",
-        "ASCAP",
-        "wea mfg. OLYPHANT X10085 3 83268 ECD04 M1S13",
-        "ifpi L902",
-        "IFPI 2U3C",
-        "wea mfg. OLYPHANT X10085 3 83268 ECD04 M1S3",
-        "ifpi L902",
-        "IFPI 2U2V",
-        "wea mfg. OLYPHANT X10085 3 83268 ECD04 M2S5",
-        "ifpi L902",
-        "IFPI 2U2P",
-        "wea mfg. OLYPHANT X10085 3 83268 ECD04 M1S22",
-        "ifpi L902",
-        "IFPI 2U2L",
-        "wea mfg. OLYPHANT X10085 3 83268 ECD04 M1S19",
-        "ifpi L902",
-        "IFPI 2U8E",
-        "wea mfg. OLYPHANT X10085 3 83268 ECD04 M1S23",
-        "none",
-        "IFPI 2U2W",
-        "wea mfg. OLYPHANT X10085 3 83268 ECD04 M1S19",
-        "none",
-        "IFPI 2U4S",
-        "wea mfg. OLYPHANT X10085 3 83268 ECD04 M2S2",
-        "ifpi L902",
-        "IFPI 2U7H"
-      ],
-      "master_id": 4683,
-      "master_url": "https://api.discogs.com/masters/4683",
-      "uri": "/master/4683-Led-Zeppelin-Early-Days-The-Best-Of-Led-Zeppelin-Volume-One",
-      "catno": "83268-2",
-      "title": "Led Zeppelin - Early Days: The Best Of Led Zeppelin Volume One",
-      "thumb": "https://i.discogs.com/V5O2D4DbsYtbJPED_PItUb5Y8GyL2EV3IQ7ggUpKb78/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1Mzk5/NzItMTM5NjM3ODM2/NS0xNTQxLmpwZWc.jpeg",
-      "cover_image": "https://i.discogs.com/xxudd0rFzYKGiK01gd0wgRIVXCpo8zpCT3o4Cr5kbAY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1Mzk5/NzItMTM5NjM3ODM2/NS0xNTQxLmpwZWc.jpeg",
-      "resource_url": "https://api.discogs.com/masters/4683",
-      "community": {
-        "want": 1202,
-        "have": 5342
-      }
-    },
-    {
-      "country": "Germany",
-      "year": "1974",
-      "format": ["Vinyl", "LP", "Compilation", "Stereo"],
-      "label": [
-        "Atlantic",
-        "Atlantic",
-        "Atlantic",
-        "2 Originals",
-        "Atlantic Recording Corporation",
-        "Atlantic Recording Corporation",
-        "WEA Musik GmbH"
-      ],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Hard Rock"],
-      "id": 256076,
-      "barcode": [
-        "W WEA Made in Austria 8210 ST-A-681461 - A B LW AT Manufactured in Germany RG",
-        "WEA Made in Austria ST-A-681462-B 8216 Manufactured in Germany RG",
-        "WEA ST-A-691671 - A LW W Manufactured in Germany AT RL",
-        "W WEA ST-A-691672-J P AT Manufactured in Germany",
-        "ST-A-681 461",
-        "ST-A-681 462",
-        "ST-A-691 671-M",
-        "ST-A-691 672-J",
-        "GEMA",
-        "Ⓞ"
-      ],
-      "master_id": 256076,
-      "master_url": "https://api.discogs.com/masters/256076",
-      "uri": "/master/256076-Led-Zeppelin-2-Originals-Of-Led-Zeppelin",
-      "catno": "ATL 80 005-O",
-      "title": "Led Zeppelin - 2 Originals Of Led Zeppelin",
-      "thumb": "https://i.discogs.com/BoQEjj512nMq8BmETEtjVQy1n6_99an2vqu9Pfj3m10/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxOTIy/NjItMTI4MTE1NjMx/MC5qcGVn.jpeg",
-      "cover_image": "https://i.discogs.com/CXFv7bYI99c0aHKer9W5A5KPW89HTXHkxNEjNGHSBT0/rs:fit/g:sm/q:90/h:361/w:360/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxOTIy/NjItMTI4MTE1NjMx/MC5qcGVn.jpeg",
-      "resource_url": "https://api.discogs.com/masters/256076",
-      "community": {
-        "want": 390,
-        "have": 821
-      }
-    },
-    {
-      "country": "US",
-      "year": "2000",
-      "format": ["CD", "Compilation", "Enhanced"],
-      "label": [
-        "Atlantic",
-        "Atlantic Recording Corporation",
-        "WEA International Inc.",
-        "Atlantic Recording Corporation",
-        "WEA International Inc.",
-        "Jim Marshall",
-        "Superhype Music, Inc.",
-        "WB Music Corp.",
-        "WEA Manufacturing Inc.",
-        "WEA Mfg. Olyphant",
-        "WEA Mfg. Olyphant",
-        "Satori"
-      ],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Classic Rock"],
-      "id": 4728,
-      "barcode": [
-        "0 7567-83278-2 7",
-        "075678327827",
-        "ASCAP",
-        "ifpi L902",
-        "wea mfg. OLYPHANT X11341 3 83278 ECD01 M1S2",
-        "IFPI 2U2U",
-        "wea mfg. OLYPHANT X11341 3 83278 ECD01 M1S17",
-        "IFPI 2U7D",
-        "[wea mfg. OLYPHANT logo] X11341 3 83278 ECD01 M1S17",
-        "IFPI 2U3H"
-      ],
-      "master_id": 4728,
-      "master_url": "https://api.discogs.com/masters/4728",
-      "uri": "/master/4728-Led-Zeppelin-Latter-Days-The-Best-Of-Led-Zeppelin-Volume-Two",
-      "catno": "83278-2",
-      "title": "Led Zeppelin - Latter Days - The Best Of Led Zeppelin Volume Two",
-      "thumb": "https://i.discogs.com/xxwa05GDXIFNjYtGWz6Xf2SfoMH2Zbpnt6prtQdPAeg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYwOTkz/NC0xMjgzNjMzMjI2/LmpwZWc.jpeg",
-      "cover_image": "https://i.discogs.com/Qe3-sDdK5Grv2DKm-BLndF0DC-8sXxXWCm9VWlO99OQ/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYwOTkz/NC0xMjgzNjMzMjI2/LmpwZWc.jpeg",
-      "resource_url": "https://api.discogs.com/masters/4728",
-      "community": {
-        "want": 807,
-        "have": 3250
-      }
-    },
-    {
-      "country": "Australia",
-      "year": "1971",
-      "format": ["Vinyl", "7\"", "45 RPM", "EP", "Misprint"],
-      "label": [
-        "Atlantic",
-        "Atlantic",
-        "Albert",
-        "Essex Music",
-        "Atlantic Recording Corporation"
-      ],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Hard Rock"],
-      "id": 489422,
-      "barcode": ["MX165935", "MX165836"],
-      "master_id": 489422,
-      "master_url": "https://api.discogs.com/masters/489422",
-      "uri": "/master/489422-Led-Zeppelin-This-Is-Led-Zeppelin",
-      "catno": "EPA 220",
-      "title": "Led Zeppelin - This Is Led Zeppelin",
-      "thumb": "https://i.discogs.com/Uu3Ui25Qiy41zuBeILnvCrLU-YClaY_a0Mt0VQHLEGo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NzA3/MjYtMTcxOTgwOTEw/OS0xNjEyLmpwZWc.jpeg",
-      "cover_image": "https://i.discogs.com/zaOZJQ93x-uicYx-jI2B-rFaV_8HmHqCnN13wQdlpdg/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NzA3/MjYtMTcxOTgwOTEw/OS0xNjEyLmpwZWc.jpeg",
-      "resource_url": "https://api.discogs.com/masters/489422",
-      "community": {
-        "want": 338,
-        "have": 341
-      }
-    },
-    {
-      "country": "Worldwide",
-      "year": "2022",
-      "format": ["File", "MP3"],
-      "label": [
-        "Provogue",
-        "Mascot Music Production And Publishing BV",
-        "Mascot Music Production And Publishing BV",
-        "Mascot Music Production And Publishing BV"
-      ],
-      "type": "master",
-      "genre": ["Rock", "Blues"],
-      "style": [],
-      "id": 2523844,
-      "barcode": [],
-      "master_id": 2523844,
-      "master_url": "https://api.discogs.com/masters/2523844",
-      "uri": "/master/2523844-Beth-Hart-A-Tribute-To-Led-Zeppelin",
-      "catno": "none",
-      "title": "Beth Hart - A Tribute To Led Zeppelin",
-      "thumb": "https://i.discogs.com/wgWYwKfSywDukUOnRRMOjcOQ_FAU0UTpMdl7frf_xfI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyNjY1/NzE2LTE2NDg0MDIz/NjQtMTAzNS5qcGVn.jpeg",
-      "cover_image": "https://i.discogs.com/mdr4xERdpnnEv7y2yqWMXlFpfJi1EGTXm5GxqCS4-64/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyNjY1/NzE2LTE2NDg0MDIz/NjQtMTAzNS5qcGVn.jpeg",
-      "resource_url": "https://api.discogs.com/masters/2523844",
-      "community": {
-        "want": 529,
-        "have": 5321
-      }
-    },
-    {
-      "country": "UK",
-      "year": "1999",
-      "format": ["Vinyl", "12\"", "33 ⅓ RPM"],
-      "label": ["Moving Shadow"],
-      "type": "master",
-      "genre": ["Electronic"],
-      "style": ["Drum n Bass"],
-      "id": 8493,
-      "barcode": [],
-      "master_id": 8493,
-      "master_url": "https://api.discogs.com/masters/8493",
-      "uri": "/Technical-Itch-Led-Arced/master/8493",
-      "catno": "SHADOW 133",
-      "title": "Technical Itch - Led / Arced",
-      "thumb": "https://i.discogs.com/uGAvSkzMWqbos6PaAbEb0NkWEgolrO9bLyr5SQOpwgA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NDct/MTI5MjEyNzA1NS5q/cGVn.jpeg",
-      "cover_image": "https://i.discogs.com/bQBZ-oKLejoVVYba5Q1ilzxowKCW0JswGSD2o4IA95Q/rs:fit/g:sm/q:90/h:610/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NDct/MTI5MjEyNzA1NS5q/cGVn.jpeg",
-      "resource_url": "https://api.discogs.com/masters/8493",
-      "community": {
-        "want": 195,
-        "have": 635
-      }
-    },
-    {
-      "country": "UK",
-      "year": "1984",
-      "format": ["Vinyl", "7\"", "45 RPM"],
-      "label": [
-        "Riot City Records",
-        "Utopia Studios",
-        "Montreuil Offset",
-        "The Cartel",
-        "Pinnacle",
-        "Cherry Red Music",
-        "Polygram Industries Messageries"
-      ],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Hardcore", "Punk"],
-      "id": 215989,
-      "barcode": [
-        "425 RIOT 29 A POLYGRAM A2",
-        "425 RIOT 29 B POLYGRAM A1",
-        "ƱTOPIA. A",
-        "ƱTOPIA. B"
-      ],
-      "master_id": 215989,
-      "master_url": "https://api.discogs.com/masters/215989",
-      "uri": "/master/215989-The-Varukers-Led-To-The-Slaughter",
-      "catno": "RIOT 29",
-      "title": "The Varukers - Led To The Slaughter",
-      "thumb": "https://i.discogs.com/Eiv5rYXa2YQuxp6s49K6-vq-qwnrtnOKTB7xIhU6N9I/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4MzQ1/NS0xNDQwNjEwMjE5/LTM3NDIuanBlZw.jpeg",
-      "cover_image": "https://i.discogs.com/sF6OhQdKHi-v2kP6KAtLXG3wnnGkTFzGJZI69CUtfH8/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4MzQ1/NS0xNDQwNjEwMjE5/LTM3NDIuanBlZw.jpeg",
-      "resource_url": "https://api.discogs.com/masters/215989",
-      "community": {
-        "want": 364,
-        "have": 786
-      }
-    },
-    {
-      "country": "Europe",
-      "year": "1995",
-      "format": ["CD", "Album"],
-      "label": [
-        "Atlantic",
-        "Warner Music Manufacturing Europe",
-        "WMME Alsdorf"
-      ],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Alternative Rock", "Hard Rock", "Pop Rock"],
-      "id": 288709,
-      "barcode": [
-        "0 7567-82731-2 4",
-        "075678273124",
-        "CA 851",
-        "LC 0121",
-        "GEMA/BIEM",
-        "756782731-2 WME",
-        "IFPI L011",
-        "IFPI 0548",
-        "IFPI 0560",
-        "IFPI 0612",
-        "IFPI 0540"
-      ],
-      "master_id": 288709,
-      "master_url": "https://api.discogs.com/masters/288709",
-      "uri": "/master/288709-Various-Encomium-A-Tribute-To-Led-Zeppelin",
-      "catno": "7567-82731-2",
-      "title": "Various - Encomium: A Tribute To Led Zeppelin",
-      "thumb": "https://i.discogs.com/F2L96sfBTkHd03skqcd1GZf6-YtssOKmlQ3N3bpnCpU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1NjAy/NDktMTQ1ODc2NzMx/NS03OTQzLmpwZWc.jpeg",
-      "cover_image": "https://i.discogs.com/EtxTyvdHpHufg3_2EzpCKWbm3WePPoO9YzDlweZmSoI/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1NjAy/NDktMTQ1ODc2NzMx/NS03OTQzLmpwZWc.jpeg",
-      "resource_url": "https://api.discogs.com/masters/288709",
-      "community": {
-        "want": 453,
-        "have": 5014
-      }
-    },
-    {
-      "country": "Canada",
-      "year": "2002",
-      "format": ["CD", "Compilation", "Enhanced"],
-      "label": [
-        "Atlantic",
-        "Warner Music Canada Ltd",
-        "Warner Music Canada Ltd",
-        "AOL Time Warner",
-        "Atlantic Recording Corporation",
-        "Atlantic Recording Corporation",
-        "WEA International Inc.",
-        "WEA International Inc.",
-        "Cinram"
-      ],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Classic Rock"],
-      "id": 4672,
-      "barcode": [
-        "0 -7567-83619-2 0",
-        "CD 83268",
-        "CD 83278",
-        "L388 5016 CD83268 D91105-15",
-        "IFPI6000",
-        "MADE IN CANADA 16",
-        "#000227XL CD83278 L386 CINRAM 31",
-        "L386",
-        "IFPI6000",
-        "MADE IN CANADA 18"
-      ],
-      "master_id": 4672,
-      "master_url": "https://api.discogs.com/masters/4672",
-      "uri": "/master/4672-Led-Zeppelin-Early-Days-Latter-Days-The-Best-Of-Led-Zeppelin-Volumes-One-And-Two",
-      "catno": "CD 83619",
-      "title": "Led Zeppelin - Early Days & Latter Days: The Best Of Led Zeppelin Volumes One And Two",
-      "thumb": "https://i.discogs.com/nTpiyIM5sTavkQFnjiUFzTnC7QXgxi7EZdMcpXIjz9E/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3NTI1/My0xNzE5MjAzMzE3/LTk3NzcuanBlZw.jpeg",
-      "cover_image": "https://i.discogs.com/EEf8NwIWIE9DRKDrLRZo0449OC-xP1nd_AgrUPiFGoQ/rs:fit/g:sm/q:90/h:520/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3NTI1/My0xNzE5MjAzMzE3/LTk3NzcuanBlZw.jpeg",
-      "resource_url": "https://api.discogs.com/masters/4672",
-      "community": {
-        "want": 386,
-        "have": 4913
-      }
-    },
-    {
-      "country": "US",
-      "year": "1987",
-      "format": ["Vinyl", "LP", "Unofficial Release"],
-      "label": ["Artemis Record Works", "LSU Assembly Center, Baton Rouge"],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Rock & Roll", "Hard Rock", "Arena Rock", "Blues Rock"],
-      "id": 410204,
-      "barcode": [],
-      "master_id": 410204,
-      "master_url": "https://api.discogs.com/masters/410204",
-      "uri": "/master/410204-Led-Zeppelin-Led-Astray-In-Baton-Rouge",
-      "catno": "CO-8001",
-      "title": "Led Zeppelin - Led Astray In Baton Rouge",
-      "thumb": "https://i.discogs.com/j-H8eK52cybAQzN97DYjNJ71goL7P1MrI49rpd7r8C8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3MjU1/NDYtMTQwMDk4Njcx/Ni0zODk0LmpwZWc.jpeg",
-      "cover_image": "https://i.discogs.com/ZdCOYAXWvzh36AM94bET2Q_sihS5y4d0uqgkaId8x-Y/rs:fit/g:sm/q:90/h:525/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3MjU1/NDYtMTQwMDk4Njcx/Ni0zODk0LmpwZWc.jpeg",
-      "resource_url": "https://api.discogs.com/masters/410204",
-      "community": {
-        "want": 152,
-        "have": 274
-      }
-    },
-    {
-      "country": "Japan",
-      "year": "2008",
-      "format": [
-        "CD",
-        "Album",
-        "Reissue",
-        "Box Set",
-        "Compilation",
-        "Limited Edition"
-      ],
-      "label": [
-        "Atlantic",
-        "Swan Song",
-        "Warner Music Japan Inc.",
-        "Warner Music Japan Inc.",
-        "Atlantic Recording Corporation",
-        "WEA International Inc."
-      ],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Blues Rock", "Hard Rock"],
-      "id": 284316,
-      "barcode": [
-        "4943674083848",
-        "¥ 28,000",
-        "JASRAC",
-        "IFPI L245",
-        "IFPI 4011",
-        "WPCR-13130 1A V",
-        "WPCR-13131 1A V",
-        "WPCR-13132 1A V",
-        "WPCR-13133 1A V",
-        "WPCR-13134 1A V",
-        "WPCR-13135 1A V",
-        "WPCR-13136 1A V",
-        "WPCR-13137 1A V",
-        "WPCR-13138 1A V",
-        "WPCR-13139 1A V",
-        "WPCR-13140 1A V",
-        "WPCR-13141 1A V"
-      ],
-      "master_id": 284316,
-      "master_url": "https://api.discogs.com/masters/284316",
-      "uri": "/master/284316-Led-Zeppelin-Led-Zeppelin-40th-Anniversary-Definitive-Collection-Of-Mini-LP-Replica-CDs",
-      "catno": "WPCR-13142/53",
-      "title": "Led Zeppelin - Led Zeppelin - 40th Anniversary - Definitive Collection Of Mini-LP Replica CDs",
-      "thumb": "https://i.discogs.com/eQEIYqWnosoUQg3upXmNYNdd2gCPPhO8rxrF_QXLad0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NjYx/ODYtMTI4NjIxMjA1/MS5qcGVn.jpeg",
-      "cover_image": "https://i.discogs.com/1-wAgROPvIT54UFRsTGx6E4e9DUh2PPCfXFfVesu410/rs:fit/g:sm/q:90/h:338/w:338/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NjYx/ODYtMTI4NjIxMjA1/MS5qcGVn.jpeg",
-      "resource_url": "https://api.discogs.com/masters/284316",
-      "community": {
-        "want": 664,
-        "have": 1851
-      }
-    },
-    {
-      "country": "UK",
-      "year": "2005",
-      "format": ["CD", "Single"],
-      "label": ["Reprise Records", "679"],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Alternative Rock"],
-      "id": 37550,
-      "barcode": [
-        "054391604422",
-        "W669CD1 TSF/SDC 30966 A",
-        "IFPI L401",
-        "IFPI 1L18"
-      ],
-      "master_id": 37550,
-      "master_url": "https://api.discogs.com/masters/37550",
-      "uri": "/master/37550-Secret-Machines-The-Road-Leads-Where-Its-Led",
-      "catno": "W 669 CD1",
-      "title": "Secret Machines - The Road Leads Where It's Led",
-      "thumb": "https://i.discogs.com/6Mz9ehHdjPxgHnP9zvTSmhUNYJ8WgyNhgOno_pca4UU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTk4/NTUtMTIzNzQwMjU1/MS5qcGVn.jpeg",
-      "cover_image": "https://i.discogs.com/VKAaJQ-y_NXXVa0r5O3Gw0xVgnT6u8JUufo0GUADJHo/rs:fit/g:sm/q:90/h:453/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTk4/NTUtMTIzNzQwMjU1/MS5qcGVn.jpeg",
-      "resource_url": "https://api.discogs.com/masters/37550",
-      "community": {
-        "want": 72,
-        "have": 790
-      }
-    },
-    {
-      "country": "Europe",
-      "year": "1997",
-      "format": ["CD", "Album"],
-      "label": [
-        "Point Music",
-        "Point Music",
-        "Point Music",
-        "Air Lyndhurst Studios",
-        "Golden Sound Studios (Hani Mehanna)",
-        "Olympic Studios",
-        "Nomis Studios",
-        "Olympic Studios",
-        "Nomis Studios",
-        "PMDC, Germany"
-      ],
-      "type": "master",
-      "genre": ["Rock", "Classical"],
-      "style": ["Modern", "Classical"],
-      "id": 656517,
-      "barcode": [
-        "0 28945 41452 2",
-        "028945414522",
-        "LC 6042",
-        "BIEM/MCPS",
-        "454 145-2 01 /",
-        "MADE IN GERMANY BY PMDC E",
-        "none",
-        "none"
-      ],
-      "master_id": 656517,
-      "master_url": "https://api.discogs.com/masters/656517",
-      "uri": "/master/656517-The-London-Philharmonic-Orchestra-Kashmir-Symphonic-Led-Zeppelin",
-      "catno": "454 145-2",
-      "title": "The London Philharmonic Orchestra* - Kashmir: Symphonic Led Zeppelin",
-      "thumb": "https://i.discogs.com/FY3uwXx9bzUMtYqVsqKE2dp1nd4iwtOv31Ye3bLCyno/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNTMx/ODgtMTU0ODIzOTk1/MS0yMTA3LmpwZWc.jpeg",
-      "cover_image": "https://i.discogs.com/uNdKpS7s8nlBkN02IMbHJGJLiSjDLaure8Yl7j5BhN4/rs:fit/g:sm/q:90/h:531/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNTMx/ODgtMTU0ODIzOTk1/MS0yMTA3LmpwZWc.jpeg",
-      "resource_url": "https://api.discogs.com/masters/656517",
-      "community": {
-        "want": 102,
-        "have": 1076
-      }
-    },
-    {
-      "country": "Italy",
-      "year": "2010",
-      "format": ["Vinyl", "LP", "EP", "Limited Edition", "Numbered"],
-      "label": ["Mannequin"],
-      "type": "master",
-      "genre": ["Electronic", "Rock"],
-      "style": ["New Wave", "Darkwave"],
-      "id": 241955,
-      "barcode": [],
-      "master_id": 241955,
-      "master_url": "https://api.discogs.com/masters/241955",
-      "uri": "/Led-Er-Est-Ancien-R%C3%A9gime-Led-Er-Est-Ancien-R%C3%A9gime/master/241955",
-      "catno": "MNQ 012",
-      "title": "Led Er Est / Ancien Régime - Led Er Est / Ancien Régime",
-      "thumb": "https://i.discogs.com/hF4sg_FQjJn6tIPp5HcHAX5lvOB_r4FOltBb6vfR63Y/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyNDEx/MTktMTQ0MTgwODI0/Ni04MTg1LmpwZWc.jpeg",
-      "cover_image": "https://i.discogs.com/zK26UFbD4RoC7smhSSolDr5nP-iEgFUGxhsAf3aLScw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyNDEx/MTktMTQ0MTgwODI0/Ni04MTg1LmpwZWc.jpeg",
-      "resource_url": "https://api.discogs.com/masters/241955",
-      "community": {
-        "want": 380,
-        "have": 237
-      }
-    },
-    {
-      "country": "France",
-      "year": "1998",
-      "format": ["CD", "Album"],
-      "label": [
-        "Axe Killer Records",
-        "Arcade Music Company",
-        "Optical Disc De France",
-        "FTS",
-        "Axe Killer",
-        "Galaxy Theater"
-      ],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Hard Rock"],
-      "id": 403149,
-      "barcode": [
-        "3383001413725",
-        "3 383001 413725",
-        "IFPI L851",
-        "ifpi 3800",
-        "ODF 3041372",
-        "IFPI L851",
-        "ifpi 3802",
-        "ODF 3041372",
-        "ARC 331",
-        "mcps"
-      ],
-      "master_id": 403149,
-      "master_url": "https://api.discogs.com/masters/403149",
-      "uri": "/master/403149-Great-White-Great-Zeppelin-A-Tribute-To-Led-Zeppelin",
-      "catno": "3041372",
-      "title": "Great White - Great Zeppelin - A Tribute To Led Zeppelin",
-      "thumb": "https://i.discogs.com/XFNo34P_1_opgmNZXc96n1MPStn3QtMQKFByYsgj654/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyOTY2/NzQtMTQ4NTI5MTM0/OS0yNjQ2LmpwZWc.jpeg",
-      "cover_image": "https://i.discogs.com/hq6_rzwwAF31VPQGBXlwYRVJXeiNoHb6LYG_ACadOXU/rs:fit/g:sm/q:90/h:587/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyOTY2/NzQtMTQ4NTI5MTM0/OS0yNjQ2LmpwZWc.jpeg",
-      "resource_url": "https://api.discogs.com/masters/403149",
-      "community": {
-        "want": 542,
-        "have": 1829
-      }
-    },
-    {
-      "country": "Europe",
-      "year": "2002",
-      "format": ["CD", "Album"],
-      "label": [
-        "Mute",
-        "Mute",
-        "Mute Records Ltd.",
-        "Mute Records Ltd.",
-        "Mute Song Ltd.",
-        "Vital",
-        "Technicolor"
-      ],
-      "type": "master",
-      "genre": ["Electronic"],
-      "style": ["Glitch", "Abstract", "Illbient"],
-      "id": 80681,
-      "barcode": [
-        "5 016025 611652 >",
-        "5016025611652",
-        "E4959 CDSTUMM 165 01 Technicolor",
-        "IFPI L122",
-        "ifpi 2307",
-        "lc5834"
-      ],
-      "master_id": 80681,
-      "master_url": "https://api.discogs.com/masters/80681",
-      "uri": "/master/80681-Komputer-Market-Led",
-      "catno": "cdstumm165",
-      "title": "Komputer - Market Led",
-      "thumb": "https://i.discogs.com/iClQrKRhbYPgWBnjt_g4dZmc7GygjBopfKMr9XDg-N8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2Nzk5/LTE1MTE4ODYwMjQt/Njg1NC5qcGVn.jpeg",
-      "cover_image": "https://i.discogs.com/JR_FdXQGopN6xYQhvRN0N9-tw1CGEL4jfTXhR9xrAWU/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2Nzk5/LTE1MTE4ODYwMjQt/Njg1NC5qcGVn.jpeg",
-      "resource_url": "https://api.discogs.com/masters/80681",
-      "community": {
-        "want": 69,
-        "have": 300
-      }
-    },
-    {
-      "country": "Germany",
-      "year": "2024",
-      "format": ["CD", "Album"],
-      "label": ["Iron Bonehead Productions"],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Black Metal", "Death Metal"],
-      "id": 3458291,
-      "barcode": ["PO-23226 309774", "LBR DF01", "DFM10"],
-      "master_id": 3458291,
-      "master_url": "https://api.discogs.com/masters/3458291",
-      "uri": "/master/3458291-Crucifier-Led-Astray",
-      "catno": "IBP609",
-      "title": "Crucifier - Led Astray",
-      "thumb": "https://i.discogs.com/gQyOqfJCbHTJ8RhIUvIveBr0tK0JCOWUK0oiHxQs-Ng/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNDEw/NTUyLTE3MTU2MjQ0/MTQtNjgyNy5qcGVn.jpeg",
-      "cover_image": "https://i.discogs.com/O90Pw3j_uKU9Nu8P1SL4HCBgvWHSQVOlrTVS4zHctNQ/rs:fit/g:sm/q:90/h:533/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNDEw/NTUyLTE3MTU2MjQ0/MTQtNjgyNy5qcGVn.jpeg",
-      "resource_url": "https://api.discogs.com/masters/3458291",
-      "community": {
-        "want": 74,
-        "have": 261
-      }
-    },
-    {
-      "country": "France",
-      "year": "2021",
-      "format": ["Vinyl", "LP", "Compilation"],
-      "label": ["Wagram Music", "In Jazz Collection"],
-      "type": "master",
-      "genre": ["Jazz"],
-      "style": [],
-      "id": 2351503,
-      "barcode": ["3596973933669"],
-      "master_id": 2351503,
-      "master_url": "https://api.discogs.com/masters/2351503",
-      "uri": "/master/2351503-Various-Led-Zeppelin-In-Jazz-A-Jazz-Tribute-To-Led-Zeppelin",
-      "catno": "3393366",
-      "title": "Various - Led Zeppelin In Jazz - A Jazz Tribute To Led Zeppelin",
-      "thumb": "https://i.discogs.com/BdCKBlfwN9z6WxirUMJz0AaPz--0stZ20a4Uihx9iJQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4ODc3/NTc2LTE2MjE5NTQx/MTAtNjM4OS5qcGVn.jpeg",
-      "cover_image": "https://i.discogs.com/_1Ni-VxcRtwBGE_ofmxK2U-GRY66h8aPy7aNBJqizpY/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4ODc3/NTc2LTE2MjE5NTQx/MTAtNjM4OS5qcGVn.jpeg",
-      "resource_url": "https://api.discogs.com/masters/2351503",
-      "community": {
-        "want": 47,
-        "have": 433
-      }
-    },
-    {
-      "country": "US",
-      "year": "2018",
-      "format": ["Vinyl", "7\"", "Single", "Limited Edition", "Numbered"],
-      "label": [
-        "Mind Over Matter Records",
-        "2018 Seven Inch Of The Month Club"
-      ],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Metalcore"],
-      "id": 1501244,
-      "barcode": [],
-      "master_id": 1501244,
-      "master_url": "https://api.discogs.com/masters/1501244",
-      "uri": "/master/1501244-ZAO-Yashira-Hide-From-The-Light-Led-To-Ache",
-      "catno": "MOM051",
-      "title": "ZAO / Yashira - Hide From The Light / Led To Ache",
-      "thumb": "https://i.discogs.com/PxDbAqjhZtsx6Txh4T8VyotuoF_mLcxDTTAcNe13tao/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMjA3/MzI3LTE1ODcyNDYw/OTItODEwNi5wbmc.jpeg",
-      "cover_image": "https://i.discogs.com/nGNHGf5O7Uu5ipC5NfCKxdfnTySg44b_GsMEzvFl-0M/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMjA3/MzI3LTE1ODcyNDYw/OTItODEwNi5wbmc.jpeg",
-      "resource_url": "https://api.discogs.com/masters/1501244",
-      "community": {
-        "want": 327,
-        "have": 516
-      }
-    },
-    {
-      "country": "US",
-      "year": "1989",
-      "format": ["Vinyl", "LP", "Transcription"],
-      "label": ["Unistar Radio Programming"],
-      "type": "master",
-      "genre": ["Rock", "Non-Music"],
-      "style": ["Hard Rock", "Classic Rock", "Interview"],
-      "id": 1815951,
-      "barcode": [],
-      "master_id": 1815951,
-      "master_url": "https://api.discogs.com/masters/1815951",
-      "uri": "/master/1815951-Led-Zeppelin-The-Led-Zeppelin-Story",
-      "catno": "11/17/89",
-      "title": "Led Zeppelin - The Led Zeppelin Story",
-      "thumb": "https://i.discogs.com/qqeZrhbLsNlDsz_IEAjFQcEOON9aRkgxKpLHeE60508/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3MjI2/OTYtMTQwMDkxNDMz/OC00MTIwLmpwZWc.jpeg",
-      "cover_image": "https://i.discogs.com/u5UMpPPAN1cWCIfweTJpQ-OXxa67ZqYIHvgmvIxCK7A/rs:fit/g:sm/q:90/h:501/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3MjI2/OTYtMTQwMDkxNDMz/OC00MTIwLmpwZWc.jpeg",
-      "resource_url": "https://api.discogs.com/masters/1815951",
-      "community": {
-        "want": 144,
-        "have": 25
-      }
-    },
-    {
-      "country": "US",
-      "year": "1989",
-      "format": ["Vinyl", "7\"", "45 RPM", "Single"],
-      "label": ["Virgin"],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Blues Rock", "Pop Rock"],
-      "id": 1144133,
-      "barcode": [
-        "7567-99211-7",
-        "ST-VR-57196 DMM-1 SP 1-1 Precision",
-        "ST-VR-57197 DMM-1 SP 1-1 Precision"
-      ],
-      "master_id": 1144133,
-      "master_url": "https://api.discogs.com/masters/1144133",
-      "uri": "/master/1144133-Gary-Moore-Led-Clones",
-      "catno": "7-99211",
-      "title": "Gary Moore - Led Clones",
-      "thumb": "https://i.discogs.com/HpaMW3wP2r5_W6LT9U2Z7fx3eeQ_kSBr3g-08YvaY9c/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzMDM2/MjYtMTM2MTM1MTg2/OS04MDg4LmpwZWc.jpeg",
-      "cover_image": "https://i.discogs.com/GJtBV0pU2FfyWW7jfiRr_fX2JJx15zknu9IDLhBuPak/rs:fit/g:sm/q:90/h:583/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzMDM2/MjYtMTM2MTM1MTg2/OS04MDg4LmpwZWc.jpeg",
-      "resource_url": "https://api.discogs.com/masters/1144133",
-      "community": {
-        "want": 57,
-        "have": 111
-      }
-    },
-    {
-      "country": "Canada",
-      "year": "1979",
-      "format": ["Vinyl", "LP", "Unofficial Release"],
-      "label": ["K&S Records"],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Blues Rock", "Hard Rock", "Classic Rock"],
-      "id": 1759820,
-      "barcode": ["LZ 171-A", "LA 171-B"],
-      "master_id": 1759820,
-      "master_url": "https://api.discogs.com/masters/1759820",
-      "uri": "/Led-Zeppelin-Led-Zeppelin/master/1759820",
-      "catno": "074",
-      "title": "Led Zeppelin - Led Zeppelin",
-      "thumb": "https://i.discogs.com/hpXVlc7N9Orj3_48CETlhDCbyVl5BuCn0la3PWWKaBE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5Nzkw/MjItMTQ4Njg0NTg4/NC0xNzk2LmpwZWc.jpeg",
-      "cover_image": "https://i.discogs.com/i1ShELACGdBXT95Ug3LpVIDPKvNFGIOtGLon7EHRCq8/rs:fit/g:sm/q:90/h:550/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5Nzkw/MjItMTQ4Njg0NTg4/NC0xNzk2LmpwZWc.jpeg",
-      "resource_url": "https://api.discogs.com/masters/1759820",
-      "community": {
-        "want": 63,
-        "have": 115
-      }
-    },
-    {
-      "country": "Netherlands",
-      "year": "2024",
-      "format": ["Vinyl", "12\"", "33 ⅓ RPM", "45 RPM"],
-      "label": ["Delsin"],
-      "type": "master",
-      "genre": ["Electronic"],
-      "style": ["Techno"],
-      "id": 3383896,
-      "barcode": [],
-      "master_id": 3383896,
-      "master_url": "https://api.discogs.com/masters/3383896",
-      "uri": "/master/3383896-Answer-Code-Request-Amotik-LED",
-      "catno": "158DSR",
-      "title": "Answer Code Request & Amotik - LED",
-      "thumb": "https://i.discogs.com/mZ_c5-OWQtclYY5hpke7kaZL7LobgSBec9ZL4JqLso4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5NTk3/ODM2LTE3MDYyNzg5/NzQtNTIyOC5qcGVn.jpeg",
-      "cover_image": "https://i.discogs.com/dViDN3pNA0IkSbPpDBM6t1V9IoleXMTpa7vkOC35vnY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5NTk3/ODM2LTE3MDYyNzg5/NzQtNTIyOC5qcGVn.jpeg",
-      "resource_url": "https://api.discogs.com/masters/3383896",
-      "community": {
-        "want": 85,
-        "have": 149
-      }
-    },
-    {
-      "country": "Czech Republic",
-      "year": "1999",
-      "format": ["CD", "Album"],
-      "label": ["Hammer Stone Records"],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Heavy Metal"],
-      "id": 1436604,
-      "barcode": ["Hammer One"],
-      "master_id": 1436604,
-      "master_url": "https://api.discogs.com/masters/1436604",
-      "uri": "/master/1436604-Buldok-Ohe%C5%88-A-Led",
-      "catno": "none",
-      "title": "Buldok - Oheň A Led",
-      "thumb": "https://i.discogs.com/42QDfnKjZfclKjkyCH6mYYWkhdD60mGGLN4_cxJhNbY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyOTk2/NjMtMTMyNDYzODkx/NC5qcGVn.jpeg",
-      "cover_image": "https://i.discogs.com/A1drXSjcUXfDA64wKzrfYl8WAuJVBhMazlvrBdJJv9A/rs:fit/g:sm/q:90/h:253/w:250/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyOTk2/NjMtMTMyNDYzODkx/NC5qcGVn.jpeg",
-      "resource_url": "https://api.discogs.com/masters/1436604",
-      "community": {
-        "want": 66,
-        "have": 146
-      }
-    },
-    {
-      "country": "Czech Republic",
-      "year": "1994",
-      "format": ["CD", "Album", "Limited Edition", "Numbered"],
-      "label": ["Warrior's Records", "Eximpo"],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Hard Rock", "Oi"],
-      "id": 707247,
-      "barcode": ["PX 4046"],
-      "master_id": 707247,
-      "master_url": "https://api.discogs.com/masters/707247",
-      "uri": "/master/707247-Buldok-Ohe%C5%88-A-Led",
-      "catno": "W.R. 001",
-      "title": "Buldok - Oheň A Led",
-      "thumb": "https://i.discogs.com/uDip2nOQwa3ksaM4_RruESdeMLgRe38IikGC4Bsu8hc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2MTk5/MzEtMTM3MDE2MTk2/NC00ODcyLmpwZWc.jpeg",
-      "cover_image": "https://i.discogs.com/20zbx_eIj7WfJzKh5q9Eyy-SYlVf-XLSiweMv7OYO9Y/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2MTk5/MzEtMTM3MDE2MTk2/NC00ODcyLmpwZWc.jpeg",
-      "resource_url": "https://api.discogs.com/masters/707247",
-      "community": {
-        "want": 112,
-        "have": 95
-      }
-    },
-    {
-      "country": "Germany",
-      "year": "2002",
-      "format": ["Vinyl", "12\"", "33 ⅓ RPM"],
-      "label": [
-        "Holzplatten",
-        "Holzplatten",
-        "Neuton",
-        "Edition Pornostar",
-        "SST Brüggemann GmbH",
-        "MPO"
-      ],
-      "type": "master",
-      "genre": ["Electronic"],
-      "style": ["Techno", "Schranz"],
-      "id": 521645,
-      "barcode": [
-        "6 61956 56561 8",
-        "661956565618",
-        "LC 02162",
-        "gema",
-        "Holz 56 A K SST MPO",
-        "Holz 56 B K SST MPO"
-      ],
-      "master_id": 521645,
-      "master_url": "https://api.discogs.com/masters/521645",
-      "uri": "/Robert-Natus-Back-To-Led/master/521645",
-      "catno": "holz56",
-      "title": "Robert Natus - Back To Led",
-      "thumb": "https://i.discogs.com/vvkTdaGBwB_nT3RLFUYKkUXzK-T5VSBZrkPZSj9HcUA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwOTQz/LTEzNzUwMjgxNTUt/NjU3My5qcGVn.jpeg",
-      "cover_image": "https://i.discogs.com/qiKoPQktRqU4adRpqxb-xNUx_BxWE9OfxEkWpQJrWqk/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwOTQz/LTEzNzUwMjgxNTUt/NjU3My5qcGVn.jpeg",
-      "resource_url": "https://api.discogs.com/masters/521645",
-      "community": {
-        "want": 127,
-        "have": 177
-      }
-    },
-    {
-      "country": "Europe",
-      "year": "2009",
-      "format": [
-        "Vinyl",
-        "LP",
-        "Limited Edition",
-        "Numbered",
-        "Unofficial Release",
-        "Mono"
-      ],
-      "label": ["The Swingin' Pig"],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Classic Rock"],
-      "id": 1080729,
-      "barcode": [],
-      "master_id": 1080729,
-      "master_url": "https://api.discogs.com/masters/1080729",
-      "uri": "/master/1080729-Led-Zeppelin-The-Alternate-Led-Zeppelin-II",
-      "catno": "TSP 500-45/1",
-      "title": "Led Zeppelin - The Alternate Led Zeppelin II",
-      "thumb": "https://i.discogs.com/sDqZWHVwc89cO1OymYE8DxGIFm7JIwsjp-QkkpzjBcI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1NjM1/NTEtMTI5MDYyOTU1/MS5qcGVn.jpeg",
-      "cover_image": "https://i.discogs.com/xTaM6o-TgarJM6WykGDrxIPVAPS221WhotjQD0Um3aM/rs:fit/g:sm/q:90/h:522/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1NjM1/NTEtMTI5MDYyOTU1/MS5qcGVn.jpeg",
-      "resource_url": "https://api.discogs.com/masters/1080729",
-      "community": {
-        "want": 124,
-        "have": 62
-      }
-    },
-    {
-      "country": "UK",
-      "year": "2000",
-      "format": ["CD", "Single"],
-      "label": [
-        "Fierce Panda",
-        "Fierce Panda",
-        "Fierce Panda",
-        "Fierce Panda Records",
-        "Vital",
-        "Far Heath Studios",
-        "Magic Hat",
-        "DOCdata"
-      ],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Indie Rock"],
-      "id": 253091,
-      "barcode": [
-        "5 020422 199521",
-        "5020422199521",
-        "NING95CD · MASTERED BY DOCDATA",
-        "IFPI LA31"
-      ],
-      "master_id": 253091,
-      "master_url": "https://api.discogs.com/masters/253091",
-      "uri": "/master/253091-Seafood-Led-By-Bison",
-      "catno": "NING 95CD",
-      "title": "Seafood - Led By Bison",
-      "thumb": "https://i.discogs.com/lp9sjxz1iYIZ9XNzWO-wiaRi2uH9ENYQR-UZNyQ0klk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk0NzM0/MS0xMTc2MTY4Njcx/LmpwZWc.jpeg",
-      "cover_image": "https://i.discogs.com/ljdaizR16QmI5L0bsN9QdMOzoOa6HkJKQRt-GdQH2Lg/rs:fit/g:sm/q:90/h:531/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk0NzM0/MS0xMTc2MTY4Njcx/LmpwZWc.jpeg",
-      "resource_url": "https://api.discogs.com/masters/253091",
-      "community": {
-        "want": 13,
-        "have": 184
-      }
-    },
-    {
-      "country": "US",
-      "year": "2016",
-      "format": ["Vinyl", "LP", "Album", "Numbered"],
-      "label": [
-        "Crush Music",
-        "Train",
-        "Train",
-        "Crush Music",
-        "Atlantic Recording Corporation",
-        "WEA International Inc.",
-        "Bear Creek Studios",
-        "Sunken Forest Studios",
-        "Magic Garden Mastering, Los Angeles",
-        "GZ Media"
-      ],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Classic Rock"],
-      "id": 1025515,
-      "barcode": ["075678664434", "144250E1/A", "144250E2/B"],
-      "master_id": 1025515,
-      "master_url": "https://api.discogs.com/masters/1025515",
-      "uri": "/master/1025515-Train-Train-Does-Led-Zeppelin-II",
-      "catno": "555757-1",
-      "title": "Train (2) - Train Does Led Zeppelin II",
-      "thumb": "https://i.discogs.com/2u9uL5fip0CF2M6X53qoVhAb8DCABxQDp258sPGt8po/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg2MDI2/NzQtMTQ2NDkwOTY2/NC04MzA3LmpwZWc.jpeg",
-      "cover_image": "https://i.discogs.com/ldLe7od2tEtRrOBgwf2RSoJCLkNHDbOTEcMcBlc96Ew/rs:fit/g:sm/q:90/h:308/w:308/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg2MDI2/NzQtMTQ2NDkwOTY2/NC04MzA3LmpwZWc.jpeg",
-      "resource_url": "https://api.discogs.com/masters/1025515",
-      "community": {
-        "want": 210,
-        "have": 734
-      }
-    },
-    {
-      "country": "UK",
-      "year": "2013",
-      "format": ["Vinyl", "12\"", "45 RPM", "Special Edition"],
-      "label": [
-        "Paradox Music",
-        "www.mastering.lt",
-        "Finyl Tweek",
-        "Record Industry",
-        "S.T. Holdings Ltd."
-      ],
-      "type": "master",
-      "genre": ["Electronic"],
-      "style": ["Drum n Bass"],
-      "id": 631910,
-      "barcode": [
-        "96946 1A PM 027 MORE LIGHTS DENNIS - ASC - NICE 1 JIFF - CMON ROLL IT.. 89 YALL - IS IT REALLY BLACK GABE - MANOSO - 404KG MMM - ANGEL HAWKSHAW - AMIT OWES ME A SAMOSA - DIRTY CITY - TL FOR LIFE - CHICO - BIG UPS EQUINOX WILL I BE ALIVE FOR 200 - THE ADE SOYES Shane",
-        "96946 1B PM 027 WHAT DOES THIS MEAN TRAX X NUCLEUS - SHANE IS ETCHING THIS - VIXEN MANJA - OVERHEADS… DIMA MOSKVA - LUV U STH - LOXY YA BAD - DAS AY UNAf - SVENTASTIC - MINI RUPTURE - MONEYPENNY - DL BEAU - FINYL TWEEK 2013 (-_-)"
-      ],
-      "master_id": 631910,
-      "master_url": "https://api.discogs.com/masters/631910",
-      "uri": "/Paradox-Jupiter-89-I-Led-You/master/631910",
-      "catno": "PM027",
-      "title": "Paradox - Jupiter 89 / I Led You",
-      "thumb": "https://i.discogs.com/X87gMYoZf-YboF-Ht8WFdGPoAKhIOEmKesrmUWicGK4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ5ODky/NzEtMTM4MzA4ODI4/NC00NTg5LmpwZWc.jpeg",
-      "cover_image": "https://i.discogs.com/tvCD7un7vC36Z6pWPXfy7mFcojyrqfy5Qd4pyvIYZkc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ5ODky/NzEtMTM4MzA4ODI4/NC00NTg5LmpwZWc.jpeg",
-      "resource_url": "https://api.discogs.com/masters/631910",
-      "community": {
-        "want": 200,
-        "have": 171
-      }
-    },
-    {
-      "country": "Germany",
-      "year": "2008",
-      "format": ["CD", "Album", "Compilation"],
-      "label": [
-        "Pepper Cake",
-        "ZYX Music",
-        "The Ultimate Tribute To Led Zeppelin",
-        "San Juan Music Group",
-        "San Juan Music Group",
-        "ZYX Music"
-      ],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Art Rock", "Hard Rock", "Classic Rock"],
-      "id": 500249,
-      "barcode": [
-        "090204893256",
-        "LC: 12635",
-        "BIEM / GEMA",
-        "PEC 2031-2/1 ZYX Music #1",
-        "PEC 2031-2/2 ZYX Music #1"
-      ],
-      "master_id": 500249,
-      "master_url": "https://api.discogs.com/masters/500249",
-      "uri": "/master/500249-Various-The-Ultimate-Tribute-To-Led-Zeppelin",
-      "catno": "PEC 2031-2",
-      "title": "Various - The Ultimate Tribute To Led Zeppelin",
-      "thumb": "https://i.discogs.com/dJCF18t9tX_UotUU4D6BXErsa2KZ865rARcTlkSqW_A/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5MTMy/MDktMTMwNzAwODA2/Ny5qcGVn.jpeg",
-      "cover_image": "https://i.discogs.com/xRa7VY11oSnXZzMzu7MNBRDqy4Sj7FNahyrGtEV8-EI/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5MTMy/MDktMTMwNzAwODA2/Ny5qcGVn.jpeg",
-      "resource_url": "https://api.discogs.com/masters/500249",
-      "community": {
-        "want": 135,
-        "have": 811
-      }
-    },
-    {
-      "country": "US",
-      "year": "1992",
-      "format": ["Vinyl", "12\"", "33 ⅓ RPM", "Single"],
-      "label": [
-        "SOUL",
-        "MCA Records",
-        "MCA Records, Inc.",
-        "MCA Records, Inc.",
-        "EMI Blackwood Music Inc.",
-        "Eric B. & Rakim Music, Inc."
-      ],
-      "type": "master",
-      "genre": ["Hip Hop"],
-      "style": ["Conscious", "Soundtrack"],
-      "id": 13450,
-      "barcode": ["008815438117", "MCA-11150-FDS-1", "MCA-11151-FDS-1"],
-      "master_id": 13450,
-      "master_url": "https://api.discogs.com/masters/13450",
-      "uri": "/master/13450-Eric-B-Rakim-Juice-Know-The-Ledge",
-      "catno": "MCA12-54381",
-      "title": "Eric B. & Rakim - Juice (Know The Ledge)",
-      "thumb": "https://i.discogs.com/VA7FhVWH81fF3thNmsvtKDUfPhSvlFcY5IX-9cbrHL0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNDI1/Mi0xNjMzMDA5OTYz/LTYzMTguanBlZw.jpeg",
-      "cover_image": "https://i.discogs.com/KMYzIDLjzTv7jkQcq7wwOcppT4iGejvt2ADYt6VILGw/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNDI1/Mi0xNjMzMDA5OTYz/LTYzMTguanBlZw.jpeg",
-      "resource_url": "https://api.discogs.com/masters/13450",
-      "community": {
-        "want": 2198,
-        "have": 1915
-      }
-    },
-    {
-      "country": "US",
-      "year": "2008",
-      "format": ["CD", "EP"],
-      "label": ["Not On Label (Tamaryn Self-released)"],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Goth Rock", "Ethereal"],
-      "id": 285992,
-      "barcode": [],
-      "master_id": 285992,
-      "master_url": "https://api.discogs.com/masters/285992",
-      "uri": "/Tamaryn-Led-Astray-Washed-Ashore/master/285992",
-      "catno": "TAM001",
-      "title": "Tamaryn - Led Astray, Washed Ashore",
-      "thumb": "https://i.discogs.com/3ZGSUqN1sMNi9OBb8LKQs1VrMa1H-CG9_y5ioaB8Ceg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2Njk0/MjgtMTU0OTUxMDM0/My04MDk1LmpwZWc.jpeg",
-      "cover_image": "https://i.discogs.com/biHOxTgp5tQO4i7cUs-PvqV8WQNyL7mAxoL0PMuO-cA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2Njk0/MjgtMTU0OTUxMDM0/My04MDk1LmpwZWc.jpeg",
-      "resource_url": "https://api.discogs.com/masters/285992",
-      "community": {
-        "want": 195,
-        "have": 304
-      }
-    },
-    {
-      "country": "US",
-      "year": "1956",
-      "format": ["Vinyl", "7\"", "45 RPM"],
-      "label": [
-        "ATCO Records",
-        "Tiger",
-        "Peer International",
-        "Atlantic Studios",
-        "Atlantic Recording Corporation"
-      ],
-      "type": "master",
-      "genre": ["Rock", "Funk / Soul", "Pop"],
-      "style": ["Rhythm & Blues", "Doo Wop"],
-      "id": 790874,
-      "barcode": [
-        "BMI",
-        "S-1859",
-        "S-1857",
-        "45-S-1859-2 AT",
-        "45-S-1857-2 AT"
-      ],
-      "master_id": 790874,
-      "master_url": "https://api.discogs.com/masters/790874",
-      "uri": "/master/790874-The-Coasters-One-Kiss-Led-To-Another-Brazil",
-      "catno": "45-6073",
-      "title": "The Coasters - One Kiss Led To Another / Brazil",
-      "thumb": "https://i.discogs.com/nRThRkcxZT8XdThatjdsA0-GOMD3sAAYiL12i2eW0jA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgyMzQ0/My0xNTM4NDg3Nzkz/LTIzOTQuanBlZw.jpeg",
-      "cover_image": "https://i.discogs.com/Zur0uup85bC-KYvRtRT62gLz6CXh8M-OTmWcQrk1954/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgyMzQ0/My0xNTM4NDg3Nzkz/LTIzOTQuanBlZw.jpeg",
-      "resource_url": "https://api.discogs.com/masters/790874",
-      "community": {
-        "want": 158,
-        "have": 214
-      }
-    },
-    {
-      "country": "South Korea",
-      "year": "1990",
-      "format": ["Vinyl", "LP", "Compilation", "Unofficial Release"],
-      "label": ["Creato"],
-      "type": "master",
-      "genre": ["Rock", "Blues"],
-      "style": [],
-      "id": 3519901,
-      "barcode": [
-        "MLR-1003",
-        "Side 1(machine stamped)   MLR  1003   A",
-        "Side 2(machine stamped)    MLR   1003   B"
-      ],
-      "master_id": 3519901,
-      "master_url": "https://api.discogs.com/masters/3519901",
-      "uri": "/master/3519901-Led-Zeppelin-Best-Of-Led-Zeppelin",
-      "catno": "MLR-1003 (CREATO 427)",
-      "title": "Led Zeppelin - Best Of Led Zeppelin",
-      "thumb": "https://i.discogs.com/5wrCtRn69AayjIIzQpSXQ1nYCq5SilBxklNqZ5oOrpQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2Nzc5/NjctMTQxODA5ODM3/Ni00MzM0LmpwZWc.jpeg",
-      "cover_image": "https://i.discogs.com/_4hsSvKsdHFH23CcShASdssNexuS6HImz4F571Ec17k/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2Nzc5/NjctMTQxODA5ODM3/Ni00MzM0LmpwZWc.jpeg",
-      "resource_url": "https://api.discogs.com/masters/3519901",
-      "community": {
-        "want": 24,
-        "have": 75
-      }
-    },
-    {
-      "country": "Australia",
-      "year": "2002",
-      "format": ["CD", "EP"],
-      "label": ["Nuffsaid Recordings"],
-      "type": "master",
-      "genre": ["Hip Hop"],
-      "style": [],
-      "id": 49960,
-      "barcode": [],
-      "master_id": 49960,
-      "master_url": "https://api.discogs.com/masters/49960",
-      "uri": "/Tumi-A-Dream-Led-To-This/master/49960",
-      "catno": "NSR015",
-      "title": "Tumi - A Dream Led To This...",
-      "thumb": "https://i.discogs.com/QGKut47gk-DDDBo-G0eGX-dJuwPo7pQ8G9wMLXPYzFI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2OTU3/MjQtMTIzNzUxODA0/MC5qcGVn.jpeg",
-      "cover_image": "https://i.discogs.com/AbYosDOWm3ykY8mB3vf5AbYmd7YHUFOXA5NJ3VyQeJg/rs:fit/g:sm/q:90/h:411/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2OTU3/MjQtMTIzNzUxODA0/MC5qcGVn.jpeg",
-      "resource_url": "https://api.discogs.com/masters/49960",
-      "community": {
-        "want": 188,
-        "have": 127
-      }
-    },
-    {
-      "country": "US",
-      "year": "2004",
-      "format": ["CD", "Album"],
-      "label": [
-        "The End Records",
-        "The End Records",
-        "The End Records",
-        "ATOZMUSIC.COM",
-        "Sonopress USA"
-      ],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Hardcore", "Heavy Metal"],
-      "id": 538117,
-      "barcode": [
-        "654436004424",
-        "ATOZMUSIC.COM TE044 + A02 + D419201",
-        "IFPI LB41",
-        "IFPI 1048"
-      ],
-      "master_id": 538117,
-      "master_url": "https://api.discogs.com/masters/538117",
-      "uri": "/master/538117-Crisis-Like-Sheep-Led-To-Slaughter",
-      "catno": "TE044",
-      "title": "Crisis (8) - Like Sheep Led To Slaughter",
-      "thumb": "https://i.discogs.com/rr-2-wsztGXLVTeHDrZRRC51ojqwt3JbEU8MWXXPxpc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgwMjI4/NTktMTYxNzg4MTU1/NC03MzQ4LmpwZWc.jpeg",
-      "cover_image": "https://i.discogs.com/oho_7L1DIs-j_lPK500NXkSfaZMLmpVsPGGcLuUmxAU/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgwMjI4/NTktMTYxNzg4MTU1/NC03MzQ4LmpwZWc.jpeg",
-      "resource_url": "https://api.discogs.com/masters/538117",
-      "community": {
-        "want": 68,
-        "have": 376
-      }
-    },
-    {
-      "country": "UK",
-      "year": "1971",
-      "format": ["Vinyl", "LP", "Album"],
-      "label": [
-        "Atlantic",
-        "Atlantic Recording Corporation",
-        "Kinney Music Ltd.",
-        "Phonodisc Ltd.",
-        "Headley Grange",
-        "Sunset Sound",
-        "Island Studios",
-        "Polydor Records Ltd."
-      ],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Hard Rock", "Blues Rock"],
-      "id": 4300,
-      "barcode": [
-        "2401012** A//3  1  1 1 2",
-        "2401012  B//3  1 2 7",
-        "2401012** A//3  1 1 3",
-        "2401012  B//3  1 1 3",
-        "2401012** A//3",
-        "2401012  B//4",
-        "2401012** A//3  1  1 1 1",
-        "2401012  B//4  1 1 7",
-        "2401012xx//  A//3  1 1 7",
-        "2401012  B//3  1 2 2",
-        "Pecko Duck",
-        "Porky"
-      ],
-      "master_id": 4300,
-      "master_url": "https://api.discogs.com/masters/4300",
-      "uri": "/master/4300-Led-Zeppelin-Untitled-",
-      "catno": "2401012",
-      "title": "Led Zeppelin - Untitled ",
-      "thumb": "https://i.discogs.com/0A5ozcMb34km4WEDZW95NkIwnsI6ThPYs-WifrzwP6E/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxMzU4/ODQtMTM4OTcxMjQ3/Ny00ODA3LmpwZWc.jpeg",
-      "cover_image": "https://i.discogs.com/FXDeOFtCi0aT4qcwxrJijofnrpAMiwzuGckrCz7wRNQ/rs:fit/g:sm/q:90/h:572/w:575/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxMzU4/ODQtMTM4OTcxMjQ3/Ny00ODA3LmpwZWc.jpeg",
-      "resource_url": "https://api.discogs.com/masters/4300",
-      "community": {
-        "want": 580697,
-        "have": 398278
-      }
-    },
-    {
-      "country": "Europe",
-      "year": "2009",
-      "format": ["Vinyl", "LP", "Unofficial Release", "Limited Edition"],
-      "label": ["The Swingin' Pig"],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Blues Rock", "Hard Rock"],
-      "id": 504485,
-      "barcode": [],
-      "master_id": 504485,
-      "master_url": "https://api.discogs.com/masters/504485",
-      "uri": "/Led-Zeppelin-The-Alternate-Led-Zeppelin-III/master/504485",
-      "catno": "TSP 500 34/1",
-      "title": "Led Zeppelin - The Alternate Led Zeppelin III",
-      "thumb": "https://i.discogs.com/l_W6gcESYrVdKDHWxVdcdytNViFQnYqP4gVVbU3V_LE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyODkx/NTctMTI3NDcwMDIy/My5qcGVn.jpeg",
-      "cover_image": "https://i.discogs.com/e5CZa_ogthGjJwfrbJeK1cKfQt1E3z4zB3PPiEbBpYM/rs:fit/g:sm/q:90/h:400/w:376/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyODkx/NTctMTI3NDcwMDIy/My5qcGVn.jpeg",
-      "resource_url": "https://api.discogs.com/masters/504485",
-      "community": {
-        "want": 122,
-        "have": 86
-      }
-    },
-    {
-      "country": "Unknown",
-      "genre": ["Rock"],
-      "format": ["Vinyl", "12\"", "Unofficial Release"],
-      "style": ["Hard Rock"],
-      "id": 740381,
-      "label": ["Not On Label (Led Zeppelin)", "Master LP"],
-      "type": "master",
-      "barcode": [],
-      "master_id": 740381,
-      "master_url": "https://api.discogs.com/masters/740381",
-      "uri": "/Led-Zeppelin-File-Under-Led-Zeppelin/master/740381",
-      "catno": "none",
-      "title": "Led Zeppelin - File Under: Led Zeppelin",
-      "thumb": "https://i.discogs.com/hd1rwRdoI6gnffjY_iZ3GGwGqt_K7uW-Zvj-lbPbrlE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxNjkx/NzAtMTM4NjM4Nzc2/OS00MDQ2LmpwZWc.jpeg",
-      "cover_image": "https://i.discogs.com/xm6hLJLmZQgkoUTp8f6Twh3F05nStEY60-D37kOdsYw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxNjkx/NzAtMTM4NjM4Nzc2/OS00MDQ2LmpwZWc.jpeg",
-      "resource_url": "https://api.discogs.com/masters/740381",
-      "community": {
-        "want": 49,
-        "have": 65
-      }
-    },
-    {
-      "country": "Spain",
-      "year": "2003",
-      "format": ["Vinyl", "LP", "Album"],
-      "label": [
-        "Munster Records",
-        "Distrolux SL",
-        "GZ Digital Media",
-        "GZ Digital Media"
-      ],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Stoner Rock"],
-      "id": 704173,
-      "barcode": ["8 435008 825317", "AE 46145/A", "AE 46146/A"],
-      "master_id": 704173,
-      "master_url": "https://api.discogs.com/masters/704173",
-      "uri": "/master/704173-Mermaid-Red-Led-Or-Death",
-      "catno": "MR 253",
-      "title": "Mermaid (2) - Red Led Or Death",
-      "thumb": "https://i.discogs.com/eJ45DXLTn7sIlF0sS__pRFcgb5_nMeAo-9lYqfTMwVQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4MTM3/MzktMTMwMjIwMDE5/NS5qcGVn.jpeg",
-      "cover_image": "https://i.discogs.com/VfdS9wCRb1V_kt6EESXyFke6iqmr-0soArOVu6IsQCI/rs:fit/g:sm/q:90/h:298/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4MTM3/MzktMTMwMjIwMDE5/NS5qcGVn.jpeg",
-      "resource_url": "https://api.discogs.com/masters/704173",
-      "community": {
-        "want": 27,
-        "have": 192
-      }
-    },
-    {
-      "country": "Italy",
-      "year": "1993",
-      "format": ["CD", "Unofficial Release"],
-      "label": ["Gulp!", "Studio 7, Napoli", "Canaria S.a.s"],
-      "type": "master",
-      "genre": ["Rock"],
-      "style": ["Hard Rock"],
-      "id": 2334712,
-      "barcode": ["8016107717804", "ADD"],
-      "master_id": 2334712,
-      "master_url": "https://api.discogs.com/masters/2334712",
-      "uri": "/master/2334712-Led-Zeppelin-Led-Zeppelin-Vol-1",
-      "catno": "CD GU1780",
-      "title": "Led Zeppelin - Led Zeppelin - Vol. 1°",
-      "thumb": "https://i.discogs.com/sMAt0zAgT3bO_w5sD1Dxv2EobO2t57B9KqWai2jb6k0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4ODkw/NzM2LTE2OTk3ODg0/NDYtNjA4OS5qcGVn.jpeg",
-      "cover_image": "https://i.discogs.com/DSYdfA5gs-GsAPjWj6wMluNenFqnJ_vhydR-eLaBod8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4ODkw/NzM2LTE2OTk3ODg0/NDYtNjA4OS5qcGVn.jpeg",
-      "resource_url": "https://api.discogs.com/masters/2334712",
-      "community": {
-        "want": 6,
-        "have": 105
-      }
     }
   ]
+},
+
+// Individual Album Response
+{
+    "id": 237604,
+    "main_release": 2229427,
+    "most_recent_release": 23832926,
+    "resource_url": "https://api.discogs.com/masters/237604",
+    "uri": "https://www.discogs.com/master/237604-Erykah-Badu-New-Amerykah-Part-Two-Return-Of-The-Ankh",
+    "versions_url": "https://api.discogs.com/masters/237604/versions",
+    "main_release_url": "https://api.discogs.com/releases/2229427",
+    "most_recent_release_url": "https://api.discogs.com/releases/23832926",
+    "num_for_sale": 207,
+    "lowest_price": 3.99,
+    "images": [
+        {
+            "type": "primary",
+            "uri": "",
+            "resource_url": "",
+            "uri150": "",
+            "width": 600,
+            "height": 600
+        },
+        {
+            "type": "secondary",
+            "uri": "",
+            "resource_url": "",
+            "uri150": "",
+            "width": 600,
+            "height": 600
+        },
+        {
+            "type": "secondary",
+            "uri": "",
+            "resource_url": "",
+            "uri150": "",
+            "width": 600,
+            "height": 600
+        },
+        {
+            "type": "secondary",
+            "uri": "",
+            "resource_url": "",
+            "uri150": "",
+            "width": 600,
+            "height": 600
+        },
+        {
+            "type": "secondary",
+            "uri": "",
+            "resource_url": "",
+            "uri150": "",
+            "width": 600,
+            "height": 600
+        },
+        {
+            "type": "secondary",
+            "uri": "",
+            "resource_url": "",
+            "uri150": "",
+            "width": 600,
+            "height": 600
+        },
+        {
+            "type": "secondary",
+            "uri": "",
+            "resource_url": "",
+            "uri150": "",
+            "width": 600,
+            "height": 600
+        },
+        {
+            "type": "secondary",
+            "uri": "",
+            "resource_url": "",
+            "uri150": "",
+            "width": 600,
+            "height": 600
+        },
+        {
+            "type": "secondary",
+            "uri": "",
+            "resource_url": "",
+            "uri150": "",
+            "width": 600,
+            "height": 600
+        },
+        {
+            "type": "secondary",
+            "uri": "",
+            "resource_url": "",
+            "uri150": "",
+            "width": 600,
+            "height": 600
+        },
+        {
+            "type": "secondary",
+            "uri": "",
+            "resource_url": "",
+            "uri150": "",
+            "width": 600,
+            "height": 600
+        },
+        {
+            "type": "secondary",
+            "uri": "",
+            "resource_url": "",
+            "uri150": "",
+            "width": 600,
+            "height": 600
+        }
+    ],
+    "genres": [
+        "Hip Hop",
+        "Funk / Soul"
+    ],
+    "styles": [
+        "Conscious",
+        "Neo Soul"
+    ],
+    "year": 2010,
+    "tracklist": [
+        {
+            "position": "A1",
+            "type_": "track",
+            "title": "20 Feet Tall",
+            "extraartists": [
+                {
+                    "name": "Erykah Badu",
+                    "anv": "E.Badu",
+                    "join": "",
+                    "role": "Lyrics By",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Tom Soares",
+                    "anv": "",
+                    "join": "",
+                    "role": "Mixed By",
+                    "tracks": "",
+                    "id": 264324,
+                    "resource_url": "https://api.discogs.com/artists/264324"
+                },
+                {
+                    "name": "James Poyser",
+                    "anv": "",
+                    "join": "",
+                    "role": "Producer [Acoustic Interpolation], Keyboards",
+                    "tracks": "",
+                    "id": 21363,
+                    "resource_url": "https://api.discogs.com/artists/21363"
+                },
+                {
+                    "name": "9th Wonder",
+                    "anv": "",
+                    "join": "",
+                    "role": "Producer [Original Track]",
+                    "tracks": "",
+                    "id": 186837,
+                    "resource_url": "https://api.discogs.com/artists/186837"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "",
+                    "join": "",
+                    "role": "Producer, Vocals [All Vocals]",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Mike Chav",
+                    "anv": "",
+                    "join": "",
+                    "role": "Synthesizer [Mooger Fooger]",
+                    "tracks": "",
+                    "id": 324295,
+                    "resource_url": "https://api.discogs.com/artists/324295"
+                },
+                {
+                    "name": "Doug Wimbish",
+                    "anv": "Douglas Wimbish",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 21658,
+                    "resource_url": "https://api.discogs.com/artists/21658"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "E.Badu",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Patrick Douthit",
+                    "anv": "P. Douthit",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 878057,
+                    "resource_url": "https://api.discogs.com/artists/878057"
+                }
+            ],
+            "duration": "3:25"
+        },
+        {
+            "position": "A2",
+            "type_": "track",
+            "title": "Window Seat",
+            "extraartists": [
+                {
+                    "name": "Stephen Bruner",
+                    "anv": "Stephen \"Thundercat\" Bruner",
+                    "join": "",
+                    "role": "Bass",
+                    "tracks": "",
+                    "id": 1573878,
+                    "resource_url": "https://api.discogs.com/artists/1573878"
+                },
+                {
+                    "name": "Mike Chav",
+                    "anv": "",
+                    "join": "",
+                    "role": "Cajón, Synthesizer [Mooger Fooger]",
+                    "tracks": "",
+                    "id": 324295,
+                    "resource_url": "https://api.discogs.com/artists/324295"
+                },
+                {
+                    "name": "Ahmir '?uestlove' Thompson",
+                    "anv": "Ahmir \"?uestlove\" Thompson",
+                    "join": "",
+                    "role": "Drums",
+                    "tracks": "",
+                    "id": 12473,
+                    "resource_url": "https://api.discogs.com/artists/12473"
+                },
+                {
+                    "name": "Alfredo Gray",
+                    "anv": "Alfredo Grey",
+                    "join": "",
+                    "role": "Handclaps, Percussion [Stomps]",
+                    "tracks": "",
+                    "id": 1074517,
+                    "resource_url": "https://api.discogs.com/artists/1074517"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "E.Badu",
+                    "join": "",
+                    "role": "Handclaps, Percussion [Stomps]",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Mike Chav",
+                    "anv": "",
+                    "join": "",
+                    "role": "Handclaps, Percussion [Stomps]",
+                    "tracks": "",
+                    "id": 324295,
+                    "resource_url": "https://api.discogs.com/artists/324295"
+                },
+                {
+                    "name": "Kirsten Agnesta",
+                    "anv": "",
+                    "join": "",
+                    "role": "Harp",
+                    "tracks": "",
+                    "id": 1766725,
+                    "resource_url": "https://api.discogs.com/artists/1766725"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "",
+                    "join": "",
+                    "role": "Lyrics By, Arranged By [Song Arrangement]",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Tom Soares",
+                    "anv": "",
+                    "join": "",
+                    "role": "Mixed By",
+                    "tracks": "",
+                    "id": 264324,
+                    "resource_url": "https://api.discogs.com/artists/264324"
+                },
+                {
+                    "name": "James Poyser",
+                    "anv": "",
+                    "join": "",
+                    "role": "Piano, Electric Piano [Rhodes]",
+                    "tracks": "",
+                    "id": 21363,
+                    "resource_url": "https://api.discogs.com/artists/21363"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "E.Badu",
+                    "join": "",
+                    "role": "Producer, Written-By",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "James Poyser",
+                    "anv": "",
+                    "join": "",
+                    "role": "Producer, Written-By",
+                    "tracks": "",
+                    "id": 21363,
+                    "resource_url": "https://api.discogs.com/artists/21363"
+                },
+                {
+                    "name": "Chris Bell (2)",
+                    "anv": "",
+                    "join": "",
+                    "role": "Recorded By",
+                    "tracks": "",
+                    "id": 523750,
+                    "resource_url": "https://api.discogs.com/artists/523750"
+                },
+                {
+                    "name": "Mike Chav",
+                    "anv": "",
+                    "join": "",
+                    "role": "Recorded By [Additionally Recorded]",
+                    "tracks": "",
+                    "id": 324295,
+                    "resource_url": "https://api.discogs.com/artists/324295"
+                },
+                {
+                    "name": "Tom Soares",
+                    "anv": "",
+                    "join": "",
+                    "role": "Recorded By [Additionally Recorded]",
+                    "tracks": "",
+                    "id": 264324,
+                    "resource_url": "https://api.discogs.com/artists/264324"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "E.Badu",
+                    "join": "",
+                    "role": "Vocals [All Vocals]",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                }
+            ],
+            "duration": "4:50"
+        },
+        {
+            "position": "A3",
+            "type_": "track",
+            "title": "Agitation",
+            "extraartists": [
+                {
+                    "name": "Tom Soares",
+                    "anv": "",
+                    "join": "",
+                    "role": "Mixed By",
+                    "tracks": "",
+                    "id": 264324,
+                    "resource_url": "https://api.discogs.com/artists/264324"
+                },
+                {
+                    "name": "David Sancious",
+                    "anv": "",
+                    "join": "",
+                    "role": "Performer [\"Just As I Thought\" Sample]",
+                    "tracks": "",
+                    "id": 289023,
+                    "resource_url": "https://api.discogs.com/artists/289023"
+                },
+                {
+                    "name": "Mike Chav",
+                    "anv": "",
+                    "join": "",
+                    "role": "Programmed By [Additional Programming]",
+                    "tracks": "",
+                    "id": 324295,
+                    "resource_url": "https://api.discogs.com/artists/324295"
+                },
+                {
+                    "name": "Mike Chav",
+                    "anv": "",
+                    "join": "",
+                    "role": "Recorded By",
+                    "tracks": "",
+                    "id": 324295,
+                    "resource_url": "https://api.discogs.com/artists/324295"
+                },
+                {
+                    "name": "Shafiq Husayn",
+                    "anv": "",
+                    "join": "",
+                    "role": "Recorded By",
+                    "tracks": "",
+                    "id": 245421,
+                    "resource_url": "https://api.discogs.com/artists/245421"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "E.Badu",
+                    "join": "",
+                    "role": "Vocals [All Vocals]",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "David Sancious",
+                    "anv": "",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 289023,
+                    "resource_url": "https://api.discogs.com/artists/289023"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "E. Badu",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Shafiq Husayn",
+                    "anv": "",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 245421,
+                    "resource_url": "https://api.discogs.com/artists/245421"
+                }
+            ],
+            "duration": "1:33"
+        },
+        {
+            "position": "B1",
+            "type_": "track",
+            "title": "Turn Me Away (Get MuNNY)",
+            "extraartists": [
+                {
+                    "name": "Stephen Bruner",
+                    "anv": "Stephen \"Thundercat\" Bruner",
+                    "join": "",
+                    "role": "Bass",
+                    "tracks": "",
+                    "id": 1573878,
+                    "resource_url": "https://api.discogs.com/artists/1573878"
+                },
+                {
+                    "name": "Karriem Riggins",
+                    "anv": "",
+                    "join": "",
+                    "role": "Drums",
+                    "tracks": "",
+                    "id": 80688,
+                    "resource_url": "https://api.discogs.com/artists/80688"
+                },
+                {
+                    "name": "Tommy Trujillo",
+                    "anv": "Tommy Trajilio",
+                    "join": "",
+                    "role": "Guitar",
+                    "tracks": "",
+                    "id": 396063,
+                    "resource_url": "https://api.discogs.com/artists/396063"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "E. Badu",
+                    "join": "",
+                    "role": "Handclaps [Claps]",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "James Poyser",
+                    "anv": "James",
+                    "join": "",
+                    "role": "Handclaps [Claps]",
+                    "tracks": "",
+                    "id": 21363,
+                    "resource_url": "https://api.discogs.com/artists/21363"
+                },
+                {
+                    "name": "Karriem Riggins",
+                    "anv": "Reim",
+                    "join": "",
+                    "role": "Handclaps [Claps]",
+                    "tracks": "",
+                    "id": 80688,
+                    "resource_url": "https://api.discogs.com/artists/80688"
+                },
+                {
+                    "name": "Questlove",
+                    "anv": "Quest",
+                    "join": "",
+                    "role": "Handclaps [Claps]",
+                    "tracks": "",
+                    "id": 2412751,
+                    "resource_url": "https://api.discogs.com/artists/2412751"
+                },
+                {
+                    "name": "Thundercat",
+                    "anv": "Cat",
+                    "join": "",
+                    "role": "Handclaps [Claps]",
+                    "tracks": "",
+                    "id": 1800656,
+                    "resource_url": "https://api.discogs.com/artists/1800656"
+                },
+                {
+                    "name": "Tommy Trujillo",
+                    "anv": "Tommy",
+                    "join": "",
+                    "role": "Handclaps [Claps]",
+                    "tracks": "",
+                    "id": 396063,
+                    "resource_url": "https://api.discogs.com/artists/396063"
+                },
+                {
+                    "name": "James Poyser",
+                    "anv": "",
+                    "join": "",
+                    "role": "Keyboards",
+                    "tracks": "",
+                    "id": 21363,
+                    "resource_url": "https://api.discogs.com/artists/21363"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "",
+                    "join": "",
+                    "role": "Lyrics By, Arranged By [Song Arrangement]",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Tom Soares",
+                    "anv": "",
+                    "join": "",
+                    "role": "Mixed By",
+                    "tracks": "",
+                    "id": 264324,
+                    "resource_url": "https://api.discogs.com/artists/264324"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "E.Badu",
+                    "join": "",
+                    "role": "Producer",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Mike Chav",
+                    "anv": "",
+                    "join": "",
+                    "role": "Recorded By [Additionally]",
+                    "tracks": "",
+                    "id": 324295,
+                    "resource_url": "https://api.discogs.com/artists/324295"
+                },
+                {
+                    "name": "Brian Vibberts",
+                    "anv": "",
+                    "join": "",
+                    "role": "Recorded By [Band Recorded]",
+                    "tracks": "",
+                    "id": 455046,
+                    "resource_url": "https://api.discogs.com/artists/455046"
+                },
+                {
+                    "name": "Buck Snow",
+                    "anv": "",
+                    "join": "",
+                    "role": "Recorded By [Band Recorded]",
+                    "tracks": "",
+                    "id": 565129,
+                    "resource_url": "https://api.discogs.com/artists/565129"
+                },
+                {
+                    "name": "Mike Chav",
+                    "anv": "",
+                    "join": "",
+                    "role": "Synthesizer [Mooger Fooger], Programmed By [Additional Programming]",
+                    "tracks": "",
+                    "id": 324295,
+                    "resource_url": "https://api.discogs.com/artists/324295"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "E.Badu",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "James Bedford",
+                    "anv": "James Bedford, Jr.",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 210728,
+                    "resource_url": "https://api.discogs.com/artists/210728"
+                },
+                {
+                    "name": "Roy Ayers",
+                    "anv": "",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 2265,
+                    "resource_url": "https://api.discogs.com/artists/2265"
+                },
+                {
+                    "name": "Sylvia Striplin",
+                    "anv": "",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 27527,
+                    "resource_url": "https://api.discogs.com/artists/27527"
+                }
+            ],
+            "duration": "5:26"
+        },
+        {
+            "position": "B2",
+            "type_": "track",
+            "title": "Gone Baby, Don't Be Long",
+            "extraartists": [
+                {
+                    "name": "Jef Lee Johnson",
+                    "anv": "Jeff Lee Johnson",
+                    "join": "",
+                    "role": "Guitar",
+                    "tracks": "",
+                    "id": 271721,
+                    "resource_url": "https://api.discogs.com/artists/271721"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "E. Badu",
+                    "join": "",
+                    "role": "Lyrics By",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Shafiq Husayn",
+                    "anv": "",
+                    "join": "",
+                    "role": "Lyrics By",
+                    "tracks": "",
+                    "id": 245421,
+                    "resource_url": "https://api.discogs.com/artists/245421"
+                },
+                {
+                    "name": "Tom Soares",
+                    "anv": "",
+                    "join": "",
+                    "role": "Mixed By",
+                    "tracks": "",
+                    "id": 264324,
+                    "resource_url": "https://api.discogs.com/artists/264324"
+                },
+                {
+                    "name": "Wings (2)",
+                    "anv": "",
+                    "join": "",
+                    "role": "Performer [\"Arrow Through Me\" Portion]",
+                    "tracks": "",
+                    "id": 145074,
+                    "resource_url": "https://api.discogs.com/artists/145074"
+                },
+                {
+                    "name": "Ta'Raach",
+                    "anv": "",
+                    "join": "",
+                    "role": "Producer",
+                    "tracks": "",
+                    "id": 246347,
+                    "resource_url": "https://api.discogs.com/artists/246347"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "E. Badu",
+                    "join": "",
+                    "role": "Producer [Additional Production]",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Mike Chav",
+                    "anv": "",
+                    "join": "",
+                    "role": "Programmed By",
+                    "tracks": "",
+                    "id": 324295,
+                    "resource_url": "https://api.discogs.com/artists/324295"
+                },
+                {
+                    "name": "Ta'Raach",
+                    "anv": "",
+                    "join": "",
+                    "role": "Programmed By",
+                    "tracks": "",
+                    "id": 246347,
+                    "resource_url": "https://api.discogs.com/artists/246347"
+                },
+                {
+                    "name": "Chris Bell (2)",
+                    "anv": "",
+                    "join": "",
+                    "role": "Recorded By",
+                    "tracks": "",
+                    "id": 523750,
+                    "resource_url": "https://api.discogs.com/artists/523750"
+                },
+                {
+                    "name": "Mike Chav",
+                    "anv": "",
+                    "join": "",
+                    "role": "Recorded By",
+                    "tracks": "",
+                    "id": 324295,
+                    "resource_url": "https://api.discogs.com/artists/324295"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "",
+                    "join": "",
+                    "role": "Vocals [All Vocals]",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "E. Badu",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Paul McCartney",
+                    "anv": "",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 35301,
+                    "resource_url": "https://api.discogs.com/artists/35301"
+                },
+                {
+                    "name": "Shafiq Husayn",
+                    "anv": "",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 245421,
+                    "resource_url": "https://api.discogs.com/artists/245421"
+                },
+                {
+                    "name": "Terrell McMathis",
+                    "anv": "T.McMathis",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 509356,
+                    "resource_url": "https://api.discogs.com/artists/509356"
+                }
+            ],
+            "duration": "4:54"
+        },
+        {
+            "position": "B3",
+            "type_": "track",
+            "title": "Umm Hmm",
+            "extraartists": [
+                {
+                    "name": "Stephen Bruner",
+                    "anv": "Stephen \"Thundercat\" Bruner",
+                    "join": "",
+                    "role": "Bass",
+                    "tracks": "",
+                    "id": 1573878,
+                    "resource_url": "https://api.discogs.com/artists/1573878"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "",
+                    "join": "",
+                    "role": "Cabasa, Vocals [All Vocals]",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "James Poyser",
+                    "anv": "",
+                    "join": "",
+                    "role": "Keyboards, Programmed By [Additional Programming]",
+                    "tracks": "",
+                    "id": 21363,
+                    "resource_url": "https://api.discogs.com/artists/21363"
+                },
+                {
+                    "name": "Tom Soares",
+                    "anv": "",
+                    "join": "",
+                    "role": "Mixed By",
+                    "tracks": "",
+                    "id": 264324,
+                    "resource_url": "https://api.discogs.com/artists/264324"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "E. Badu",
+                    "join": "",
+                    "role": "Percussion [All Percussion]",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Leon Ndugu Chancler",
+                    "anv": "Ndugu",
+                    "join": "",
+                    "role": "Performer [\"Take Some Time\" Sample]",
+                    "tracks": "",
+                    "id": 192112,
+                    "resource_url": "https://api.discogs.com/artists/192112"
+                },
+                {
+                    "name": "The Chocolate Jam Co.",
+                    "anv": "Chocolate Jams Co.",
+                    "join": "",
+                    "role": "Performer [\"Take Some Time\" Sample]",
+                    "tracks": "",
+                    "id": 364156,
+                    "resource_url": "https://api.discogs.com/artists/364156"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "",
+                    "join": "",
+                    "role": "Producer",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Madlib",
+                    "anv": "",
+                    "join": "",
+                    "role": "Producer",
+                    "tracks": "",
+                    "id": 16508,
+                    "resource_url": "https://api.discogs.com/artists/16508"
+                },
+                {
+                    "name": "Madlib",
+                    "anv": "",
+                    "join": "",
+                    "role": "Programmed By",
+                    "tracks": "",
+                    "id": 16508,
+                    "resource_url": "https://api.discogs.com/artists/16508"
+                },
+                {
+                    "name": "Mike Chav",
+                    "anv": "",
+                    "join": "",
+                    "role": "Recorded By",
+                    "tracks": "",
+                    "id": 324295,
+                    "resource_url": "https://api.discogs.com/artists/324295"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "E. Badu",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Leon Ndugu Chancler",
+                    "anv": "L. Chancler",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 192112,
+                    "resource_url": "https://api.discogs.com/artists/192112"
+                },
+                {
+                    "name": "Otis Jackson Jr.",
+                    "anv": "O. Jackson Jr.",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 346740,
+                    "resource_url": "https://api.discogs.com/artists/346740"
+                }
+            ],
+            "duration": "3:52"
+        },
+        {
+            "position": "C1",
+            "type_": "track",
+            "title": "Love",
+            "extraartists": [
+                {
+                    "name": "Erykah Badu",
+                    "anv": "",
+                    "join": "",
+                    "role": "Arranged By [Arrangement], Producer [Additional Production]",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Mike Chav",
+                    "anv": "",
+                    "join": "",
+                    "role": "Arranged By [Arrangement], Producer [Additional Production]",
+                    "tracks": "",
+                    "id": 324295,
+                    "resource_url": "https://api.discogs.com/artists/324295"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "",
+                    "join": "",
+                    "role": "Lyrics By, Vocals [All Vocals], Recorded By",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Chris Bell (2)",
+                    "anv": "",
+                    "join": "",
+                    "role": "Mixed By",
+                    "tracks": "",
+                    "id": 523750,
+                    "resource_url": "https://api.discogs.com/artists/523750"
+                },
+                {
+                    "name": "Fabulous Souls",
+                    "anv": "",
+                    "join": "",
+                    "role": "Performer [\"Take Me\" Portion]",
+                    "tracks": "",
+                    "id": 73348,
+                    "resource_url": "https://api.discogs.com/artists/73348"
+                },
+                {
+                    "name": "Mike Chav",
+                    "anv": "",
+                    "join": "",
+                    "role": "Performer [Intro Created By], Synthesizer [Mooger Fooger]",
+                    "tracks": "",
+                    "id": 324295,
+                    "resource_url": "https://api.discogs.com/artists/324295"
+                },
+                {
+                    "name": "J Dilla",
+                    "anv": "Jay Dilla",
+                    "join": "",
+                    "role": "Producer",
+                    "tracks": "",
+                    "id": 324866,
+                    "resource_url": "https://api.discogs.com/artists/324866"
+                },
+                {
+                    "name": "Pilar Cote",
+                    "anv": "",
+                    "join": "",
+                    "role": "Vocals [Intro]",
+                    "tracks": "",
+                    "id": 474901,
+                    "resource_url": "https://api.discogs.com/artists/474901"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "E. Badu",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Ira Raibon",
+                    "anv": "I. Raibon",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 411628,
+                    "resource_url": "https://api.discogs.com/artists/411628"
+                },
+                {
+                    "name": "James Yancey",
+                    "anv": "J. Yancey",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 246270,
+                    "resource_url": "https://api.discogs.com/artists/246270"
+                }
+            ],
+            "duration": "3:36"
+        },
+        {
+            "position": "C2",
+            "type_": "track",
+            "title": "You Loving Me (Session)",
+            "extraartists": [
+                {
+                    "name": "Jah Born",
+                    "anv": "",
+                    "join": "",
+                    "role": "Drum Programming [MP2000]",
+                    "tracks": "",
+                    "id": 315670,
+                    "resource_url": "https://api.discogs.com/artists/315670"
+                },
+                {
+                    "name": "RC Williams",
+                    "anv": "",
+                    "join": "",
+                    "role": "Keyboards",
+                    "tracks": "",
+                    "id": 211939,
+                    "resource_url": "https://api.discogs.com/artists/211939"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "",
+                    "join": "",
+                    "role": "Lyrics By",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Waldo D. Benzworth",
+                    "anv": "",
+                    "join": "",
+                    "role": "Lyrics By",
+                    "tracks": "",
+                    "id": 1776322,
+                    "resource_url": "https://api.discogs.com/artists/1776322"
+                },
+                {
+                    "name": "Tom Soares",
+                    "anv": "",
+                    "join": "",
+                    "role": "Mixed By",
+                    "tracks": "",
+                    "id": 264324,
+                    "resource_url": "https://api.discogs.com/artists/264324"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "",
+                    "join": "",
+                    "role": "Producer, Vocals [All Vocals]",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Chris Bell (2)",
+                    "anv": "",
+                    "join": "",
+                    "role": "Recorded By",
+                    "tracks": "",
+                    "id": 523750,
+                    "resource_url": "https://api.discogs.com/artists/523750"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "E. Badu",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Jonathan Cantero",
+                    "anv": "J. Cantero",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 1657697,
+                    "resource_url": "https://api.discogs.com/artists/1657697"
+                },
+                {
+                    "name": "RC Williams",
+                    "anv": "",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 211939,
+                    "resource_url": "https://api.discogs.com/artists/211939"
+                },
+                {
+                    "name": "Waldo D. Benzworth",
+                    "anv": "",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 1776322,
+                    "resource_url": "https://api.discogs.com/artists/1776322"
+                }
+            ],
+            "duration": "0:55"
+        },
+        {
+            "position": "C3",
+            "type_": "track",
+            "title": "Fall In Love (Your Funeral)",
+            "extraartists": [
+                {
+                    "name": "Erykah Badu",
+                    "anv": "",
+                    "join": "",
+                    "role": "Lyrics By, Percussion [All Percussion]",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Tom Soares",
+                    "anv": "",
+                    "join": "",
+                    "role": "Mixed By",
+                    "tracks": "",
+                    "id": 264324,
+                    "resource_url": "https://api.discogs.com/artists/264324"
+                },
+                {
+                    "name": "Eddie Kendricks",
+                    "anv": "",
+                    "join": "",
+                    "role": "Performer [\"Intimate Friends\" Sample]",
+                    "tracks": "",
+                    "id": 29810,
+                    "resource_url": "https://api.discogs.com/artists/29810"
+                },
+                {
+                    "name": "Karriem Riggins",
+                    "anv": "",
+                    "join": "",
+                    "role": "Producer, Programmed By, Vocals [All Vocals]",
+                    "tracks": "",
+                    "id": 80688,
+                    "resource_url": "https://api.discogs.com/artists/80688"
+                },
+                {
+                    "name": "Mike Chav",
+                    "anv": "",
+                    "join": "",
+                    "role": "Synthesizer [Mooger Fooger], Recorded By",
+                    "tracks": "",
+                    "id": 324295,
+                    "resource_url": "https://api.discogs.com/artists/324295"
+                },
+                {
+                    "name": "Eddie Kendricks",
+                    "anv": "E. Kendricks",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 29810,
+                    "resource_url": "https://api.discogs.com/artists/29810"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "E. Badu",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Garry Glenn",
+                    "anv": "",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 336172,
+                    "resource_url": "https://api.discogs.com/artists/336172"
+                },
+                {
+                    "name": "Karriem Riggins",
+                    "anv": "",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 80688,
+                    "resource_url": "https://api.discogs.com/artists/80688"
+                }
+            ],
+            "duration": "4:30"
+        },
+        {
+            "position": "D1",
+            "type_": "track",
+            "title": "Strawberry Incense",
+            "extraartists": [
+                {
+                    "name": "Erykah Badu",
+                    "anv": "",
+                    "join": "",
+                    "role": "Arranged By",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Mike Chav",
+                    "anv": "",
+                    "join": "",
+                    "role": "Arranged By",
+                    "tracks": "",
+                    "id": 324295,
+                    "resource_url": "https://api.discogs.com/artists/324295"
+                },
+                {
+                    "name": "Kirsten Agnesta",
+                    "anv": "",
+                    "join": "",
+                    "role": "Featuring, Harp",
+                    "tracks": "",
+                    "id": 1766725,
+                    "resource_url": "https://api.discogs.com/artists/1766725"
+                },
+                {
+                    "name": "Tom Soares",
+                    "anv": "",
+                    "join": "",
+                    "role": "Mixed By",
+                    "tracks": "",
+                    "id": 264324,
+                    "resource_url": "https://api.discogs.com/artists/264324"
+                },
+                {
+                    "name": "Madlib",
+                    "anv": "",
+                    "join": "",
+                    "role": "Producer",
+                    "tracks": "",
+                    "id": 16508,
+                    "resource_url": "https://api.discogs.com/artists/16508"
+                },
+                {
+                    "name": "Mike Chav",
+                    "anv": "",
+                    "join": "",
+                    "role": "Recorded By",
+                    "tracks": "",
+                    "id": 324295,
+                    "resource_url": "https://api.discogs.com/artists/324295"
+                },
+                {
+                    "name": "Tom Soares",
+                    "anv": "",
+                    "join": "",
+                    "role": "Recorded By [Harp Recorded By]",
+                    "tracks": "",
+                    "id": 264324,
+                    "resource_url": "https://api.discogs.com/artists/264324"
+                },
+                {
+                    "name": "Mike Chav",
+                    "anv": "",
+                    "join": "",
+                    "role": "Synthesizer [Mooger Fooger], Programmed By [Additional Programming]",
+                    "tracks": "",
+                    "id": 324295,
+                    "resource_url": "https://api.discogs.com/artists/324295"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "",
+                    "join": "",
+                    "role": "Vocals [All Vocals]",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Erykah Badu",
+                    "anv": "E. Badu",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 10995,
+                    "resource_url": "https://api.discogs.com/artists/10995"
+                },
+                {
+                    "name": "Otis Jackson Jr.",
+                    "anv": "O. Jackson, Jr.",
+                    "join": "",
+                    "role": "Written-By",
+                    "tracks": "",
+                    "id": 346740,
+                    "resource_url": "https://api.discogs.com/artists/346740"
+                }
+            ],
+            "duration": "3:25"
+        },
+        {
+            "position": "",
+            "type_": "index",
+            "title": "Out My Mind, Just In Time",
+            "extraartists": [
+                {
+                    "name": "Tom Soares",
+                    "anv": "",
+                    "join": "",
+                    "role": "Mixed By",
+                    "tracks": "",
+                    "id": 264324,
+                    "resource_url": "https://api.discogs.com/artists/264324"
+                }
+            ],
+            "duration": "10:21",
+            "sub_tracks": [
+                {
+                    "position": "D2.1",
+                    "type_": "track",
+                    "title": "Movement I",
+                    "duration": ""
+                },
+                {
+                    "position": "D2.2",
+                    "type_": "track",
+                    "title": "Movement I",
+                    "duration": ""
+                },
+                {
+                    "position": "D2.3",
+                    "type_": "track",
+                    "title": "Movement I",
+                    "duration": ""
+                }
+            ]
+        }
+    ],
+    "artists": [
+        {
+            "name": "Erykah Badu",
+            "anv": "",
+            "join": "",
+            "role": "",
+            "tracks": "",
+            "id": 10995,
+            "resource_url": "https://api.discogs.com/artists/10995"
+        }
+    ],
+    "title": "New Amerykah Part Two: Return Of The Ankh",
+    "data_quality": "Correct",
+    "videos": [
+        {
+            "uri": "https://www.youtube.com/watch?v=9hVp47f5YZg",
+            "title": "Erykah Badu - Window Seat",
+            "description": "Music video by Erykah Badu performing Window Seat. (C) 2010 Universal Motown Records, a division of UMG Recordings, Inc.",
+            "duration": 338,
+            "embed": true
+        },
+        {
+            "uri": "https://www.youtube.com/watch?v=HRH8WDpGfFo",
+            "title": "Fall In Love (Your Funeral)",
+            "description": "Provided to YouTube by Universal Music Group\n\nFall In Love (Your Funeral) · Erykah Badu\n\nNew Amerykah Part Two: Return Of The Ankh\n\n℗ 2010 Universal Motown Records, a division of UMG Recordings, Inc.\n\nReleased on: 2009-01-01\n\nProducer: Karriem Riggins\nStu",
+            "duration": 367,
+            "embed": true
+        },
+        {
+            "uri": "https://www.youtube.com/watch?v=Vnt9XZjqxsc",
+            "title": "Gone Baby, Don't Be Long",
+            "description": "Provided to YouTube by Universal Music Group\n\nGone Baby, Don't Be Long · Erykah Badu\n\nNew Amerykah Part Two: Return Of The Ankh\n\n℗ 2010 Universal Motown Records, a division of UMG Recordings, Inc.\n\nReleased on: 2009-01-01\n\nProducer, Associated  Performer,",
+            "duration": 280,
+            "embed": true
+        },
+        {
+            "uri": "https://www.youtube.com/watch?v=PJrnXyWgipk",
+            "title": "Agitation",
+            "description": "Provided to YouTube by Universal Music Group\n\nAgitation · Erykah Badu\n\nNew Amerykah Part Two: Return Of The Ankh\n\n℗ 2010 Universal Motown Records, a division of UMG Recordings, Inc.\n\nReleased on: 2009-01-01\n\nStudio  Personnel, Recording  Engineer: Shafiq ",
+            "duration": 94,
+            "embed": true
+        },
+        {
+            "uri": "https://www.youtube.com/watch?v=ZKxXLThI91g",
+            "title": "20 Feet Tall",
+            "description": "Provided to YouTube by Universal Music Group\n\n20 Feet Tall · Erykah Badu\n\nNew Amerykah Part Two: Return Of The Ankh\n\n℗ 2010 Universal Motown Records, a division of UMG Recordings, Inc.\n\nReleased on: 2009-01-01\n\nProducer: Erykah Badu\nStudio  Personnel, Rec",
+            "duration": 205,
+            "embed": true
+        },
+        {
+            "uri": "https://www.youtube.com/watch?v=uTvhcPt7yV0",
+            "title": "Incense",
+            "description": "Provided to YouTube by Universal Music Group\n\nIncense · Erykah Badu · Kirsten Agresta\n\nNew Amerykah Part Two: Return Of The Ankh\n\n℗ 2010 Universal Motown Records, a division of UMG Recordings, Inc.\n\nReleased on: 2009-01-01\n\nProducer: Madlib\nStudio  Person",
+            "duration": 207,
+            "embed": true
+        },
+        {
+            "uri": "https://www.youtube.com/watch?v=DboNG7bbQ8A",
+            "title": "You Loving Me (Session)",
+            "description": "Provided to YouTube by Universal Music Group\n\nYou Loving Me (Session) · Erykah Badu\n\nNew Amerykah Part Two: Return Of The Ankh\n\n℗ 2010 Universal Motown Records, a division of UMG Recordings, Inc.\n\nReleased on: 2009-01-01\n\nProducer: Erykah Badu\nStudio  Per",
+            "duration": 65,
+            "embed": true
+        },
+        {
+            "uri": "https://www.youtube.com/watch?v=2j4qvVyRgRk",
+            "title": "Out My Mind, Just In Time",
+            "description": "Provided to YouTube by Universal Music Group\n\nOut My Mind, Just In Time · Erykah Badu\n\nNew Amerykah Part Two: Return Of The Ankh\n\n℗ 2010 Universal Motown Records, a division of UMG Recordings, Inc.\n\nReleased on: 2009-01-01\n\nProducer: Erykah Badu\nStudio  P",
+            "duration": 0,
+            "embed": true
+        },
+        {
+            "uri": "https://www.youtube.com/watch?v=MRPDsiijMyI",
+            "title": "Umm Hmm",
+            "description": "Provided to YouTube by Universal Music Group\n\nUmm Hmm · Erykah Badu\n\nNew Amerykah Part Two: Return Of The Ankh\n\n℗ 2010 Universal Motown Records, a division of UMG Recordings, Inc.\n\nReleased on: 2009-01-01\n\nProducer: Madlib\nProducer: Erykah Badu\nStudio  Pe",
+            "duration": 226,
+            "embed": true
+        },
+        {
+            "uri": "https://www.youtube.com/watch?v=2aGN-B-CobM",
+            "title": "Love",
+            "description": "Provided to YouTube by Universal Music Group\n\nLove · Erykah Badu\n\nNew Amerykah Part Two: Return Of The Ankh\n\n℗ 2010 Universal Motown Records, a division of UMG Recordings, Inc.\n\nReleased on: 2009-01-01\n\nProducer: J Dilla\nStudio  Personnel, Recording  Engi",
+            "duration": 362,
+            "embed": true
+        }
+    ]
 }

@@ -1,26 +1,115 @@
-import { useState } from "react"
-import ExtraArtistDisplay from "./ExtraArtistDisplay"
+import { useState } from "react";
+import ExtraArtistDisplay from "./ExtraArtistDisplay";
 
-const TrackDisplay = ({track}) => {
-    const [showExtraArtists, setShowExtraArtists] = useState(false)
+const TrackDisplay = ({ track }) => {
+  const [showExtraArtists, setShowExtraArtists] = useState(false);
 
-    return (
-        <li onClick={()=>setShowExtraArtists(!showExtraArtists)} className={"track " + (track.extraartists ? "hasExtraArtists" : "")}>
-            {track.title}
-            {
-                track.extraartists || showExtraArtists ? (
-                    <ul className="extraArtistsList">
-                            {
-                                track.extraartists.map((artist, i)=> {
-                                    return(
-                                        <ExtraArtistDisplay artist={artist} key={i} />
-                                    )})
-                            }
-                    </ul>
-                ) : null
-            }
-        </li>
-    )
-}
+  // Function to categorize artists by their roles
+  const categorizeArtists = (artists) => {
+    const categories = {
+      writing: [],
+      production: [],
+      instruments: [],
+    };
 
-export default TrackDisplay
+    artists.forEach((artist) => {
+      const role = artist.role.toLowerCase();
+
+      // Writing credits
+      if (
+        role.includes("written") ||
+        role.includes("lyrics") ||
+        role.includes("arranged") ||
+        role.includes("composed") ||
+        role.includes("songwriter")
+      ) {
+        categories.writing.push(artist);
+      }
+      // Production credits
+      else if (
+        role.includes("produced") ||
+        role.includes("engineered") ||
+        role.includes("recorded") ||
+        role.includes("mixed") ||
+        role.includes("mastered") ||
+        role.includes("co-producer")
+      ) {
+        categories.production.push(artist);
+      }
+      // Instrument credits
+      else {
+        categories.instruments.push(artist);
+      }
+    });
+
+    return categories;
+  };
+
+  const hasExtraArtists = track.extraartists && track.extraartists.length > 0;
+  const categories = hasExtraArtists
+    ? categorizeArtists(track.extraartists)
+    : null;
+
+  const handleClick = () => {
+    if (hasExtraArtists) {
+      setShowExtraArtists(!showExtraArtists);
+    }
+  };
+
+  return (
+    <li
+      onClick={handleClick}
+      className={hasExtraArtists ? "hasExtraArtists" : ""}
+    >
+      <div className="trackHeader">
+        <div className="trackInfo">
+          <span className="trackTitle">{track.title}</span>
+          {track.duration && (
+            <span className="trackDuration">({track.duration})</span>
+          )}
+        </div>
+
+        {hasExtraArtists && (
+          <div className="trackIcons">
+            {categories.writing.length > 0 && (
+              <div className="iconGroup">
+                <span className="icon">📝</span>
+                <span className="count">{categories.writing.length}</span>
+              </div>
+            )}
+            {categories.production.length > 0 && (
+              <div className="iconGroup">
+                <span className="icon">💿</span>
+                <span className="count">{categories.production.length}</span>
+              </div>
+            )}
+            {categories.instruments.length > 0 && (
+              <div className="iconGroup">
+                <span className="icon">🎸</span>
+                <span className="count">{categories.instruments.length}</span>
+              </div>
+            )}
+          </div>
+        )}
+
+        {hasExtraArtists && (
+          <span
+            className={`dropdownArrow ${showExtraArtists ? "expanded" : ""}`}
+          >
+            ▼
+          </span>
+        )}
+      </div>
+
+      {hasExtraArtists && showExtraArtists && (
+        <ul className="extraArtistsList">
+          {track.extraartists.map((artist, i) => (
+            <ExtraArtistDisplay artist={artist} key={i} />
+          ))}
+        </ul>
+      )}
+    </li>
+  );
+};
+
+export default TrackDisplay;
