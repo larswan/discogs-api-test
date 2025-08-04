@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import SearchBar from "./SearchBar";
 import AlbumDisplay from "./AlbumDisplay";
+import ContributorDisplay from "./ContributorDisplay";
 import ThemeToggle from "./ThemeToggle";
 
 function App() {
   const [selectedAlbum, setSelectedAlbum] = useState(null);
+  const [selectedContributor, setSelectedContributor] = useState(null);
   const [searchResults, setSearchResults] = useState([]);
   const [showSearchResults, setShowSearchResults] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
@@ -63,13 +65,25 @@ function App() {
         </>
       )}
 
-      {selectedAlbum && (
+      {selectedAlbum && !selectedContributor && (
         <AlbumDisplay
           album={selectedAlbum}
           searchQuery={searchQuery}
+          onContributorClick={(contributor) => {
+            setSelectedContributor(contributor);
+          }}
           onBack={() => {
             setSelectedAlbum(null);
             setShowSearchResults(true);
+          }}
+        />
+      )}
+
+      {selectedContributor && (
+        <ContributorDisplay
+          contributor={selectedContributor}
+          onBack={() => {
+            setSelectedContributor(null);
           }}
         />
       )}

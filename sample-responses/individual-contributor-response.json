@@ -1,0 +1,1858 @@
+{
+  "pagination": {
+    "page": 1,
+    "pages": 8,
+    "per_page": 100,
+    "items": 722,
+    "urls": {
+      "last": "https://api.discogs.com/artists/186837/releases?sort=year&sort_order=asc&per_page=100&page=8",
+      "next": "https://api.discogs.com/artists/186837/releases?sort=year&sort_order=asc&per_page=100&page=2"
+    }
+  },
+  "releases": [
+    {
+      "id": 26001289,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CDr, VBR",
+      "label": "Not On Label",
+      "title": "9th Invented The Remix",
+      "resource_url": "https://api.discogs.com/releases/26001289",
+      "role": "Main",
+      "artist": "9th Wonder",
+      "year": 2003,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 12,
+          "in_collection": 29
+        }
+      }
+    },
+    {
+      "id": 464060,
+      "title": "Black Is Back",
+      "type": "master",
+      "main_release": 1144290,
+      "artist": "9th Wonder",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/464060",
+      "year": 2004,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 62,
+          "in_collection": 95
+        }
+      }
+    },
+    {
+      "id": 100793,
+      "title": "Spirit Of '94: Version 9.0",
+      "type": "master",
+      "main_release": 1026659,
+      "artist": "Kazē* & 9th Wonder",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/100793",
+      "year": 2004,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 64,
+          "in_collection": 212
+        }
+      }
+    },
+    {
+      "id": 679510,
+      "status": "Accepted",
+      "type": "release",
+      "format": "12\"",
+      "label": "Brick Records, Traffic Entertainment Group, Vintage Music Group",
+      "title": "50/50 Amp / Spirit Of '94",
+      "resource_url": "https://api.discogs.com/releases/679510",
+      "role": "Main",
+      "artist": "Kazē* & 9th Wonder",
+      "year": 2005,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 48,
+          "in_collection": 181
+        }
+      }
+    },
+    {
+      "id": 692057,
+      "status": "Accepted",
+      "type": "release",
+      "format": "12\"",
+      "label": "Duck Down",
+      "title": "No Comparison / Side Talk",
+      "resource_url": "https://api.discogs.com/releases/692057",
+      "role": "Main",
+      "artist": "9th Wonder & Buckshot",
+      "year": 2005,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 56,
+          "in_collection": 283
+        }
+      }
+    },
+    {
+      "id": 809083,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Album",
+      "label": "6 Hole Records",
+      "title": "Dream Merchant Volume 1",
+      "resource_url": "https://api.discogs.com/releases/809083",
+      "role": "Main",
+      "artist": "9th Wonder",
+      "year": 2005,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 92,
+          "in_collection": 135
+        }
+      }
+    },
+    {
+      "id": 1269236,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CDr, EP, Promo",
+      "label": "World Of Beats",
+      "title": "Dat Greedy: The Mixtape",
+      "resource_url": "https://api.discogs.com/releases/1269236",
+      "role": "Main",
+      "artist": "G.U.N* / 9th Wonder",
+      "year": 2005,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 22,
+          "in_collection": 7
+        }
+      }
+    },
+    {
+      "id": 2364282,
+      "status": "Accepted",
+      "type": "release",
+      "format": "3xCD, Comp, Ltd",
+      "label": "6 Hole Records",
+      "title": "National Mayhem (Limited Edition Collectors 3 CD Set)",
+      "resource_url": "https://api.discogs.com/releases/2364282",
+      "role": "Main",
+      "artist": "L.E.G.A.C.Y. / The Away Team (2) / 9th Wonder",
+      "year": 2005,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 38,
+          "in_collection": 116
+        }
+      }
+    },
+    {
+      "id": 3153479,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CDr, Comp",
+      "label": "Not On Label",
+      "title": "Unreleased Beats Volume 1",
+      "resource_url": "https://api.discogs.com/releases/3153479",
+      "role": "Main",
+      "artist": "9th Wonder",
+      "year": 2005,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 43,
+          "in_collection": 9
+        }
+      }
+    },
+    {
+      "id": 3153488,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CDr",
+      "label": "Not On Label",
+      "title": "Unreleased Beats Volume 2",
+      "resource_url": "https://api.discogs.com/releases/3153488",
+      "role": "Main",
+      "artist": "9th Wonder",
+      "year": 2005,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 39,
+          "in_collection": 13
+        }
+      }
+    },
+    {
+      "id": 3717016,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CDr, EP",
+      "label": "HipHopSite.com",
+      "title": "The A.L.L.I.E.S.",
+      "resource_url": "https://api.discogs.com/releases/3717016",
+      "role": "Main",
+      "artist": "9th Wonder Presents The A.L.L.I.E.S.",
+      "year": 2005,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 38,
+          "in_collection": 20
+        }
+      }
+    },
+    {
+      "id": 5501853,
+      "status": "Accepted",
+      "type": "release",
+      "format": "LP, Comp",
+      "label": "Tee Vee International (2)",
+      "title": "Unreleased Instrumentals Vol. 3 ",
+      "resource_url": "https://api.discogs.com/releases/5501853",
+      "role": "Main",
+      "artist": "9th Wonder",
+      "year": 2005,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 157,
+          "in_collection": 55
+        }
+      }
+    },
+    {
+      "id": 458266,
+      "title": "Chemistry",
+      "type": "master",
+      "main_release": 495727,
+      "artist": "9th Wonder & Buckshot",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/458266",
+      "year": 2005,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 487,
+          "in_collection": 820
+        }
+      }
+    },
+    {
+      "id": 815463,
+      "status": "Accepted",
+      "type": "release",
+      "format": "12\"",
+      "label": "Brick Records, Traffic Entertainment Group, Vintage Music Group",
+      "title": "Last Laugh / Locked In Chains / Blood Thicker Than Oil",
+      "resource_url": "https://api.discogs.com/releases/815463",
+      "role": "Main",
+      "artist": "Kazē* & 9th Wonder",
+      "year": 2006,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 40,
+          "in_collection": 179
+        }
+      }
+    },
+    {
+      "id": 820967,
+      "status": "Accepted",
+      "type": "release",
+      "format": "12\"",
+      "label": "6 Hole Records",
+      "title": "Brooklyn In My Mind (Crooklyn Dodgers III)",
+      "resource_url": "https://api.discogs.com/releases/820967",
+      "role": "Main",
+      "artist": "9th Wonder",
+      "year": 2006,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 91,
+          "in_collection": 317
+        }
+      }
+    },
+    {
+      "id": 1456224,
+      "status": "Accepted",
+      "type": "release",
+      "format": "12\"",
+      "label": "Traffic Entertainment Group",
+      "title": "Cloud 9: Way To Go / I'm On It",
+      "resource_url": "https://api.discogs.com/releases/1456224",
+      "role": "Main",
+      "artist": "Skyzoo & 9th Wonder",
+      "year": 2006,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 49,
+          "in_collection": 176
+        }
+      }
+    },
+    {
+      "id": 1881284,
+      "status": "Accepted",
+      "type": "release",
+      "format": "12\"",
+      "label": "Bucktown USA Entertainment",
+      "title": "Remixes / Fed Up / I Love You",
+      "resource_url": "https://api.discogs.com/releases/1881284",
+      "role": "Main",
+      "artist": "9th Wonder / Smif N Wessun* & Mary J*",
+      "year": 2006,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 144,
+          "in_collection": 214
+        }
+      }
+    },
+    {
+      "id": 2064152,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CDr, Mixed, Promo",
+      "label": "Not On Label (9th Wonder)",
+      "title": "The Best Of 9th Wonder",
+      "resource_url": "https://api.discogs.com/releases/2064152",
+      "role": "Main",
+      "artist": "9th Wonder",
+      "year": 2006,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 31,
+          "in_collection": 21
+        }
+      }
+    },
+    {
+      "id": 102651,
+      "title": "Cloud 9: The 3 Day High",
+      "type": "master",
+      "main_release": 1310265,
+      "artist": "Skyzoo & 9th Wonder",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/102651",
+      "year": 2006,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 93,
+          "in_collection": 201
+        }
+      }
+    },
+    {
+      "id": 6606,
+      "title": "Murray's Revenge",
+      "type": "master",
+      "main_release": 647472,
+      "artist": "Murs And 9th Wonder",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/6606",
+      "year": 2006,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 103,
+          "in_collection": 595
+        }
+      }
+    },
+    {
+      "id": 1115520,
+      "status": "Accepted",
+      "type": "release",
+      "format": "12\"",
+      "label": "6 Hole Records",
+      "title": "Sunday / The Last Time / Ya Hear Me",
+      "resource_url": "https://api.discogs.com/releases/1115520",
+      "role": "Main",
+      "artist": "9th Wonder",
+      "year": 2007,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 27,
+          "in_collection": 101
+        }
+      }
+    },
+    {
+      "id": 3763149,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CDr, EP",
+      "label": "6 Hole Records",
+      "title": "The Dream Merchant Vol. 2: Preview EP",
+      "resource_url": "https://api.discogs.com/releases/3763149",
+      "role": "Main",
+      "artist": "9th Wonder",
+      "year": 2007,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 11,
+          "in_collection": 9
+        }
+      }
+    },
+    {
+      "id": 241637,
+      "title": "The Dream Merchant Vol. 2",
+      "type": "master",
+      "main_release": 1988173,
+      "artist": "9th Wonder",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/241637",
+      "year": 2007,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 61,
+          "in_collection": 253
+        }
+      }
+    },
+    {
+      "id": 1336019,
+      "status": "Accepted",
+      "type": "release",
+      "format": "10xFile, MP3, Album, 192",
+      "label": "kevinnottingham.com",
+      "title": "The Corner Of Spec & 9th",
+      "resource_url": "https://api.discogs.com/releases/1336019",
+      "role": "Main",
+      "artist": "Spectac (2) & 9th Wonder",
+      "year": 2008,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 33,
+          "in_collection": 26
+        }
+      }
+    },
+    {
+      "id": 5641872,
+      "status": "Accepted",
+      "type": "release",
+      "format": "12\", Promo",
+      "label": "Not On Label",
+      "title": "Hold It Down / Go All Out",
+      "resource_url": "https://api.discogs.com/releases/5641872",
+      "role": "Main",
+      "artist": "9th Wonder & Buckshot",
+      "year": 2008,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 38,
+          "in_collection": 10
+        }
+      }
+    },
+    {
+      "id": 12437259,
+      "status": "Accepted",
+      "type": "release",
+      "format": "9xFile, MP3, EP, Mixtape, 320",
+      "label": "Petroleum Empire Media Group",
+      "title": "9 Wonders",
+      "resource_url": "https://api.discogs.com/releases/12437259",
+      "role": "Main",
+      "artist": "NYOIL* verses 9th Wonder",
+      "year": 2008,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 16,
+          "in_collection": 5
+        }
+      }
+    },
+    {
+      "id": 16245877,
+      "status": "Accepted",
+      "type": "release",
+      "format": "20xFile, MP3, Album, Mixtape, Promo, 192",
+      "label": "Tree City Partners",
+      "title": "Album Mixtape (Volume One)",
+      "resource_url": "https://api.discogs.com/releases/16245877",
+      "role": "Main",
+      "artist": "9th Wonder & Cans (3)",
+      "year": 2008,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 1,
+          "in_collection": 5
+        }
+      }
+    },
+    {
+      "id": 29406784,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Mixed, Mixtape, Promo + CD, Comp, Promo",
+      "label": "Cornerstone Promotion, Cornerstone Promotion",
+      "title": "Cornerstone Mixtape #104 / Producer's Edition / April 2008",
+      "resource_url": "https://api.discogs.com/releases/29406784",
+      "role": "Main",
+      "artist": "Double O, 9th Wonder, Various",
+      "year": 2008,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 3,
+          "in_collection": 3
+        }
+      }
+    },
+    {
+      "id": 6658,
+      "title": "Sweet Lord",
+      "type": "master",
+      "main_release": 1628189,
+      "artist": "Murs & 9th Wonder",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/6658",
+      "year": 2008,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 127,
+          "in_collection": 73
+        }
+      }
+    },
+    {
+      "id": 57050,
+      "title": "The Formula",
+      "type": "master",
+      "main_release": 1326310,
+      "artist": "9th Wonder & Buckshot",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/57050",
+      "year": 2008,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 92,
+          "in_collection": 480
+        }
+      }
+    },
+    {
+      "id": 40407,
+      "title": "Jeanius",
+      "type": "master",
+      "main_release": 1509572,
+      "artist": "Jean Grae / 9th Wonder",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/40407",
+      "year": 2008,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 537,
+          "in_collection": 263
+        }
+      }
+    },
+    {
+      "id": 258368,
+      "title": "Back To The Feature",
+      "type": "master",
+      "main_release": 2339025,
+      "artist": "Wale & 9th Wonder",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/258368",
+      "year": 2009,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 27,
+          "in_collection": 11
+        }
+      }
+    },
+    {
+      "id": 2296038,
+      "status": "Accepted",
+      "type": "release",
+      "format": "23xFile, MP3, Mixtape",
+      "label": "Not On Label (9th Wonder)",
+      "title": "9th Invented The Remix... AGAIN",
+      "resource_url": "https://api.discogs.com/releases/2296038",
+      "role": "Main",
+      "artist": "9th Wonder",
+      "year": 2010,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 13,
+          "in_collection": 8
+        }
+      }
+    },
+    {
+      "id": 2462867,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Album",
+      "label": "It's A Wonderful World Music Group",
+      "title": "Entrapment",
+      "resource_url": "https://api.discogs.com/releases/2462867",
+      "role": "Main",
+      "artist": "9th Wonder Presents Big Remo",
+      "year": 2010,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 31,
+          "in_collection": 58
+        }
+      }
+    },
+    {
+      "id": 11123167,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Album",
+      "label": "It's A Wonderful World Music Group, ABB Records",
+      "title": "9th's Opus",
+      "resource_url": "https://api.discogs.com/releases/11123167",
+      "role": "Main",
+      "artist": "9th Wonder",
+      "year": 2010,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 38,
+          "in_collection": 21
+        }
+      }
+    },
+    {
+      "id": 291460,
+      "title": "Fornever",
+      "type": "master",
+      "main_release": 2233176,
+      "artist": "Murs & 9th Wonder",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/291460",
+      "year": 2010,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 82,
+          "in_collection": 359
+        }
+      }
+    },
+    {
+      "id": 3191565,
+      "title": "Be With You",
+      "type": "master",
+      "main_release": 20082019,
+      "artist": "David Banner & 9th Wonder Ft. Ludacris & Marsha Ambrosius",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/3191565",
+      "year": 2010,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 9,
+          "in_collection": 3
+        }
+      }
+    },
+    {
+      "id": 1304416,
+      "title": "Death Of A Pop Star",
+      "type": "master",
+      "main_release": 4425161,
+      "artist": "David Banner & 9th Wonder",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/1304416",
+      "year": 2010,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 39,
+          "in_collection": 126
+        }
+      }
+    },
+    {
+      "id": 1170889,
+      "title": "Catch 22 (9th Wonder Remix)",
+      "type": "master",
+      "main_release": 10197086,
+      "artist": "Goapele & 9th Wonder",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/1170889",
+      "year": 2010,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 3,
+          "in_collection": 2
+        }
+      }
+    },
+    {
+      "id": 385809,
+      "title": "The Wonder Years",
+      "type": "master",
+      "main_release": 3132171,
+      "artist": "9th Wonder",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/385809",
+      "year": 2011,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 90,
+          "in_collection": 268
+        }
+      }
+    },
+    {
+      "id": 16246036,
+      "status": "Accepted",
+      "type": "release",
+      "format": "15xFile, MP3, Album, Mixtape, 160",
+      "label": "Tree City Partners",
+      "title": "Volume Three",
+      "resource_url": "https://api.discogs.com/releases/16246036",
+      "role": "Main",
+      "artist": "Cans (3) And 9th Wonder",
+      "year": 2012,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 1,
+          "in_collection": 1
+        }
+      }
+    },
+    {
+      "id": 502405,
+      "title": "The Final Adventure",
+      "type": "master",
+      "main_release": 4118079,
+      "artist": "Murs And 9th Wonder",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/502405",
+      "year": 2012,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 80,
+          "in_collection": 198
+        }
+      }
+    },
+    {
+      "id": 521993,
+      "title": "The Solution",
+      "type": "master",
+      "main_release": 4137250,
+      "artist": "9th Wonder & Buckshot",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/521993",
+      "year": 2012,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 74,
+          "in_collection": 214
+        }
+      }
+    },
+    {
+      "id": 3000602,
+      "title": "Tutankhamen",
+      "type": "master",
+      "main_release": 16271295,
+      "artist": "9th Wonder",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/3000602",
+      "year": 2012,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 12,
+          "in_collection": 7
+        }
+      }
+    },
+    {
+      "id": 14225781,
+      "status": "Accepted",
+      "type": "release",
+      "format": "File, MP3, Mixed, Mixtape",
+      "label": "Barbatruco Producciones",
+      "title": "Bea(s)t Series vol.4-9th Wonder (mixed by Cinturon Negro)",
+      "resource_url": "https://api.discogs.com/releases/14225781",
+      "role": "Main",
+      "artist": "Cinturón Negro, 9th Wonder",
+      "year": 2013,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 1,
+          "in_collection": 1
+        }
+      }
+    },
+    {
+      "id": 16246097,
+      "status": "Accepted",
+      "type": "release",
+      "format": "14xFile, MP3, 128 + File, MP3, 320 + Album, Mixtap",
+      "label": "Tree City Partners",
+      "title": "Volume Four",
+      "resource_url": "https://api.discogs.com/releases/16246097",
+      "role": "Main",
+      "artist": "Cans (3) & 9th Wonder",
+      "year": 2013,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 1,
+          "in_collection": 1
+        }
+      }
+    },
+    {
+      "id": 16276786,
+      "status": "Accepted",
+      "type": "release",
+      "format": "73xFile, MP3, Mixtape, 320",
+      "label": "Jamla",
+      "title": "Bladey Mae (Grandma's Blades)",
+      "resource_url": "https://api.discogs.com/releases/16276786",
+      "role": "Main",
+      "artist": "9th Wonder",
+      "year": 2013,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 6,
+          "in_collection": 7
+        }
+      }
+    },
+    {
+      "id": 5988325,
+      "status": "Accepted",
+      "type": "release",
+      "format": "2xCD, Mixed",
+      "label": "Jamla",
+      "title": "Jamla Is The Squad",
+      "resource_url": "https://api.discogs.com/releases/5988325",
+      "role": "Main",
+      "artist": "9th Wonder",
+      "year": 2014,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 50,
+          "in_collection": 63
+        }
+      }
+    },
+    {
+      "id": 1065853,
+      "title": "Sound Of The Weapon (9th Wonder Remix) (Instrumental)",
+      "type": "master",
+      "main_release": 9120785,
+      "artist": "Verbal Kent & Khrysis, 9th Wonder",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/1065853",
+      "year": 2014,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 4,
+          "in_collection": 3
+        }
+      }
+    },
+    {
+      "id": 908912,
+      "title": "Indie 500",
+      "type": "master",
+      "main_release": 7681481,
+      "artist": "Talib Kweli / 9th Wonder",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/908912",
+      "year": 2015,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 70,
+          "in_collection": 189
+        }
+      }
+    },
+    {
+      "id": 16246141,
+      "status": "Accepted",
+      "type": "release",
+      "format": "13xFile, MP3, Album, Mixtape, 160",
+      "label": "Tree City Partners",
+      "title": "Vol. V",
+      "resource_url": "https://api.discogs.com/releases/16246141",
+      "role": "Main",
+      "artist": "Cans (3) & 9th Wonder",
+      "year": 2016,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 0,
+          "in_collection": 1
+        }
+      }
+    },
+    {
+      "id": 1014916,
+      "title": "Brighter Daze",
+      "type": "master",
+      "main_release": 8642792,
+      "artist": "Murs & 9th Wonder",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/1014916",
+      "year": 2016,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 16,
+          "in_collection": 9
+        }
+      }
+    },
+    {
+      "id": 11899224,
+      "status": "Accepted",
+      "type": "release",
+      "format": "2xLP, Ltd, Blu",
+      "label": "Empire",
+      "title": "Zion II",
+      "resource_url": "https://api.discogs.com/releases/11899224",
+      "role": "Main",
+      "artist": "9th Wonder",
+      "year": 2018,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 264,
+          "in_collection": 352
+        }
+      }
+    },
+    {
+      "id": 32628126,
+      "status": "Accepted",
+      "type": "release",
+      "format": "File, AAC, Single, 256",
+      "label": "Not On Label (J. Cole Self-released), Not On Label (9th Wonder Self-released)",
+      "title": "Legendary",
+      "resource_url": "https://api.discogs.com/releases/32628126",
+      "role": "Main",
+      "artist": "J Cole* And 9th Wonder Ft Joey Badass*",
+      "year": 2020,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 0,
+          "in_collection": 0
+        }
+      }
+    },
+    {
+      "id": 2488672,
+      "title": "The Don & Eye",
+      "type": "master",
+      "main_release": 21966751,
+      "artist": "The Musalini x 9th Wonder",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/2488672",
+      "year": 2022,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 58,
+          "in_collection": 91
+        }
+      }
+    },
+    {
+      "id": 27947232,
+      "status": "Accepted",
+      "type": "release",
+      "format": "File, AAC, Single, 256",
+      "label": "Top Dawg Entertainment",
+      "title": "The Soul Pt. 3",
+      "resource_url": "https://api.discogs.com/releases/27947232",
+      "role": "Main",
+      "artist": "Reason (24) Feat. 9th Wonder",
+      "year": 2023,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 0,
+          "in_collection": 0
+        }
+      }
+    },
+    {
+      "id": 3416518,
+      "title": "Don & Eye 2",
+      "type": "master",
+      "main_release": 29966407,
+      "artist": "The Musalini, 9th Wonder",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/3416518",
+      "year": 2023,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 26,
+          "in_collection": 46
+        }
+      }
+    },
+    {
+      "id": 34471639,
+      "status": "Accepted",
+      "type": "release",
+      "format": "3xFile, AAC, Single, 256",
+      "label": "Lowly, O'Connor (2)",
+      "title": "Forever",
+      "resource_url": "https://api.discogs.com/releases/34471639",
+      "role": "Main",
+      "artist": "Terrace Martin & 9th Wonder",
+      "year": 2024,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 0,
+          "in_collection": 0
+        }
+      }
+    },
+    {
+      "id": 3466450,
+      "title": "The Supergoat",
+      "type": "master",
+      "main_release": 30490396,
+      "artist": "Hus Kingpin* & 9th Wonder",
+      "role": "Main",
+      "resource_url": "https://api.discogs.com/masters/3466450",
+      "year": 2024,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 12,
+          "in_collection": 8
+        }
+      }
+    },
+    {
+      "id": 1130753,
+      "status": "Accepted",
+      "type": "release",
+      "format": "LP",
+      "label": "Tee Vee International (2)",
+      "title": "Unreleased Instrumentals Vol. 2",
+      "resource_url": "https://api.discogs.com/releases/1130753",
+      "role": "Main",
+      "artist": "9th Wonder",
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 198,
+          "in_collection": 76
+        }
+      }
+    },
+    {
+      "id": 1801389,
+      "status": "Accepted",
+      "type": "release",
+      "format": "LP",
+      "label": "Tee Vee International (2)",
+      "title": "Unreleased Instrumentals Vol. 1",
+      "resource_url": "https://api.discogs.com/releases/1801389",
+      "role": "Main",
+      "artist": "9th Wonder",
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 217,
+          "in_collection": 77
+        }
+      }
+    },
+    {
+      "id": 337010,
+      "status": "Accepted",
+      "type": "release",
+      "format": "12\"",
+      "label": "ABB Records",
+      "title": "Allways",
+      "resource_url": "https://api.discogs.com/releases/337010",
+      "role": "Remix",
+      "artist": "Kev Brown",
+      "trackinfo": "Allways (9th Wonder Re...",
+      "year": 2003,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 200,
+          "in_collection": 377
+        }
+      }
+    },
+    {
+      "id": 1302558,
+      "status": "Accepted",
+      "type": "release",
+      "format": "2xCDr, Comp, Ltd",
+      "label": "Hall Of Justus",
+      "title": "N.C. State Of Mind",
+      "resource_url": "https://api.discogs.com/releases/1302558",
+      "role": "Remix",
+      "artist": "Justus League",
+      "trackinfo": "Drought 2002 (Remix)",
+      "year": 2003,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 88,
+          "in_collection": 68
+        }
+      }
+    },
+    {
+      "id": 20262,
+      "title": "I Can (9th Wonder Remix) / Say Mama (9th Wonder Remixes)",
+      "type": "master",
+      "main_release": 2858362,
+      "artist": "Nas, Spectac (2)",
+      "role": "Remix",
+      "resource_url": "https://api.discogs.com/masters/20262",
+      "year": 2003,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 47,
+          "in_collection": 57
+        }
+      }
+    },
+    {
+      "id": 343421,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Comp, P/Mixed, Promo",
+      "label": "Scion Audio/Visual",
+      "title": "Scion CD Sampler V.8 - Beat Constructors Past Present, And Future",
+      "resource_url": "https://api.discogs.com/releases/343421",
+      "role": "Remix",
+      "artist": "Melo-D",
+      "trackinfo": "Allways (9th Wonder Re...",
+      "year": 2004,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 34,
+          "in_collection": 95
+        }
+      }
+    },
+    {
+      "id": 506612,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Comp, Enh",
+      "label": "Hiero Imperium",
+      "title": "The Building",
+      "resource_url": "https://api.discogs.com/releases/506612",
+      "role": "Remix",
+      "artist": "Hieroglyphics",
+      "trackinfo": "Make Your Move (9th Wo...",
+      "year": 2004,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 60,
+          "in_collection": 240
+        }
+      }
+    },
+    {
+      "id": 649393,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Comp, Mixtape",
+      "label": "Roy Lee's Records & Tapes",
+      "title": "The Chittlin' Circuit - The Mixtape",
+      "resource_url": "https://api.discogs.com/releases/649393",
+      "role": "Remix",
+      "artist": "Little Brother (3)",
+      "trackinfo": "Nighttime Maneuvers (9...",
+      "year": 2004,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 87,
+          "in_collection": 89
+        }
+      }
+    },
+    {
+      "id": 9203787,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CDr, Mixed",
+      "label": "Pijason",
+      "title": "The Message",
+      "resource_url": "https://api.discogs.com/releases/9203787",
+      "role": "Remix",
+      "artist": "DJ Off & Cleon*",
+      "trackinfo": "Always (Remix By 9th W...",
+      "year": 2004,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 7,
+          "in_collection": 4
+        }
+      }
+    },
+    {
+      "id": 19571710,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Album, Mixed, Mixtape, Smplr",
+      "label": "Warner Urban Promotions",
+      "title": "Warner Urban Carnival Mix CD",
+      "resource_url": "https://api.discogs.com/releases/19571710",
+      "role": "Remix",
+      "artist": "Matchstick & MVP Squad",
+      "trackinfo": "Not Like This (9th Won...",
+      "year": 2004,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 1,
+          "in_collection": 4
+        }
+      }
+    },
+    {
+      "id": 29272438,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CDr, Comp, Mixtape",
+      "label": "Roy Lee's Records & Tapes",
+      "title": "The Chittlin' Circuit - The Mixtape",
+      "resource_url": "https://api.discogs.com/releases/29272438",
+      "role": "Remix",
+      "artist": "Little Brother (3)",
+      "trackinfo": "Nighttime Maneuvers (9...",
+      "year": 2004,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 3,
+          "in_collection": 3
+        }
+      }
+    },
+    {
+      "id": 483315,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Mixtape",
+      "label": "Draft Records",
+      "title": "A Tribe Called Quence (1995-2004)",
+      "resource_url": "https://api.discogs.com/releases/483315",
+      "role": "Remix",
+      "artist": "Consequence (2)",
+      "trackinfo": "Word Play (Remix)",
+      "year": 2005,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 59,
+          "in_collection": 156
+        }
+      }
+    },
+    {
+      "id": 4360983,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Mixed",
+      "label": "Dat Sound Productions",
+      "title": "Bring It Back",
+      "resource_url": "https://api.discogs.com/releases/4360983",
+      "role": "Remix",
+      "artist": "DJ Skully",
+      "trackinfo": "Night Riders (9th Wond...",
+      "year": 2005,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 19,
+          "in_collection": 24
+        }
+      }
+    },
+    {
+      "id": 9070714,
+      "status": "Accepted",
+      "type": "release",
+      "format": "2xCD, Comp, Enh, Promo, Smplr",
+      "label": "HipHopSite.com",
+      "title": "Preemptive Hype Vol. 7",
+      "resource_url": "https://api.discogs.com/releases/9070714",
+      "role": "Remix",
+      "artist": "Various",
+      "trackinfo": "Nightriders (9th Wonde...",
+      "year": 2005,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 13,
+          "in_collection": 32
+        }
+      }
+    },
+    {
+      "id": 14408844,
+      "status": "Accepted",
+      "type": "release",
+      "format": "Cass, Mixtape",
+      "label": "Not On Label (Fat Daddy Self-released)",
+      "title": "Fat Daddy Hip-Hop No. 26",
+      "resource_url": "https://api.discogs.com/releases/14408844",
+      "role": "Remix",
+      "artist": "Fat Daddy",
+      "trackinfo": "Threatz (9th Wonder Re...",
+      "year": 2005,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 8,
+          "in_collection": 1
+        }
+      }
+    },
+    {
+      "id": 16484808,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Comp, Mixed, Promo",
+      "label": "Ballers Records",
+      "title": "Next Generation 20",
+      "resource_url": "https://api.discogs.com/releases/16484808",
+      "role": "Remix",
+      "artist": "DJ Ryow (2)",
+      "trackinfo": "Girl(9th Wonder Remix)",
+      "year": 2005,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 3,
+          "in_collection": 0
+        }
+      }
+    },
+    {
+      "id": 6360,
+      "title": "The Chittlin Circuit 1.5",
+      "type": "master",
+      "main_release": 489104,
+      "artist": "Little Brother (3)",
+      "role": "Remix",
+      "resource_url": "https://api.discogs.com/masters/6360",
+      "year": 2005,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 98,
+          "in_collection": 435
+        }
+      }
+    },
+    {
+      "id": 372578,
+      "title": "Sleepers",
+      "type": "master",
+      "main_release": 818928,
+      "artist": "Rapper Big Pooh*",
+      "role": "Remix",
+      "resource_url": "https://api.discogs.com/masters/372578",
+      "year": 2005,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 48,
+          "in_collection": 325
+        }
+      }
+    },
+    {
+      "id": 100793,
+      "title": " Spirit Of '94 ",
+      "type": "master",
+      "main_release": 7859420,
+      "artist": "Kaze (2)",
+      "role": "Remix",
+      "resource_url": "https://api.discogs.com/masters/100793",
+      "year": 2005,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 14,
+          "in_collection": 15
+        }
+      }
+    },
+    {
+      "id": 3645417,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Comp, Mixed",
+      "label": "Not On Label",
+      "title": "Chamber Music",
+      "resource_url": "https://api.discogs.com/releases/3645417",
+      "role": "Remix",
+      "artist": "Ghostface*, DJ Ayres & DJ Soul (2)",
+      "trackinfo": "Never Be The Same Agai...",
+      "year": 2006,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 32,
+          "in_collection": 28
+        }
+      }
+    },
+    {
+      "id": 10082033,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Mixed, Promo",
+      "label": "River City Music Entertainment Inc.",
+      "title": "Unknown Suite",
+      "resource_url": "https://api.discogs.com/releases/10082033",
+      "role": "Remix",
+      "artist": "DJ Oldfashion",
+      "trackinfo": "Caught Up (9th Wonder ...",
+      "year": 2006,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 3,
+          "in_collection": 5
+        }
+      }
+    },
+    {
+      "id": 13080746,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CDr, Comp, Mixtape",
+      "label": "Duck Down",
+      "title": "Search And Recover Part III",
+      "resource_url": "https://api.discogs.com/releases/13080746",
+      "role": "Remix",
+      "artist": "Boot Camp Clik",
+      "trackinfo": "Night Riders",
+      "year": 2006,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 33,
+          "in_collection": 7
+        }
+      }
+    },
+    {
+      "id": 1481730,
+      "title": "Lightly Anxious",
+      "type": "master",
+      "main_release": 931092,
+      "artist": "Maspyke",
+      "role": "Remix",
+      "resource_url": "https://api.discogs.com/masters/1481730",
+      "year": 2006,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 56,
+          "in_collection": 86
+        }
+      }
+    },
+    {
+      "id": 150193,
+      "title": "Brothaz",
+      "type": "master",
+      "main_release": 792050,
+      "artist": "Mr. Lif",
+      "role": "Remix",
+      "resource_url": "https://api.discogs.com/masters/150193",
+      "year": 2006,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 58,
+          "in_collection": 143
+        }
+      }
+    },
+    {
+      "id": 332021,
+      "title": "Safari",
+      "type": "master",
+      "main_release": 1902864,
+      "artist": "Alias (20)",
+      "role": "Remix",
+      "resource_url": "https://api.discogs.com/masters/332021",
+      "year": 2006,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 0,
+          "in_collection": 3
+        }
+      }
+    },
+    {
+      "id": 483191,
+      "title": "Fish N Chips",
+      "type": "master",
+      "main_release": 5072278,
+      "artist": "Ghostface Killah",
+      "role": "Remix",
+      "resource_url": "https://api.discogs.com/masters/483191",
+      "year": 2006,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 28,
+          "in_collection": 18
+        }
+      }
+    },
+    {
+      "id": 4761610,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Album",
+      "label": "Classick Productions",
+      "title": "The Session, Vol. 1",
+      "resource_url": "https://api.discogs.com/releases/4761610",
+      "role": "Remix",
+      "artist": "Team Classick",
+      "trackinfo": "Hiding Place (Classick...",
+      "year": 2007,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 6,
+          "in_collection": 2
+        }
+      }
+    },
+    {
+      "id": 20859994,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Comp",
+      "label": "Universal Music Group",
+      "title": "Verve // Remixed⁴",
+      "resource_url": "https://api.discogs.com/releases/20859994",
+      "role": "Remix",
+      "artist": "Various",
+      "trackinfo": "Everybody Loves The Su...",
+      "year": 2008,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 8,
+          "in_collection": 4
+        }
+      }
+    },
+    {
+      "id": 1437774,
+      "title": "Delivery Man",
+      "type": "master",
+      "main_release": 4593090,
+      "artist": "The Cool Kids",
+      "role": "Remix",
+      "resource_url": "https://api.discogs.com/masters/1437774",
+      "year": 2008,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 84,
+          "in_collection": 27
+        }
+      }
+    },
+    {
+      "id": 55565,
+      "title": "Verve // Remixed⁴",
+      "type": "master",
+      "main_release": 1363873,
+      "artist": "Various",
+      "role": "Remix",
+      "resource_url": "https://api.discogs.com/masters/55565",
+      "year": 2008,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 376,
+          "in_collection": 251
+        }
+      }
+    },
+    {
+      "id": 4305217,
+      "status": "Accepted",
+      "type": "release",
+      "format": "2xLP, Comp",
+      "label": "Abstract (8)",
+      "title": "A Tribe Called Tip",
+      "resource_url": "https://api.discogs.com/releases/4305217",
+      "role": "Remix",
+      "artist": "Q-Tip",
+      "trackinfo": "Word Play (Remix)",
+      "year": 2009,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 88,
+          "in_collection": 66
+        }
+      }
+    },
+    {
+      "id": 492823,
+      "title": "Black Radio Recovered (The Remix EP)",
+      "type": "master",
+      "main_release": 4071842,
+      "artist": "Robert Glasper Experiment",
+      "role": "Remix",
+      "resource_url": "https://api.discogs.com/masters/492823",
+      "year": 2012,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 538,
+          "in_collection": 810
+        }
+      }
+    },
+    {
+      "id": 5642829,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Album",
+      "label": "Mello Music Group, Fat Beats",
+      "title": "Sound Of The Weapon",
+      "resource_url": "https://api.discogs.com/releases/5642829",
+      "role": "Remix",
+      "artist": "Verbal Kent",
+      "trackinfo": "Sound Of The Weapon (9...",
+      "year": 2014,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 18,
+          "in_collection": 98
+        }
+      }
+    },
+    {
+      "id": 709441,
+      "title": "The Remix Project",
+      "type": "master",
+      "main_release": 5889235,
+      "artist": "D.I.T.C.",
+      "role": "Remix",
+      "resource_url": "https://api.discogs.com/masters/709441",
+      "year": 2014,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 293,
+          "in_collection": 251
+        }
+      }
+    },
+    {
+      "id": 921516,
+      "title": "D.I.T.C. The Remix Project: Bonus Edition",
+      "type": "master",
+      "main_release": 7792593,
+      "artist": "D.I.T.C.",
+      "role": "Remix",
+      "resource_url": "https://api.discogs.com/masters/921516",
+      "year": 2014,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 75,
+          "in_collection": 34
+        }
+      }
+    },
+    {
+      "id": 20308279,
+      "status": "Accepted",
+      "type": "release",
+      "format": "LP, Album, Neo",
+      "label": "ATO Records",
+      "title": "Jaime (Reimagined)",
+      "resource_url": "https://api.discogs.com/releases/20308279",
+      "role": "Remix",
+      "artist": "Brittany Howard",
+      "trackinfo": "He Loves Me (9th Wonde...",
+      "year": 2021,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 157,
+          "in_collection": 1296
+        }
+      }
+    },
+    {
+      "id": 416242,
+      "title": "Black Radio",
+      "type": "master",
+      "main_release": 25140763,
+      "artist": "Robert Glasper Experiment",
+      "role": "Remix",
+      "resource_url": "https://api.discogs.com/masters/416242",
+      "year": 2022,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 274,
+          "in_collection": 1051
+        }
+      }
+    },
+    {
+      "id": 2273385,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CDr, Mixed, Mixtape",
+      "label": "Konkrete Kaos Entertainment",
+      "title": "Where I'm From (Remixed Edition)",
+      "resource_url": "https://api.discogs.com/releases/2273385",
+      "role": "Remix",
+      "artist": "Sean Carter*",
+      "trackinfo": "Dec 4th (9th Wonder Mix)",
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 4,
+          "in_collection": 3
+        }
+      }
+    },
+    {
+      "id": 4576870,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CDr, Mixed",
+      "label": "Spitkicker",
+      "title": "The Next Spit Vol. 3",
+      "resource_url": "https://api.discogs.com/releases/4576870",
+      "role": "Remix",
+      "artist": "DJ Eleven",
+      "trackinfo": "Make Your Move (9th Wo...",
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 35,
+          "in_collection": 27
+        }
+      }
+    },
+    {
+      "id": 12303921,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CDr, Mixtape",
+      "label": "Not On Label",
+      "title": "Do You! Vol. 4",
+      "resource_url": "https://api.discogs.com/releases/12303921",
+      "role": "Remix",
+      "artist": "VickOne*",
+      "trackinfo": "Make Your Move (9th Wo...",
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 2,
+          "in_collection": 1
+        }
+      }
+    },
+    {
+      "id": 3159499,
+      "status": "Accepted",
+      "type": "release",
+      "format": "CD, Album",
+      "label": "D.O.T.F.W. Music",
+      "title": "Wooden Nickels",
+      "resource_url": "https://api.discogs.com/releases/3159499",
+      "role": "Producer",
+      "artist": "Cesar Comanche",
+      "trackinfo": "WJLR, Da Bagging, J-Vi...",
+      "year": 2000,
+      "thumb": "",
+      "stats": {
+        "community": {
+          "in_wantlist": 66,
+          "in_collection": 17
+        }
+      }
+    }
+  ]
+}

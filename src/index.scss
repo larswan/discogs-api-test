@@ -578,6 +578,167 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
   }
 }
 
+// Contributor Display Styles
+.contributorDisplay {
+  flex: 1;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  .loading,
+  .error {
+    text-align: center;
+    padding: 4rem 1rem;
+    font-size: 1.5rem;
+    color: $textColor;
+  }
+
+  .contributorHeader {
+    margin-bottom: 2rem;
+
+    .contributorInfo {
+      text-align: left;
+      margin-top: 1rem;
+
+      h1 {
+        font-size: 2rem;
+        margin: 0 0 0.5rem 0;
+        color: $textColor;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: $textSecondaryColor;
+        margin: 0;
+      }
+    }
+  }
+
+  .releasesList {
+    text-align: left;
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: $textColor;
+      border-bottom: 2px solid $borderColor;
+      padding-bottom: 0.5rem;
+    }
+
+    .releasesGrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1rem;
+
+      .releaseItem {
+        background-color: rgba(0, 0, 0, 0.05);
+        border: 1px solid $borderColor;
+        border-radius: 8px;
+        padding: 1rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.1);
+          transform: translateY(-2px);
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .releaseInfo {
+          h4 {
+            font-size: 1.1rem;
+            margin: 0 0 0.5rem 0;
+            color: $textColor;
+            font-weight: bold;
+          }
+
+          p {
+            font-size: 0.9rem;
+            margin: 0.25rem 0;
+            color: $textSecondaryColor;
+
+            &.releaseArtist {
+              font-weight: bold;
+            }
+
+            &.releaseRole {
+              color: $secondaryColor;
+              font-weight: bold;
+            }
+          }
+        }
+
+        .releaseStats {
+          margin-top: 0.75rem;
+          padding-top: 0.75rem;
+          border-top: 1px solid $borderColor;
+          display: flex;
+          gap: 1rem;
+          font-size: 0.8rem;
+          color: $textSecondaryColor;
+        }
+      }
+    }
+  }
+}
+
+.dark-mode .contributorDisplay {
+  .loading,
+  .error {
+    color: $textColorDark;
+  }
+
+  .contributorHeader .contributorInfo {
+    h1 {
+      color: $textColorDark;
+    }
+
+    p {
+      color: $textSecondaryColorDark;
+    }
+  }
+
+  .releasesList {
+    h3 {
+      color: $textColorDark;
+      border-bottom: 2px solid $borderColorDark;
+    }
+
+    .releasesGrid .releaseItem {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid $borderColorDark;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .releaseInfo {
+        h4 {
+          color: $textColorDark;
+        }
+
+        p {
+          color: $textSecondaryColorDark;
+
+          &.releaseRole {
+            color: $secondaryColorDark;
+          }
+        }
+      }
+
+      .releaseStats {
+        border-top: 1px solid $borderColorDark;
+        color: $textSecondaryColorDark;
+      }
+    }
+  }
+}
+
 // Responsive Design
 @media (max-width: 768px) {
   .searchBar {

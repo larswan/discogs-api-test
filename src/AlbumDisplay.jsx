@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import TrackDisplay from "./TrackDisplay";
 import { queryByMasterId } from "./requestFunctions/queryByMasterId";
 
-const AlbumDisplay = ({ album, onBack, searchQuery }) => {
+const AlbumDisplay = ({ album, onBack, searchQuery, onContributorClick }) => {
   const [albumDetails, setAlbumDetails] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -68,7 +68,11 @@ const AlbumDisplay = ({ album, onBack, searchQuery }) => {
         <h3>Tracks</h3>
         <ol>
           {albumDetails.tracklist?.map((track, index) => (
-            <TrackDisplay track={track} key={index} />
+            <TrackDisplay
+              track={track}
+              key={index}
+              onContributorClick={onContributorClick}
+            />
           ))}
         </ol>
       </div>
