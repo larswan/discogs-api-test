@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import SearchBar from "./SearchBar";
 import AlbumDisplay from "./AlbumDisplay";
+import ThemeToggle from "./ThemeToggle";
 
 function App() {
   const [selectedAlbum, setSelectedAlbum] = useState(null);
@@ -10,6 +11,7 @@ function App() {
 
   return (
     <div className="app">
+      <ThemeToggle />
       <SearchBar
         setSearchResults={setSearchResults}
         setShowSearchResults={setShowSearchResults}
