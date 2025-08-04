@@ -1,7 +1,11 @@
-const ExtraArtistDisplay = ({ artist, onContributorClick }) => {
+const ExtraArtistDisplay = ({ artist, onContributorClick, albumName }) => {
   const handleClick = () => {
     if (onContributorClick) {
-      onContributorClick(artist);
+      onContributorClick({
+        contributor: artist,
+        albumName: albumName,
+        role: artist.role,
+      });
     }
   };
 

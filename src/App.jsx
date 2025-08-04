@@ -81,7 +81,9 @@ function App() {
 
       {selectedContributor && (
         <ContributorDisplay
-          contributor={selectedContributor}
+          contributor={selectedContributor.contributor}
+          albumName={selectedContributor.albumName}
+          role={selectedContributor.role}
           onBack={() => {
             setSelectedContributor(null);
           }}

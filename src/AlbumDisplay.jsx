@@ -72,6 +72,7 @@ const AlbumDisplay = ({ album, onBack, searchQuery, onContributorClick }) => {
               track={track}
               key={index}
               onContributorClick={onContributorClick}
+              albumName={albumDetails.title}
             />
           ))}
         </ol>

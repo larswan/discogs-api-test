@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ExtraArtistDisplay from "./ExtraArtistDisplay";
 
-const TrackDisplay = ({ track, onContributorClick }) => {
+const TrackDisplay = ({ track, onContributorClick, albumName }) => {
   const [showExtraArtists, setShowExtraArtists] = useState(false);
 
   // Function to categorize artists by their roles
@@ -111,6 +111,7 @@ const TrackDisplay = ({ track, onContributorClick }) => {
               artist={artist}
               key={i}
               onContributorClick={onContributorClick}
+              albumName={albumName}
             />
           ))}
         </ul>
