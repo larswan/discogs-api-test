@@ -1,5 +1,6 @@
 const ExtraArtistDisplay = ({ artist, onContributorClick, albumName }) => {
   const handleClick = () => {
+    console.log("Clicking contributor:", artist);
     if (onContributorClick) {
       onContributorClick({
         contributor: artist,

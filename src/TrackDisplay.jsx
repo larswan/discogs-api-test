@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ExtraArtistDisplay from "./ExtraArtistDisplay";
+import { cleanRole, logRoleData } from "./utils/roleCleaner";
 
 const TrackDisplay = ({ track, onContributorClick, albumName }) => {
   const [showExtraArtists, setShowExtraArtists] = useState(false);
@@ -13,7 +14,10 @@ const TrackDisplay = ({ track, onContributorClick, albumName }) => {
     };
 
     artists.forEach((artist) => {
-      const role = artist.role.toLowerCase();
+      const cleanedRole = cleanRole(artist.role);
+      logRoleData(artist.role, cleanedRole, "track_display");
+
+      const role = cleanedRole.toLowerCase();
 
       // Writing credits
       if (
@@ -21,7 +25,8 @@ const TrackDisplay = ({ track, onContributorClick, albumName }) => {
         role.includes("lyrics") ||
         role.includes("arranged") ||
         role.includes("composed") ||
-        role.includes("songwriter")
+        role.includes("songwriter") ||
+        role.includes("music")
       ) {
         categories.writing.push(artist);
       }
@@ -32,7 +37,8 @@ const TrackDisplay = ({ track, onContributorClick, albumName }) => {
         role.includes("recorded") ||
         role.includes("mixed") ||
         role.includes("mastered") ||
-        role.includes("co-producer")
+        role.includes("co-producer") ||
+        role.includes("producer")
       ) {
         categories.production.push(artist);
       }
@@ -62,7 +68,7 @@ const TrackDisplay = ({ track, onContributorClick, albumName }) => {
       className={hasExtraArtists ? "hasExtraArtists" : "noCredits"}
     >
       <div className="trackHeader">
-        <span className="trackPosition">{track.position}</span>
+        <span className="trackPosition">{track.index + 1}.</span>
 
         <div className="trackInfo">
           <span className="trackTitle">{track.title}</span>

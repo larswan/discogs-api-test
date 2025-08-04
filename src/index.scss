@@ -599,6 +599,24 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
   .contributorHeader {
     margin-bottom: 2rem;
 
+    .backButton {
+      background: none;
+      border: none;
+      color: $secondaryColor;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 18px;
+      margin-bottom: 1.5rem;
+      transition: all 0.3s ease;
+      text-align: left;
+      width: 100%;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+    }
+
     .contributorInfo {
       text-align: left;
       margin-top: 1rem;
@@ -630,80 +648,89 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
       padding-bottom: 0.5rem;
     }
 
-    .releasesGrid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 1rem;
+    .releasesTable {
+      margin-top: 1rem;
+      border: 1px solid $borderColor;
+      border-radius: 8px;
+      overflow: hidden;
 
-      .releaseItem {
-        background-color: rgba(0, 0, 0, 0.05);
-        border: 1px solid $borderColor;
-        border-radius: 8px;
-        padding: 1rem;
-        transition: all 0.3s ease;
+      .tableHeader {
         display: flex;
-        gap: 1rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-bottom: 2px solid $borderColor;
 
-        &:hover {
-          background-color: rgba(0, 0, 0, 0.1);
-          transform: translateY(-2px);
-          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
+        .headerCell {
+          padding: 1rem;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background-color 0.2s ease;
+          user-select: none;
 
-        .releaseImage {
-          flex-shrink: 0;
-          width: 80px;
-          height: 80px;
-          border-radius: 6px;
-          overflow: hidden;
-          background-color: rgba(0, 0, 0, 0.1);
-
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
-        }
-
-        .releaseInfo {
-          flex: 1;
-          min-width: 0;
-
-          h4 {
-            font-size: 1.1rem;
-            margin: 0 0 0.5rem 0;
-            color: $textColor;
-            font-weight: bold;
-            word-wrap: break-word;
-            overflow-wrap: break-word;
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.15);
           }
 
-          p {
-            font-size: 0.9rem;
-            margin: 0.25rem 0;
-            color: $textSecondaryColor;
-            word-wrap: break-word;
-            overflow-wrap: break-word;
+          &.yearHeader {
+            flex: 0 0 80px;
+            text-align: left;
+          }
 
-            &.releaseArtist {
-              font-weight: bold;
-            }
+          &.titleHeader {
+            flex: 1;
+            text-align: left;
+            padding-left: 2rem;
+          }
 
-            &.releaseRole {
-              color: $secondaryColor;
-              font-weight: bold;
-            }
+          &.roleHeader {
+            flex: 0 0 150px;
+            text-align: right;
           }
         }
+      }
 
-        .releaseStats {
-          margin-top: 0.75rem;
-          padding-top: 0.75rem;
-          border-top: 1px solid $borderColor;
+      .tableBody {
+        .tableRow {
           display: flex;
-          gap: 1rem;
-          font-size: 0.8rem;
-          color: $textSecondaryColor;
+          border-bottom: 1px solid $borderColor;
+          transition: background-color 0.2s ease;
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+          }
+
+          &.even {
+            background-color: rgba(0, 0, 0, 0.02);
+          }
+
+          &.odd {
+            background-color: rgba(255, 255, 255, 0.5);
+          }
+
+          .tableCell {
+            padding: 10px;
+            font-size: 18px;
+            white-space: nowrap;
+            overflow: hidden;
+
+            &.yearCell {
+              flex: 0 0 80px;
+              text-align: left;
+              font-weight: 500;
+            }
+
+            &.titleCell {
+              flex: 1;
+              text-align: left;
+              padding-left: 2rem;
+              text-overflow: ellipsis;
+            }
+
+            &.roleCell {
+              flex: 0 0 150px;
+              text-align: right;
+              font-weight: 500;
+            }
+          }
         }
       }
     }
@@ -732,32 +759,42 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
       border-bottom: 2px solid $borderColorDark;
     }
 
-    .releasesGrid .releaseItem {
-      background-color: rgba(255, 255, 255, 0.05);
+    .releasesTable {
       border: 1px solid $borderColorDark;
 
-      &:hover {
+      .tableHeader {
         background-color: rgba(255, 255, 255, 0.1);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-      }
+        border-bottom: 2px solid $borderColorDark;
 
-      .releaseInfo {
-        h4 {
+        .headerCell {
           color: $textColorDark;
-        }
 
-        p {
-          color: $textSecondaryColorDark;
-
-          &.releaseRole {
-            color: $secondaryColorDark;
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.15);
           }
         }
       }
 
-      .releaseStats {
-        border-top: 1px solid $borderColorDark;
-        color: $textSecondaryColorDark;
+      .tableBody {
+        .tableRow {
+          border-bottom: 1px solid $borderColorDark;
+
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+          }
+
+          &.even {
+            background-color: rgba(255, 255, 255, 0.02);
+          }
+
+          &.odd {
+            background-color: rgba(0, 0, 0, 0.1);
+          }
+
+          .tableCell {
+            color: $textColorDark;
+          }
+        }
       }
     }
   }

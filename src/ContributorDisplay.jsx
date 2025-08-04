@@ -1,9 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
+import { cleanRole, logRoleData } from "./utils/roleCleaner";
+import { logFetchResponse } from "./utils/responseLogger";
 
 const ContributorDisplay = ({ contributor, onBack, albumName, role }) => {
   const [contributorData, setContributorData] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [releaseImages, setReleaseImages] = useState({});
+  const [sortField, setSortField] = useState("year");
+  const [sortDirection, setSortDirection] = useState("desc");
 
   useEffect(() => {
     const fetchContributorData = async () => {
@@ -14,35 +17,16 @@ const ContributorDisplay = ({ contributor, onBack, albumName, role }) => {
             `https://api.discogs.com/artists/${contributor.id}/releases?sort=year&sort_order=desc&per_page=50`
           );
           const data = await response.json();
+          console.log("Full contributor response:", data);
+
+          // Log the response for analysis
+          logFetchResponse(
+            `/artists/${contributor.id}/releases`,
+            data,
+            "contributor_page"
+          );
+
           setContributorData(data);
-
-          // Fetch cover images for releases that don't have thumb images
-          if (data.releases) {
-            const imagePromises = data.releases
-              .filter((release) => !release.thumb && release.resource_url)
-              .map(async (release) => {
-                try {
-                  const releaseResponse = await fetch(release.resource_url);
-                  const releaseData = await releaseResponse.json();
-                  return {
-                    id: release.id,
-                    image: releaseData.images?.[0]?.uri || null,
-                  };
-                } catch (error) {
-                  console.error(`Error fetching release ${release.id}:`, error);
-                  return { id: release.id, image: null };
-                }
-              });
-
-            const images = await Promise.all(imagePromises);
-            const imageMap = {};
-            images.forEach((img) => {
-              if (img.image) {
-                imageMap[img.id] = img.image;
-              }
-            });
-            setReleaseImages(imageMap);
-          }
         } catch (error) {
           console.error("Error fetching contributor data:", error);
         } finally {
@@ -53,6 +37,41 @@ const ContributorDisplay = ({ contributor, onBack, albumName, role }) => {
 
     fetchContributorData();
   }, [contributor]);
+
+  const handleSort = (field) => {
+    if (sortField === field) {
+      setSortDirection(sortDirection === "asc" ? "desc" : "asc");
+    } else {
+      setSortField(field);
+      setSortDirection("asc");
+    }
+  };
+
+  const sortedReleases = useMemo(() => {
+    if (!contributorData?.releases) return [];
+
+    return [...contributorData.releases].sort((a, b) => {
+      let aValue = a[sortField];
+      let bValue = b[sortField];
+
+      // Handle year sorting (numeric)
+      if (sortField === "year") {
+        aValue = aValue || 0;
+        bValue = bValue || 0;
+        return sortDirection === "asc" ? aValue - bValue : bValue - aValue;
+      }
+
+      // Handle string sorting
+      aValue = (aValue || "").toString().toLowerCase();
+      bValue = (bValue || "").toString().toLowerCase();
+
+      if (sortDirection === "asc") {
+        return aValue.localeCompare(bValue);
+      } else {
+        return bValue.localeCompare(aValue);
+      }
+    });
+  }, [contributorData?.releases, sortField, sortDirection]);
 
   if (loading) {
     return (
@@ -79,7 +98,7 @@ const ContributorDisplay = ({ contributor, onBack, albumName, role }) => {
         <div className="contributorInfo">
           <h1>{contributor.name}</h1>
           <p>
-            {role} on "{albumName}"
+            {cleanRole(role)} on "{albumName}"
           </p>
           <p>Discography ({contributorData.pagination?.items || 0} releases)</p>
         </div>
@@ -87,40 +106,50 @@ const ContributorDisplay = ({ contributor, onBack, albumName, role }) => {
 
       <div className="releasesList">
         <h3>Releases</h3>
-        <div className="releasesGrid">
-          {contributorData.releases?.map((release, index) => (
-            <div key={index} className="releaseItem">
-              {(release.thumb || releaseImages[release.id]) && (
-                <div className="releaseImage">
-                  <img
-                    src={release.thumb || releaseImages[release.id]}
-                    alt={release.title}
-                    onError={(e) => {
-                      e.target.style.display = "none";
-                    }}
-                  />
-                </div>
-              )}
-              <div className="releaseInfo">
-                <h4>{release.title}</h4>
-                <p className="releaseArtist">{release.artist}</p>
-                <p className="releaseYear">{release.year}</p>
-                <p className="releaseRole">{release.role}</p>
-                {release.format && (
-                  <p className="releaseFormat">{release.format}</p>
-                )}
-                {release.label && (
-                  <p className="releaseLabel">{release.label}</p>
-                )}
-              </div>
-              {release.stats && (
-                <div className="releaseStats">
-                  <span>Want: {release.stats.community.in_wantlist}</span>
-                  <span>Have: {release.stats.community.in_collection}</span>
-                </div>
-              )}
+        <div className="releasesTable">
+          <div className="tableHeader">
+            <div
+              className="headerCell yearHeader"
+              onClick={() => handleSort("year")}
+            >
+              Year{" "}
+              {sortField === "year" && (sortDirection === "asc" ? "↑" : "↓")}
             </div>
-          ))}
+            <div
+              className="headerCell titleHeader"
+              onClick={() => handleSort("title")}
+            >
+              Title{" "}
+              {sortField === "title" && (sortDirection === "asc" ? "↑" : "↓")}
+            </div>
+            <div
+              className="headerCell roleHeader"
+              onClick={() => handleSort("role")}
+            >
+              Role{" "}
+              {sortField === "role" && (sortDirection === "asc" ? "↑" : "↓")}
+            </div>
+          </div>
+          <div className="tableBody">
+            {sortedReleases?.map((release, index) => (
+              <div
+                key={index}
+                className={`tableRow ${index % 2 === 0 ? "even" : "odd"}`}
+              >
+                <div className="tableCell yearCell">
+                  {release.year || "Unknown"}
+                </div>
+                <div className="tableCell titleCell">{release.title}</div>
+                <div className="tableCell roleCell">
+                  {(() => {
+                    const cleanedRole = cleanRole(release.role);
+                    logRoleData(release.role, cleanedRole, "contributor_page");
+                    return cleanedRole;
+                  })()}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

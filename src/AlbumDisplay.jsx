@@ -69,7 +69,7 @@ const AlbumDisplay = ({ album, onBack, searchQuery, onContributorClick }) => {
         <ol>
           {albumDetails.tracklist?.map((track, index) => (
             <TrackDisplay
-              track={track}
+              track={{ ...track, index }}
               key={index}
               onContributorClick={onContributorClick}
               albumName={albumDetails.title}

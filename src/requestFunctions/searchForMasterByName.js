@@ -1,24 +1,33 @@
 import stringToQuery from "../stringToQuery";
+import { logFetchResponse } from "../utils/responseLogger";
 const consumerKey = import.meta.env.VITE_DISCOGS_CONSUMER_KEY;
 const consumerSecret = import.meta.env.VITE_DISCOGS_CONSUMER_SECRET;
 
 const searchForMasterByName = async (query) => {
-    try {
-        let req = await fetch(`https://api.discogs.com/database/search?q=${stringToQuery(query)}&type=master&key=${consumerKey}&secret=${consumerSecret}`, {
-            headers: {
-                'User-Agent': 'YourCustomUserAgent/1.0 +http://yourwebsite.com',
-            },
-        });
-        let res = await req.json();
+  try {
+    let req = await fetch(
+      `https://api.discogs.com/database/search?q=${stringToQuery(
+        query
+      )}&type=master&key=${consumerKey}&secret=${consumerSecret}`,
+      {
+        headers: {
+          "User-Agent": "YourCustomUserAgent/1.0 +http://yourwebsite.com",
+        },
+      }
+    );
+    let res = await req.json();
 
-        console.log("Search results: ")
-        console.log(res);
+    console.log("Search results: ");
+    console.log(res);
 
-        return res
-    } catch (error) {
-        console.error('Error fetching search by title:', error);
-        throw error;
-    }
-}
+    // Log the response for analysis
+    logFetchResponse("/database/search", res, "search_results");
 
-export { searchForMasterByName }
+    return res;
+  } catch (error) {
+    console.error("Error fetching search by title:", error);
+    throw error;
+  }
+};
+
+export { searchForMasterByName };
