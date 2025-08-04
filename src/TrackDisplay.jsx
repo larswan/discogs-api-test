@@ -62,11 +62,10 @@ const TrackDisplay = ({ track }) => {
       className={hasExtraArtists ? "hasExtraArtists" : ""}
     >
       <div className="trackHeader">
+        <span className="trackPosition">{track.position}</span>
+
         <div className="trackInfo">
           <span className="trackTitle">{track.title}</span>
-          {track.duration && (
-            <span className="trackDuration">({track.duration})</span>
-          )}
         </div>
 
         {hasExtraArtists && (

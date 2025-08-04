@@ -1,3 +1,5 @@
+@use "sass:color";
+
 // Light mode variables (default)
 $primaryColor: #ffffff;
 $secondaryColor: #333333;
@@ -383,22 +385,23 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
         .trackHeader {
           display: flex;
           align-items: center;
-          justify-content: space-between;
           width: 100%;
+          gap: 0.75rem;
+
+          .trackPosition {
+            font-weight: bold;
+            color: $textSecondaryColor;
+            min-width: 2rem;
+            text-align: center;
+          }
 
           .trackInfo {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
             flex: 1;
 
             .trackTitle {
               font-weight: bold;
-            }
-
-            .trackDuration {
-              color: $textSecondaryColor;
-              font-size: 0.9rem;
             }
           }
 
@@ -437,6 +440,7 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
             font-size: 1.2rem;
             transition: transform 0.3s ease;
             color: $textSecondaryColor;
+            margin-left: auto;
 
             &.expanded {
               transform: rotate(180deg);
@@ -526,7 +530,7 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
       }
 
       .trackHeader {
-        .trackInfo .trackDuration {
+        .trackPosition {
           color: $textSecondaryColorDark;
         }
 
