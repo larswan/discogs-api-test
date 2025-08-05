@@ -2,7 +2,13 @@ import { useState, useEffect, useMemo } from "react";
 import { cleanRole } from "./utils/roleCleaner";
 import { logFetchResponse } from "./utils/responseLogger";
 
-const PersonDisplay = ({ contributor, onBack, albumName, role }) => {
+const PersonDisplay = ({
+  contributor,
+  onBack,
+  albumName,
+  role,
+  onReleaseSelect,
+}) => {
   const [contributorData, setContributorData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [sortField, setSortField] = useState("year");
@@ -138,7 +144,10 @@ const PersonDisplay = ({ contributor, onBack, albumName, role }) => {
             {sortedReleases?.map((release, index) => (
               <div
                 key={index}
-                className={`tableRow ${index % 2 === 0 ? "even" : "odd"}`}
+                className={`tableRow ${index % 2 === 0 ? "even" : "odd"} ${
+                  onReleaseSelect ? "clickable" : ""
+                }`}
+                onClick={() => onReleaseSelect && onReleaseSelect(release)}
               >
                 <div className="tableCell yearCell">
                   {release.year || "Unknown"}

@@ -11,6 +11,21 @@ function App() {
   const [showSearchResults, setShowSearchResults] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
 
+  const handleReleaseSelectFromPerson = (release) => {
+    // Create album data structure for the selected release
+    const albumData = {
+      id: release.id,
+      title: release.title,
+      cover_image: release.thumb || "",
+      year: release.year || "",
+      type: release.type || "release",
+      master_id: release.id, // For master releases, use the id as master_id
+    };
+
+    setSelectedAlbum(albumData);
+    setSelectedContributor(null);
+  };
+
   return (
     <div className="app">
       <ThemeToggle />
@@ -87,6 +102,7 @@ function App() {
           onBack={() => {
             setSelectedContributor(null);
           }}
+          onReleaseSelect={handleReleaseSelectFromPerson}
         />
       )}
     </div>

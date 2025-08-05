@@ -698,6 +698,15 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
             background-color: rgba(0, 0, 0, 0.05);
           }
 
+          &.clickable {
+            cursor: pointer;
+
+            &:hover {
+              background-color: rgba($primaryColor, 0.1);
+              transform: translateX(2px);
+            }
+          }
+
           &.even {
             background-color: rgba(0, 0, 0, 0.02);
           }
