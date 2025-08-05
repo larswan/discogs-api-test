@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
-import { cleanRole, logRoleData } from "./utils/roleCleaner";
+import { cleanRole } from "./utils/roleCleaner";
 import { logFetchResponse } from "./utils/responseLogger";
 
 const PersonDisplay = ({ contributor, onBack, albumName, role }) => {
@@ -50,7 +50,12 @@ const PersonDisplay = ({ contributor, onBack, albumName, role }) => {
   const sortedReleases = useMemo(() => {
     if (!contributorData?.releases) return [];
 
-    return [...contributorData.releases].sort((a, b) => {
+    // Filter to only show master releases
+    const masterReleases = contributorData.releases.filter(
+      (release) => release.type === "master"
+    );
+
+    return [...masterReleases].sort((a, b) => {
       let aValue = a[sortField];
       let bValue = b[sortField];
 
@@ -100,7 +105,7 @@ const PersonDisplay = ({ contributor, onBack, albumName, role }) => {
           <p>
             {cleanRole(role)} on "{albumName}"
           </p>
-          <p>Discography ({contributorData.pagination?.items || 0} releases)</p>
+          <p>Discography ({sortedReleases.length} master releases)</p>
         </div>
       </div>
 
@@ -141,11 +146,7 @@ const PersonDisplay = ({ contributor, onBack, albumName, role }) => {
                 </div>
                 <div className="tableCell titleCell">{release.title}</div>
                 <div className="tableCell roleCell">
-                  {(() => {
-                    const cleanedRole = cleanRole(release.role);
-                    logRoleData(release.role, cleanedRole, "contributor_page");
-                    return cleanedRole;
-                  })()}
+                  {cleanRole(release.role)}
                 </div>
               </div>
             ))}
