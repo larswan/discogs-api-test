@@ -578,8 +578,8 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
   }
 }
 
-// Contributor Display Styles
-.contributorDisplay {
+// Person Display Styles
+.personDisplay {
   flex: 1;
   padding: 1rem;
   max-width: 1200px;
@@ -737,7 +737,7 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
   }
 }
 
-.dark-mode .contributorDisplay {
+.dark-mode .personDisplay {
   .loading,
   .error {
     color: $textColorDark;

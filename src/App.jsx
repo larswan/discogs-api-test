@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import SearchBar from "./SearchBar";
 import AlbumDisplay from "./AlbumDisplay";
-import ContributorDisplay from "./ContributorDisplay";
+import PersonDisplay from "./PersonDisplay";
 import ThemeToggle from "./ThemeToggle";
 
 function App() {
@@ -80,7 +80,7 @@ function App() {
       )}
 
       {selectedContributor && (
-        <ContributorDisplay
+        <PersonDisplay
           contributor={selectedContributor.contributor}
           albumName={selectedContributor.albumName}
           role={selectedContributor.role}

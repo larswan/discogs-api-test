@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 import { cleanRole, logRoleData } from "./utils/roleCleaner";
 import { logFetchResponse } from "./utils/responseLogger";
 
-const ContributorDisplay = ({ contributor, onBack, albumName, role }) => {
+const PersonDisplay = ({ contributor, onBack, albumName, role }) => {
   const [contributorData, setContributorData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [sortField, setSortField] = useState("year");
@@ -75,22 +75,22 @@ const ContributorDisplay = ({ contributor, onBack, albumName, role }) => {
 
   if (loading) {
     return (
-      <div className="contributorDisplay">
-        <div className="loading">Loading contributor information...</div>
+      <div className="personDisplay">
+        <div className="loading">Loading person information...</div>
       </div>
     );
   }
 
   if (!contributorData) {
     return (
-      <div className="contributorDisplay">
-        <div className="error">Could not load contributor information</div>
+      <div className="personDisplay">
+        <div className="error">Could not load person information</div>
       </div>
     );
   }
 
   return (
-    <div className="contributorDisplay">
+    <div className="personDisplay">
       <div className="contributorHeader">
         <button className="backButton" onClick={onBack}>
           ← Back to "{albumName}"
@@ -156,4 +156,4 @@ const ContributorDisplay = ({ contributor, onBack, albumName, role }) => {
   );
 };
 
-export default ContributorDisplay;
+export default PersonDisplay;
