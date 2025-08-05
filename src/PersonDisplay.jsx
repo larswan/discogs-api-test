@@ -17,13 +17,12 @@ const PersonDisplay = ({ contributor, onBack, albumName, role }) => {
             `https://api.discogs.com/artists/${contributor.id}/releases?sort=year&sort_order=desc&per_page=50`
           );
           const data = await response.json();
-          console.log("Full contributor response:", data);
 
           // Log the response for analysis
           logFetchResponse(
             `/artists/${contributor.id}/releases`,
             data,
-            "contributor_page"
+            "person_page"
           );
 
           setContributorData(data);
