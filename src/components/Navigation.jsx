@@ -5,8 +5,6 @@ import "../index.scss";
 
 const Navigation = ({
   setSearchResults,
-  setShowSearchResults,
-  showSearchResults,
   setSearchQuery,
   onHistoryClick,
   onAccountClick,
@@ -26,11 +24,9 @@ const Navigation = ({
         );
         const data = await response.json();
         setSearchResults(data.results || []);
-        setShowSearchResults(true);
       } catch (error) {
         console.error("Error searching:", error);
         setSearchResults([]);
-        setShowSearchResults(true);
       }
     }
   };

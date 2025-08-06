@@ -2,13 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 import { cleanRole } from "./utils/roleCleaner";
 import { logFetchResponse } from "./utils/responseLogger";
 
-const PersonDisplay = ({
-  contributor,
-  onBack,
-  albumName,
-  role,
-  onReleaseSelect,
-}) => {
+const PersonDisplay = ({ contributor, albumName, role, onReleaseSelect }) => {
   const [contributorData, setContributorData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [sortField, setSortField] = useState("year");
@@ -102,9 +96,6 @@ const PersonDisplay = ({
   return (
     <div className="personDisplay">
       <div className="contributorHeader">
-        <button className="backButton" onClick={onBack}>
-          ← Back to "{albumName}"
-        </button>
         <div className="contributorInfo">
           <h1>{contributor.name}</h1>
           <p>
