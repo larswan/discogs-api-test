@@ -26,9 +26,11 @@ const ThemeToggle = () => {
   };
 
   return (
-    <button className="themeToggle" onClick={toggleTheme}>
-      {isDarkMode ? "☀️" : "🌙"}
-    </button>
+    <button
+      className={`themeToggle ${isDarkMode ? "dark-mode" : ""}`}
+      onClick={toggleTheme}
+      aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
+    />
   );
 };
 
