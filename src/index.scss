@@ -64,9 +64,9 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
 
 // Theme Toggle - Material UI Switch Style
 .themeToggle {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
   width: 42px;
   height: 26px;
   padding: 0;
@@ -135,12 +135,128 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
   }
 }
 
-// Search Bar Styles
-.searchBar {
-  padding: 10px 25px 10px 60px; // Added left padding to make room for theme toggle
+// Navigation Styles
+.navigation {
   background-color: $primaryColor;
   border-bottom: 1px solid $borderColor;
+  padding: 0;
   position: relative;
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 25px;
+  height: 60px;
+}
+
+.navLeft {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.navCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  max-width: 500px;
+  margin: 0 20px;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 0 0 auto;
+}
+
+.navIcon {
+  color: $secondaryColor;
+  transition: all 0.2s ease;
+  padding: 8px;
+  border-radius: 50%;
+  
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transform: scale(1.1);
+  }
+}
+
+.dark-mode .navIcon {
+  color: $secondaryColorDark;
+  
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+// Search Form Styles
+.searchForm {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.searchInput {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 2px solid $borderColor;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    border-color: $secondaryColor;
+  }
+}
+
+.searchButton {
+  padding: 8px 16px;
+  border: none;
+  color: $secondaryColor;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.dark-mode {
+  .searchInput {
+    background-color: $primaryColorDark;
+    color: $textColorDark;
+    border-color: $borderColorDark;
+
+    &:focus {
+      border-color: $secondaryColorDark;
+    }
+
+    &::placeholder {
+      color: $textSecondaryColorDark;
+    }
+  }
+
+  .searchButton {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $secondaryColorDark;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+  }
+}
 
   form {
     display: flex;
@@ -187,35 +303,6 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
     &:disabled {
       opacity: 0.6;
       cursor: not-allowed;
-    }
-  }
-}
-
-.dark-mode .searchBar {
-  background-color: $primaryColorDark;
-  border-bottom: 1px solid $borderColorDark;
-
-  .searchInput {
-    background-color: $primaryColorDark;
-    color: $textColorDark;
-    border-color: $borderColorDark;
-
-    &:focus {
-      border-color: $secondaryColorDark;
-    }
-
-    &::placeholder {
-      color: $textSecondaryColorDark;
-    }
-  }
-
-  .searchButton {
-    background-color: $secondaryColorDark;
-    color: $primaryColorDark;
-    border: 2px solid #f5f5f5;
-
-    &:hover:not(:disabled) {
-      background-color: color.adjust($secondaryColorDark, $lightness: 10%);
     }
   }
 }
@@ -868,11 +955,20 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
 
 // Responsive Design
 @media (max-width: 768px) {
-  .searchBar {
-    form {
-      flex-direction: column;
-      max-width: 300px;
-    }
+  .navContainer {
+    padding: 10px 15px;
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+  }
+
+  .navCenter {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .searchForm {
+    max-width: 300px;
   }
 
   .searchResultsHeader {

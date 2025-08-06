@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
-import SearchBar from "./SearchBar";
+import Navigation from "./components/Navigation";
 import AlbumDisplay from "./AlbumDisplay";
 import PersonDisplay from "./PersonDisplay";
-import ThemeToggle from "./ThemeToggle";
 
 function App() {
   const [selectedAlbum, setSelectedAlbum] = useState(null);
@@ -28,12 +27,13 @@ function App() {
 
   return (
     <div className="app">
-      <ThemeToggle />
-      <SearchBar
+      <Navigation
         setSearchResults={setSearchResults}
         setShowSearchResults={setShowSearchResults}
         showSearchResults={showSearchResults}
         setSearchQuery={setSearchQuery}
+        onHistoryClick={() => console.log("History clicked")}
+        onAccountClick={() => console.log("Account clicked")}
       />
 
       {showSearchResults && searchResults.length > 0 && (
