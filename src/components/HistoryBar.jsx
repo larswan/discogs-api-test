@@ -1,37 +1,64 @@
 import React from "react";
 
-const HistoryBar = ({ history, onBack, currentView }) => {
-  if (history.length === 0) {
+const HistoryBar = ({ history, onBack, onBreadcrumbClick, currentIndex }) => {
+  if (!history || history.length === 0) {
     return null;
   }
 
   const getBackButtonText = () => {
-    const lastItem = history[history.length - 1];
-    if (lastItem.type === "search") {
+    if (currentIndex <= 0 || !history || history.length === 0) {
+      return "← Back to search";
+    }
+
+    const previousItem = history[currentIndex - 1];
+    if (!previousItem || !previousItem.type) {
+      return "← Back to search";
+    }
+
+    if (previousItem.type === "search") {
       return `← Back to search results`;
-    } else if (lastItem.type === "album") {
-      return `← Back to "${lastItem.title}"`;
-    } else if (lastItem.type === "person") {
-      return `← Back to "${lastItem.albumName}"`;
+    } else if (previousItem.type === "album") {
+      return `← Back to "${previousItem.name || "album"}"`;
+    } else if (previousItem.type === "person") {
+      return `← Back to ${previousItem.name || "person"}`;
     }
     return "← Back";
   };
 
-  const getBreadcrumbText = () => {
-    if (history.length === 0) return "";
+  const renderBreadcrumbs = () => {
+    if (!history || history.length === 0) return null;
 
-    const breadcrumbs = history.map((item, index) => {
+    return history.map((item, index) => {
+      if (!item || !item.type) return null;
+
+      const isActive = index === currentIndex;
+      const isClickable = index < currentIndex;
+
+      let displayName = "";
       if (item.type === "search") {
-        return "Search Results";
+        displayName = "Search Results";
       } else if (item.type === "album") {
-        return item.title;
+        displayName = `"${item.name || "Album"}"`;
       } else if (item.type === "person") {
-        return item.contributor.name;
+        displayName = item.name || "Person";
       }
-      return "";
-    });
 
-    return breadcrumbs.join(" > ");
+      return (
+        <span key={item.id}>
+          <span
+            className={`breadcrumb-item ${isActive ? "active" : ""} ${
+              isClickable ? "clickable" : ""
+            }`}
+            onClick={isClickable ? () => onBreadcrumbClick(index) : undefined}
+          >
+            {displayName}
+          </span>
+          {index < history.length - 1 && (
+            <span className="breadcrumb-separator"> &gt; </span>
+          )}
+        </span>
+      );
+    });
   };
 
   return (
@@ -40,8 +67,8 @@ const HistoryBar = ({ history, onBack, currentView }) => {
         <button className="backButton" onClick={onBack}>
           {getBackButtonText()}
         </button>
-        {history.length > 1 && (
-          <div className="breadcrumbs">{getBreadcrumbText()}</div>
+        {history && history.length > 1 && (
+          <div className="breadcrumbs">{renderBreadcrumbs()}</div>
         )}
       </div>
     </div>

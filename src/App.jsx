@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Navigation from "./components/Navigation";
 import HistoryBar from "./components/HistoryBar";
 import ContentContainer from "./components/ContentContainer";
+import { historyManager, cacheManager } from "./utils/historyManager";
 
 function App() {
   const [selectedAlbum, setSelectedAlbum] = useState(null);
@@ -10,88 +11,208 @@ function App() {
   const [searchQuery, setSearchQuery] = useState("");
   const [currentView, setCurrentView] = useState("search");
   const [history, setHistory] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(-1);
 
   const handleReleaseSelectFromPerson = (release) => {
     // Create album data structure for the selected release
-    // Note: We don't set cover_image here because it will be fetched
-    // by the AlbumDisplay component using the master_id
     const albumData = {
       id: release.id,
       title: release.title,
       year: release.year || "",
       type: release.type || "release",
-      master_id: release.id, // For master releases, use the id as master_id
+      master_id: release.id,
     };
 
-    // Add to history
-    setHistory((prev) => [
-      ...prev,
-      { type: "album", title: albumData.title, album: albumData },
-    ]);
+    // Create history item
+    const historyItem = historyManager.createHistoryItem(
+      "album",
+      albumData.title,
+      { album: albumData },
+      { albumId: albumData.id, masterId: albumData.master_id }
+    );
+
+    // Add to history and cache
+    const newHistory = historyManager.addToHistory(history, historyItem);
+    const newIndex = newHistory.length - 1;
+
+    setHistory(newHistory);
+    setCurrentIndex(newIndex);
     setCurrentView("album");
     setSelectedAlbum(albumData);
     setSelectedContributor(null);
+
+    // Save to localStorage
+    historyManager.saveHistory(newHistory);
   };
 
   const handleContributorClick = (contributor) => {
-    // Add to history
-    setHistory((prev) => [
-      ...prev,
+    // Create history item
+    const historyItem = historyManager.createHistoryItem(
+      "person",
+      contributor.contributor.name,
+      { contributor: contributor },
       {
-        type: "person",
-        contributor: contributor.contributor,
+        contributorId: contributor.contributor.id,
         albumName: contributor.albumName,
         role: contributor.role,
-      },
-    ]);
+      }
+    );
+
+    // Add to history and cache
+    const newHistory = historyManager.addToHistory(history, historyItem);
+    const newIndex = newHistory.length - 1;
+
+    setHistory(newHistory);
+    setCurrentIndex(newIndex);
     setCurrentView("person");
     setSelectedContributor(contributor);
+
+    // Save to localStorage
+    historyManager.saveHistory(newHistory);
   };
 
   const handleAlbumSelect = (album) => {
-    // Add to history
-    setHistory((prev) => [
-      ...prev,
-      { type: "album", title: album.title, album: album },
-    ]);
+    // Create history item
+    const historyItem = historyManager.createHistoryItem(
+      "album",
+      album.title,
+      { album: album },
+      { albumId: album.id, masterId: album.master_id }
+    );
+
+    // Add to history and cache
+    const newHistory = historyManager.addToHistory(history, historyItem);
+    const newIndex = newHistory.length - 1;
+
+    setHistory(newHistory);
+    setCurrentIndex(newIndex);
     setCurrentView("album");
     setSelectedAlbum(album);
+
+    // Save to localStorage
+    historyManager.saveHistory(newHistory);
   };
 
   const handleBack = () => {
-    if (history.length > 0) {
-      const newHistory = [...history];
-      const lastItem = newHistory.pop();
-
-      if (lastItem.type === "album") {
-        // Going back from album to search or person
-        if (newHistory.length === 0) {
-          setCurrentView("search");
-          setSelectedAlbum(null);
-        } else {
-          const previousItem = newHistory[newHistory.length - 1];
-          if (previousItem.type === "person") {
-            setCurrentView("person");
-            setSelectedContributor({
-              contributor: previousItem.contributor,
-              albumName: previousItem.albumName,
-              role: previousItem.role,
-            });
-            setSelectedAlbum(null);
-          } else {
-            setCurrentView("search");
-            setSelectedAlbum(null);
-          }
-        }
-      } else if (lastItem.type === "person") {
-        // Going back from person to album
-        setCurrentView("album");
-        setSelectedContributor(null);
-      }
+    if (currentIndex > 0) {
+      const newIndex = currentIndex - 1;
+      const { history: newHistory, currentIndex: updatedIndex } =
+        historyManager.navigateToIndex(history, newIndex);
 
       setHistory(newHistory);
+      setCurrentIndex(updatedIndex);
+
+      // Restore state from history
+      const currentItem = newHistory[updatedIndex];
+      if (currentItem) {
+        if (currentItem.type === "search") {
+          setCurrentView("search");
+          setSelectedAlbum(null);
+          setSelectedContributor(null);
+          if (currentItem.data.searchResults) {
+            setSearchResults(currentItem.data.searchResults);
+          }
+          if (currentItem.metadata.searchQuery) {
+            setSearchQuery(currentItem.metadata.searchQuery);
+          }
+        } else if (currentItem.type === "album") {
+          setCurrentView("album");
+          setSelectedAlbum(currentItem.data.album);
+          setSelectedContributor(null);
+        } else if (currentItem.type === "person") {
+          setCurrentView("person");
+          setSelectedContributor(currentItem.data.contributor);
+          setSelectedAlbum(null);
+        }
+      }
+
+      // Save to localStorage
+      historyManager.saveHistory(newHistory);
     }
   };
+
+  const handleBreadcrumbClick = (index) => {
+    const { history: newHistory, currentIndex: updatedIndex } =
+      historyManager.navigateToIndex(history, index);
+
+    setHistory(newHistory);
+    setCurrentIndex(updatedIndex);
+
+    // Restore state from history
+    const currentItem = newHistory[updatedIndex];
+    if (currentItem) {
+      if (currentItem.type === "search") {
+        setCurrentView("search");
+        setSelectedAlbum(null);
+        setSelectedContributor(null);
+        if (currentItem.data.searchResults) {
+          setSearchResults(currentItem.data.searchResults);
+        }
+        if (currentItem.metadata.searchQuery) {
+          setSearchQuery(currentItem.metadata.searchQuery);
+        }
+      } else if (currentItem.type === "album") {
+        setCurrentView("album");
+        setSelectedAlbum(currentItem.data.album);
+        setSelectedContributor(null);
+      } else if (currentItem.type === "person") {
+        setCurrentView("person");
+        setSelectedContributor(currentItem.data.contributor);
+        setSelectedAlbum(null);
+      }
+    }
+
+    // Save to localStorage
+    historyManager.saveHistory(newHistory);
+  };
+
+  const handleSearchComplete = (query, results) => {
+    // Create history item for search
+    const historyItem = historyManager.createHistoryItem(
+      "search",
+      `Search: ${query}`,
+      { searchResults: results },
+      { searchQuery: query }
+    );
+
+    // Clear existing history and start fresh with the new search
+    const newHistory = [historyItem];
+    const newIndex = 0;
+
+    setHistory(newHistory);
+    setCurrentIndex(newIndex);
+    setCurrentView("search");
+
+    // Save to localStorage
+    historyManager.saveHistory(newHistory);
+  };
+
+  // Load history from localStorage on app start
+  useEffect(() => {
+    const savedHistory = historyManager.loadHistory();
+    if (savedHistory.length > 0) {
+      setHistory(savedHistory);
+      setCurrentIndex(savedHistory.length - 1);
+
+      // Restore the last state
+      const lastItem = savedHistory[savedHistory.length - 1];
+      if (lastItem.type === "search") {
+        setCurrentView("search");
+        if (lastItem.data.searchResults) {
+          setSearchResults(lastItem.data.searchResults);
+        }
+        if (lastItem.metadata.searchQuery) {
+          setSearchQuery(lastItem.metadata.searchQuery);
+        }
+      } else if (lastItem.type === "album") {
+        setCurrentView("album");
+        setSelectedAlbum(lastItem.data.album);
+      } else if (lastItem.type === "person") {
+        setCurrentView("person");
+        setSelectedContributor(lastItem.data.contributor);
+      }
+    }
+  }, []);
 
   // Listen for album selection events from search results
   useEffect(() => {
@@ -111,12 +232,14 @@ function App() {
         setSearchQuery={setSearchQuery}
         onHistoryClick={() => console.log("History clicked")}
         onAccountClick={() => console.log("Account clicked")}
+        onSearchComplete={handleSearchComplete}
       />
 
       <HistoryBar
         history={history}
         onBack={handleBack}
-        currentView={currentView}
+        onBreadcrumbClick={handleBreadcrumbClick}
+        currentIndex={currentIndex}
       />
 
       <ContentContainer

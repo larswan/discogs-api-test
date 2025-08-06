@@ -8,6 +8,7 @@ const Navigation = ({
   setSearchQuery,
   onHistoryClick,
   onAccountClick,
+  onSearchComplete,
 }) => {
   const handleSearch = async (e) => {
     e.preventDefault();
@@ -23,7 +24,13 @@ const Navigation = ({
           )}&type=master&key=cRAzvcfLMUBYtnXcAhSu&secret=unCJcRgqBuLQVDGiYlOfJhkgPGzQUblO`
         );
         const data = await response.json();
-        setSearchResults(data.results || []);
+        const results = data.results || [];
+        setSearchResults(results);
+
+        // Notify parent component about search completion
+        if (onSearchComplete) {
+          onSearchComplete(query, results);
+        }
       } catch (error) {
         console.error("Error searching:", error);
         setSearchResults([]);
