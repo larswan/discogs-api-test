@@ -12,6 +12,25 @@ const AlbumDisplay = ({ album, onBack, searchQuery, onContributorClick }) => {
         try {
           setLoading(true);
           const details = await queryByMasterId(album.master_id);
+
+          // Try to get cover image from main release if available
+          if (details.main_release && !details.images?.[0]?.uri) {
+            try {
+              const mainReleaseResponse = await fetch(
+                `https://api.discogs.com/releases/${details.main_release}`
+              );
+              const mainReleaseData = await mainReleaseResponse.json();
+              if (mainReleaseData.images?.[0]?.uri) {
+                details.cover_image = mainReleaseData.images[0].uri;
+              }
+            } catch (error) {
+              console.error(
+                "Error fetching main release for cover image:",
+                error
+              );
+            }
+          }
+
           setAlbumDetails(details);
         } catch (error) {
           console.error("Error fetching album details:", error);
@@ -52,7 +71,12 @@ const AlbumDisplay = ({ album, onBack, searchQuery, onContributorClick }) => {
         </button>
         <div className="albumInfo">
           <img
-            src={album.cover_image}
+            src={
+              albumDetails.cover_image ||
+              albumDetails.images?.[0]?.uri ||
+              album.cover_image ||
+              ""
+            }
             alt={albumDetails.title}
             className="albumCover"
           />

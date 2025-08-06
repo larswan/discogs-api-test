@@ -12,10 +12,11 @@ function App() {
 
   const handleReleaseSelectFromPerson = (release) => {
     // Create album data structure for the selected release
+    // Note: We don't set cover_image here because it will be fetched
+    // by the AlbumDisplay component using the master_id
     const albumData = {
       id: release.id,
       title: release.title,
-      cover_image: release.thumb || "",
       year: release.year || "",
       type: release.type || "release",
       master_id: release.id, // For master releases, use the id as master_id
