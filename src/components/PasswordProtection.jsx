@@ -11,12 +11,12 @@ const PasswordProtection = ({ onAuthenticated, children }) => {
   useEffect(() => {
     const authStatus = sessionStorage.getItem("app_authenticated");
     const authTime = sessionStorage.getItem("app_auth_time");
-    
+
     // Check if authentication is still valid (24 hours)
     if (authStatus === "true" && authTime) {
       const timeDiff = Date.now() - parseInt(authTime);
       const hoursDiff = timeDiff / (1000 * 60 * 60);
-      
+
       if (hoursDiff < 24) {
         setIsAuthenticated(true);
         if (onAuthenticated) onAuthenticated(true);
@@ -26,7 +26,7 @@ const PasswordProtection = ({ onAuthenticated, children }) => {
         sessionStorage.removeItem("app_auth_time");
       }
     }
-    
+
     setIsChecking(false);
   }, [onAuthenticated]);
 
@@ -36,12 +36,27 @@ const PasswordProtection = ({ onAuthenticated, children }) => {
 
     // Get password from environment variable (must be set in Vercel)
     const correctPassword = import.meta.env.VITE_APP_PASSWORD;
-    
-    if (!correctPassword) {
-      setError("Password protection not configured. Please set VITE_APP_PASSWORD.");
+    const isDevelopment = import.meta.env.DEV || window.location.hostname === 'localhost';
+
+    // In development, allow access without password (for local testing)
+    if (isDevelopment && !correctPassword) {
+      console.warn("Development mode: Password protection disabled. Set VITE_APP_PASSWORD for production.");
+      setIsAuthenticated(true);
+      sessionStorage.setItem("app_authenticated", "true");
+      sessionStorage.setItem("app_auth_time", Date.now().toString());
+      if (onAuthenticated) onAuthenticated(true);
       return;
     }
-    
+
+    // In production, require password
+    if (!correctPassword || correctPassword.trim() === "") {
+      setError(
+        "Password protection not configured. Please set VITE_APP_PASSWORD in Vercel environment variables and redeploy."
+      );
+      console.error("VITE_APP_PASSWORD is not set. Current value:", correctPassword);
+      return;
+    }
+
     if (password === correctPassword) {
       setIsAuthenticated(true);
       sessionStorage.setItem("app_authenticated", "true");
@@ -92,4 +107,3 @@ const PasswordProtection = ({ onAuthenticated, children }) => {
 };
 
 export default PasswordProtection;
-
