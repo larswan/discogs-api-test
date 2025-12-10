@@ -308,6 +308,45 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
     .searchResultInfo {
       text-align: left;
 
+      .albumTitleRow {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 0.25rem;
+
+        h3 {
+          font-size: 1rem;
+          margin: 0;
+          color: $textColor;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          flex: 1;
+        }
+
+        .wikipediaIndicator {
+          flex-shrink: 0;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 1.2rem;
+          height: 1.2rem;
+          background-color: #28a745;
+          color: white;
+          border-radius: 50%;
+          font-size: 0.75rem;
+          font-weight: bold;
+          text-decoration: none;
+          transition: all 0.2s ease;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #218838;
+            transform: scale(1.1);
+          }
+        }
+      }
+
       h3 {
         font-size: 1rem;
         margin: 0 0 0.25rem 0;
@@ -340,6 +379,20 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
     }
 
     .searchResultInfo {
+      .albumTitleRow {
+        h3 {
+          color: $textColorDark;
+        }
+
+        .wikipediaIndicator {
+          background-color: #2ecc71;
+
+          &:hover {
+            background-color: #27ae60;
+          }
+        }
+      }
+
       h3 {
         color: $textColorDark;
       }
@@ -348,6 +401,101 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
         color: $textSecondaryColorDark;
       }
     }
+  }
+}
+
+// Welcome Message Styles
+.welcomeMessage {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2rem;
+  text-align: center;
+  color: $textColor;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: $textColor;
+  }
+
+  .welcomeDescription {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: $textSecondaryColor;
+  }
+
+  .welcomeInstructions {
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem 0;
+    border: 1px solid $borderColor;
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: $textColor;
+      text-align: center;
+    }
+
+    ol {
+      padding-left: 1.5rem;
+      line-height: 2;
+
+      li {
+        margin-bottom: 0.75rem;
+        font-size: 1rem;
+        color: $textColor;
+
+        strong {
+          color: $textColor;
+        }
+      }
+    }
+  }
+
+  .welcomeFooter {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    color: $textSecondaryColor;
+    font-style: italic;
+  }
+}
+
+.dark-mode .welcomeMessage {
+  color: $textColorDark;
+
+  h1 {
+    color: $textColorDark;
+  }
+
+  .welcomeDescription {
+    color: $textSecondaryColorDark;
+  }
+
+  .welcomeInstructions {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid $borderColorDark;
+
+    h2 {
+      color: $textColorDark;
+    }
+
+    ol {
+      li {
+        color: $textColorDark;
+
+        strong {
+          color: $textColorDark;
+        }
+      }
+    }
+  }
+
+  .welcomeFooter {
+    color: $textSecondaryColorDark;
   }
 }
 
@@ -996,10 +1144,15 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
       border: none;
       color: $textColor;
       cursor: pointer;
-      font-size: 0.9rem;
+      font-size: 18px;
       padding: 0.5rem 0;
       text-decoration: none;
       transition: color 0.2s ease;
+      max-width: 300px;
+      text-align: left;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
 
       &:hover {
         color: $primaryColor;
@@ -1008,8 +1161,18 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
 
     .breadcrumbs {
       color: $textSecondaryColor;
-      font-size: 0.8rem;
+      font-size: 18px;
       font-style: italic;
+      flex: 1;
+      text-align: right;
+      overflow-x: auto;
+      white-space: nowrap;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* IE and Edge */
+
+      &::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+      }
 
       .breadcrumb-item {
         transition: color 0.2s ease;
@@ -1047,6 +1210,145 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
   width: 100%;
 }
 
+// Password Protection Styles
+.password-protection {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $backgroundColor;
+  padding: 2rem;
+
+  .password-form {
+    background-color: $primaryColor;
+    border: 1px solid $borderColor;
+    border-radius: 12px;
+    padding: 2.5rem;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+    h2 {
+      font-size: 1.8rem;
+      margin: 0 0 0.5rem 0;
+      color: $textColor;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $textSecondaryColor;
+      text-align: center;
+      margin: 0 0 1.5rem 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .password-input {
+      padding: 12px 16px;
+      font-size: 16px;
+      border: 2px solid $borderColor;
+      border-radius: 8px;
+      outline: none;
+      transition: border-color 0.3s ease;
+      background-color: $primaryColor;
+      color: $textColor;
+
+      &:focus {
+        border-color: $secondaryColor;
+      }
+
+      &::placeholder {
+        color: $textSecondaryColor;
+      }
+    }
+
+    .password-error {
+      color: #dc3545;
+      font-size: 0.9rem;
+      text-align: center;
+      margin-top: -0.5rem;
+    }
+
+    .password-submit {
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: 600;
+      color: $primaryColor;
+      background-color: $secondaryColor;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: color.adjust($secondaryColor, $lightness: -10%);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+    }
+
+    .loading {
+      text-align: center;
+      color: $textSecondaryColor;
+      font-size: 1rem;
+    }
+  }
+}
+
+.dark-mode .password-protection {
+  background-color: $backgroundColorDark;
+
+  .password-form {
+    background-color: $primaryColorDark;
+    border-color: $borderColorDark;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+    h2 {
+      color: $textColorDark;
+    }
+
+    p {
+      color: $textSecondaryColorDark;
+    }
+
+    .password-input {
+      background-color: $primaryColorDark;
+      color: $textColorDark;
+      border-color: $borderColorDark;
+
+      &:focus {
+        border-color: $secondaryColorDark;
+      }
+
+      &::placeholder {
+        color: $textSecondaryColorDark;
+      }
+    }
+
+    .password-submit {
+      color: $primaryColorDark;
+      background-color: $secondaryColorDark;
+
+      &:hover {
+        background-color: color.adjust($secondaryColorDark, $lightness: 10%);
+      }
+    }
+
+    .loading {
+      color: $textSecondaryColorDark;
+    }
+  }
+}
+
 // Dark mode styles for new components
 .dark-mode {
   .historyBar {
@@ -1056,6 +1358,7 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
     .historyContent {
       .backButton {
         color: $textColorDark;
+        font-size: 18px;
 
         &:hover {
           color: $primaryColorDark;
@@ -1064,6 +1367,7 @@ $textSecondaryColorDark: rgba(255, 255, 255, 0.7);
 
       .breadcrumbs {
         color: $textSecondaryColorDark;
+        font-size: 18px;
 
         .breadcrumb-item {
           &.active {

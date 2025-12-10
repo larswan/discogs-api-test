@@ -6,6 +6,10 @@ const HistoryBar = ({ history, onBack, onBreadcrumbClick, currentIndex }) => {
   }
 
   const getBackButtonText = () => {
+    if (currentIndex === 0) {
+      return "← Clear search";
+    }
+
     if (currentIndex <= 0 || !history || history.length === 0) {
       return "← Back to search";
     }

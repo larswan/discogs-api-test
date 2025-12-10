@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Navigation from "./components/Navigation";
 import HistoryBar from "./components/HistoryBar";
 import ContentContainer from "./components/ContentContainer";
+import PasswordProtection from "./components/PasswordProtection";
 import { historyManager, cacheManager } from "./utils/historyManager";
 
 function App() {
@@ -94,7 +95,19 @@ function App() {
   };
 
   const handleBack = () => {
-    if (currentIndex > 0) {
+    if (currentIndex === 0) {
+      // If we're at the search results, clear everything and go back to empty state
+      setHistory([]);
+      setCurrentIndex(-1);
+      setCurrentView("search");
+      setSelectedAlbum(null);
+      setSelectedContributor(null);
+      setSearchResults([]);
+      setSearchQuery("");
+
+      // Clear from localStorage
+      historyManager.saveHistory([]);
+    } else if (currentIndex > 0) {
       const newIndex = currentIndex - 1;
       const { history: newHistory, currentIndex: updatedIndex } =
         historyManager.navigateToIndex(history, newIndex);
@@ -226,32 +239,34 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
-      <Navigation
-        setSearchResults={setSearchResults}
-        setSearchQuery={setSearchQuery}
-        onHistoryClick={() => console.log("History clicked")}
-        onAccountClick={() => console.log("Account clicked")}
-        onSearchComplete={handleSearchComplete}
-      />
+    <PasswordProtection>
+      <div className="app">
+        <Navigation
+          setSearchResults={setSearchResults}
+          setSearchQuery={setSearchQuery}
+          onHistoryClick={() => console.log("History clicked")}
+          onAccountClick={() => console.log("Account clicked")}
+          onSearchComplete={handleSearchComplete}
+        />
 
-      <HistoryBar
-        history={history}
-        onBack={handleBack}
-        onBreadcrumbClick={handleBreadcrumbClick}
-        currentIndex={currentIndex}
-      />
+        <HistoryBar
+          history={history}
+          onBack={handleBack}
+          onBreadcrumbClick={handleBreadcrumbClick}
+          currentIndex={currentIndex}
+        />
 
-      <ContentContainer
-        currentView={currentView}
-        searchResults={searchResults}
-        selectedAlbum={selectedAlbum}
-        selectedContributor={selectedContributor}
-        searchQuery={searchQuery}
-        onContributorClick={handleContributorClick}
-        onReleaseSelectFromPerson={handleReleaseSelectFromPerson}
-      />
-    </div>
+        <ContentContainer
+          currentView={currentView}
+          searchResults={searchResults}
+          selectedAlbum={selectedAlbum}
+          selectedContributor={selectedContributor}
+          searchQuery={searchQuery}
+          onContributorClick={handleContributorClick}
+          onReleaseSelectFromPerson={handleReleaseSelectFromPerson}
+        />
+      </div>
+    </PasswordProtection>
   );
 }
 

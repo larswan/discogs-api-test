@@ -14,6 +14,44 @@ const ContentContainer = ({
   const renderContent = () => {
     switch (currentView) {
       case "search":
+        // Show welcome message when no query is entered
+        if (!searchQuery && searchResults.length === 0) {
+          return (
+            <div className="welcomeMessage">
+              <h1>Welcome to Discogs Explorer</h1>
+              <p className="welcomeDescription">
+                Discover and explore music albums from the Discogs database.
+                Search for any album to view its details, contributors, and
+                related releases.
+              </p>
+              <div className="welcomeInstructions">
+                <h2>How to use:</h2>
+                <ol>
+                  <li>
+                    <strong>Search for albums</strong> using the search bar at
+                    the top
+                  </li>
+                  <li>
+                    <strong>Click on any album</strong> to view detailed
+                    information including tracks and contributors
+                  </li>
+                  <li>
+                    <strong>Explore contributors</strong> by clicking on
+                    musicians, writers, or producers to see their other work
+                  </li>
+                  <li>
+                    <strong>Navigate your history</strong> using the breadcrumb
+                    trail at the top to go back to any previous view
+                  </li>
+                </ol>
+              </div>
+              <p className="welcomeFooter">
+                Start by searching for an album above to begin exploring!
+              </p>
+            </div>
+          );
+        }
+
         return (
           <>
             <div className="searchResultsHeader">
@@ -51,7 +89,21 @@ const ContentContainer = ({
                           : result.title;
                       return (
                         <>
-                          <h3>{albumTitle}</h3>
+                          <div className="albumTitleRow">
+                            <h3>{albumTitle}</h3>
+                            {result.wikipedia?.hasArticle && (
+                              <a
+                                href={result.wikipedia.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="wikipediaIndicator"
+                                onClick={(e) => e.stopPropagation()}
+                                title={`Wikipedia: ${result.wikipedia.title}`}
+                              >
+                                ✓
+                              </a>
+                            )}
+                          </div>
                           <p>{artistName}</p>
                           <p>{result.year}</p>
                         </>
