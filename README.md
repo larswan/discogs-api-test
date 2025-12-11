@@ -150,3 +150,13 @@ year: num,
 GET /artists/{artist_id}/releases{?sort,sort_order}
 
 [Example Thundercat Releases Ascending by Year](https://api.discogs.com/artists/1800656/releases?sort=year&sort_order=asc`;)
+
+## Local Development
+
+1. `npm install`
+2. `npm run dev`
+3. Open the URL printed by Vite (usually http://localhost:5173).
+
+## Preview Deployments
+
+Every push to GitHub spins up a Vercel preview deployment for the matching branch. Watch the GitHub checks on your pull request or branch to grab the unique preview URL that Vercel posts once the build finishes. This keeps feature work (like the `test` branch) isolated until it is ready for main.
