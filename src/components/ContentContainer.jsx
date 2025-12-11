@@ -10,6 +10,10 @@ const ContentContainer = ({
   searchQuery,
   onContributorClick,
   onReleaseSelectFromPerson,
+  albumDetailsCache,
+  contributorDataCache,
+  onAlbumDetailsFetched,
+  onContributorDataFetched,
 }) => {
   const renderContent = () => {
     switch (currentView) {
@@ -18,7 +22,7 @@ const ContentContainer = ({
         if (!searchQuery && searchResults.length === 0) {
           return (
             <div className="welcomeMessage">
-              <h1>Welcome to Discogs Explorer</h1>
+              <h1>Find Music by Musicians You Love</h1>
               <p className="welcomeDescription">
                 Discover and explore music albums from the Discogs database.
                 Search for any album to view its details, contributors, and
@@ -122,6 +126,8 @@ const ContentContainer = ({
             album={selectedAlbum}
             searchQuery={searchQuery}
             onContributorClick={onContributorClick}
+            cachedDetails={albumDetailsCache}
+            onDetailsFetched={onAlbumDetailsFetched}
           />
         );
 
@@ -132,6 +138,8 @@ const ContentContainer = ({
             albumName={selectedContributor.albumName}
             role={selectedContributor.role}
             onReleaseSelect={onReleaseSelectFromPerson}
+            cachedData={contributorDataCache}
+            onDataFetched={onContributorDataFetched}
           />
         );
 

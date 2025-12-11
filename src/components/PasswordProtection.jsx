@@ -36,11 +36,14 @@ const PasswordProtection = ({ onAuthenticated, children }) => {
 
     // Get password from environment variable (must be set in Vercel)
     const correctPassword = import.meta.env.VITE_APP_PASSWORD;
-    const isDevelopment = import.meta.env.DEV || window.location.hostname === 'localhost';
+    const isDevelopment =
+      import.meta.env.DEV || window.location.hostname === "localhost";
 
     // In development, allow access without password (for local testing)
     if (isDevelopment && !correctPassword) {
-      console.warn("Development mode: Password protection disabled. Set VITE_APP_PASSWORD for production.");
+      console.warn(
+        "Development mode: Password protection disabled. Set VITE_APP_PASSWORD for production."
+      );
       setIsAuthenticated(true);
       sessionStorage.setItem("app_authenticated", "true");
       sessionStorage.setItem("app_auth_time", Date.now().toString());
@@ -53,7 +56,10 @@ const PasswordProtection = ({ onAuthenticated, children }) => {
       setError(
         "Password protection not configured. Please set VITE_APP_PASSWORD in Vercel environment variables and redeploy."
       );
-      console.error("VITE_APP_PASSWORD is not set. Current value:", correctPassword);
+      console.error(
+        "VITE_APP_PASSWORD is not set. Current value:",
+        correctPassword
+      );
       return;
     }
 

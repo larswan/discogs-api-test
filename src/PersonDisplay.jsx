@@ -2,13 +2,28 @@ import { useState, useEffect, useMemo } from "react";
 import { cleanRole } from "./utils/roleCleaner";
 import { logFetchResponse } from "./utils/responseLogger";
 
-const PersonDisplay = ({ contributor, albumName, role, onReleaseSelect }) => {
-  const [contributorData, setContributorData] = useState(null);
-  const [loading, setLoading] = useState(true);
+const PersonDisplay = ({
+  contributor,
+  albumName,
+  role,
+  onReleaseSelect,
+  cachedData,
+  onDataFetched,
+}) => {
+  const [contributorData, setContributorData] = useState(cachedData || null);
+  const [loading, setLoading] = useState(!cachedData);
   const [sortField, setSortField] = useState("year");
   const [sortDirection, setSortDirection] = useState("desc");
 
   useEffect(() => {
+    // If we have cached data, use it
+    if (cachedData) {
+      setContributorData(cachedData);
+      setLoading(false);
+      return;
+    }
+
+    // Otherwise, fetch the data
     const fetchContributorData = async () => {
       if (contributor.id) {
         try {
@@ -26,6 +41,10 @@ const PersonDisplay = ({ contributor, albumName, role, onReleaseSelect }) => {
           );
 
           setContributorData(data);
+          // Notify parent to cache the fetched data
+          if (onDataFetched) {
+            onDataFetched(data);
+          }
         } catch (error) {
           console.error("Error fetching contributor data:", error);
         } finally {
@@ -35,7 +54,7 @@ const PersonDisplay = ({ contributor, albumName, role, onReleaseSelect }) => {
     };
 
     fetchContributorData();
-  }, [contributor]);
+  }, [contributor, cachedData, onDataFetched]);
 
   const handleSort = (field) => {
     if (sortField === field) {

@@ -2,11 +2,25 @@ import { useState, useEffect } from "react";
 import TrackDisplay from "./TrackDisplay";
 import { queryByMasterId } from "./requestFunctions/queryByMasterId";
 
-const AlbumDisplay = ({ album, searchQuery, onContributorClick }) => {
-  const [albumDetails, setAlbumDetails] = useState(null);
-  const [loading, setLoading] = useState(true);
+const AlbumDisplay = ({
+  album,
+  searchQuery,
+  onContributorClick,
+  cachedDetails,
+  onDetailsFetched,
+}) => {
+  const [albumDetails, setAlbumDetails] = useState(cachedDetails || null);
+  const [loading, setLoading] = useState(!cachedDetails);
 
   useEffect(() => {
+    // If we have cached details, use them
+    if (cachedDetails) {
+      setAlbumDetails(cachedDetails);
+      setLoading(false);
+      return;
+    }
+
+    // Otherwise, fetch the details
     const fetchAlbumDetails = async () => {
       if (album.master_id) {
         try {
@@ -32,6 +46,10 @@ const AlbumDisplay = ({ album, searchQuery, onContributorClick }) => {
           }
 
           setAlbumDetails(details);
+          // Notify parent to cache the fetched details
+          if (onDetailsFetched) {
+            onDetailsFetched(details);
+          }
         } catch (error) {
           console.error("Error fetching album details:", error);
         } finally {
@@ -41,7 +59,7 @@ const AlbumDisplay = ({ album, searchQuery, onContributorClick }) => {
     };
 
     fetchAlbumDetails();
-  }, [album]);
+  }, [album, cachedDetails, onDetailsFetched]);
 
   if (loading) {
     return (
