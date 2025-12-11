@@ -202,9 +202,9 @@ function App() {
       // Get cached data from browser history if available
       const browserState = getStateFromHistory();
       const cachedData = browserState?.cachedData || {};
-      
+
       restoreStateFromItem(currentItem, cachedData);
-      
+
       // Update browser history to match
       if (currentItem.type === "search") {
         replaceHistoryState(
@@ -217,7 +217,10 @@ function App() {
         replaceHistoryState(
           "album",
           { album: currentItem.data.album },
-          { albumId: currentItem.metadata.albumId, masterId: currentItem.metadata.masterId },
+          {
+            albumId: currentItem.metadata.albumId,
+            masterId: currentItem.metadata.masterId,
+          },
           cachedData
         );
       } else if (currentItem.type === "person") {
@@ -301,10 +304,10 @@ function App() {
   // Handlers for caching fetched data
   const handleAlbumDetailsFetched = (albumDetails) => {
     setAlbumDetailsCache(albumDetails);
-    // Update browser history state with cached data
+    // Update browser history state with cached data (replace, don't push to avoid breaking forward nav)
     const currentState = getStateFromHistory();
     if (currentState && currentState.type === "album") {
-      pushHistoryState(
+      replaceHistoryState(
         currentState.type,
         currentState.data,
         currentState.metadata,
@@ -315,10 +318,10 @@ function App() {
 
   const handleContributorDataFetched = (contributorData) => {
     setContributorDataCache(contributorData);
-    // Update browser history state with cached data
+    // Update browser history state with cached data (replace, don't push to avoid breaking forward nav)
     const currentState = getStateFromHistory();
     if (currentState && currentState.type === "person") {
-      pushHistoryState(
+      replaceHistoryState(
         currentState.type,
         currentState.data,
         currentState.metadata,
@@ -350,7 +353,10 @@ function App() {
         replaceHistoryState(
           "album",
           { album: lastItem.data.album },
-          { albumId: lastItem.metadata.albumId, masterId: lastItem.metadata.masterId },
+          {
+            albumId: lastItem.metadata.albumId,
+            masterId: lastItem.metadata.masterId,
+          },
           {}
         );
       } else if (lastItem.type === "person") {
@@ -377,7 +383,7 @@ function App() {
       if (event.state) {
         // Restore state from browser history
         const { type, data, metadata, cachedData } = event.state;
-        
+
         // Find matching item in internal history or create one
         let matchingItem = null;
         if (type === "search") {
@@ -390,7 +396,10 @@ function App() {
           matchingItem = {
             type: "album",
             data: { album: data.album },
-            metadata: { albumId: metadata.albumId, masterId: metadata.masterId },
+            metadata: {
+              albumId: metadata.albumId,
+              masterId: metadata.masterId,
+            },
           };
         } else if (type === "person") {
           matchingItem = {
@@ -406,7 +415,7 @@ function App() {
 
         if (matchingItem) {
           restoreStateFromItem(matchingItem, cachedData || {});
-          
+
           // Update internal history to match browser history
           // Find the index in internal history or add it
           const currentHistory = historyRef.current;
@@ -414,11 +423,13 @@ function App() {
             (item) =>
               item.type === matchingItem.type &&
               ((item.type === "search" &&
-                item.metadata.searchQuery === matchingItem.metadata.searchQuery) ||
+                item.metadata.searchQuery ===
+                  matchingItem.metadata.searchQuery) ||
                 (item.type === "album" &&
                   item.metadata.albumId === matchingItem.metadata.albumId) ||
                 (item.type === "person" &&
-                  item.metadata.contributorId === matchingItem.metadata.contributorId))
+                  item.metadata.contributorId ===
+                    matchingItem.metadata.contributorId))
           );
 
           if (existingIndex >= 0) {

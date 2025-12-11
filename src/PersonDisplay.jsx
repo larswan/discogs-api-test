@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo, useRef } from "react";
 import { cleanRole } from "./utils/roleCleaner";
 import { logFetchResponse } from "./utils/responseLogger";
 
@@ -14,33 +14,42 @@ const PersonDisplay = ({
   const [loading, setLoading] = useState(!cachedData);
   const [sortField, setSortField] = useState("year");
   const [sortDirection, setSortDirection] = useState("desc");
+  const contributorId = contributor?.id;
+  const lastFetchedIdRef = useRef(null);
 
   useEffect(() => {
-    // If we have cached data, use it
+    // If we have cached data for this contributor, use it immediately
     if (cachedData) {
       setContributorData(cachedData);
       setLoading(false);
+      lastFetchedIdRef.current = contributorId;
+      return;
+    }
+
+    // If we already fetched data for this contributor ID, don't refetch
+    if (lastFetchedIdRef.current === contributorId && contributorData) {
       return;
     }
 
     // Otherwise, fetch the data
     const fetchContributorData = async () => {
-      if (contributor.id) {
+      if (contributorId) {
         try {
           setLoading(true);
           const response = await fetch(
-            `https://api.discogs.com/artists/${contributor.id}/releases?sort=year&sort_order=desc&per_page=50`
+            `https://api.discogs.com/artists/${contributorId}/releases?sort=year&sort_order=desc&per_page=50`
           );
           const data = await response.json();
 
           // Log the response for analysis
           logFetchResponse(
-            `/artists/${contributor.id}/releases`,
+            `/artists/${contributorId}/releases`,
             data,
             "person_page"
           );
 
           setContributorData(data);
+          lastFetchedIdRef.current = contributorId;
           // Notify parent to cache the fetched data
           if (onDataFetched) {
             onDataFetched(data);
@@ -54,7 +63,7 @@ const PersonDisplay = ({
     };
 
     fetchContributorData();
-  }, [contributor, cachedData, onDataFetched]);
+  }, [contributorId, cachedData, onDataFetched]); // Depend on contributorId, not whole contributor object
 
   const handleSort = (field) => {
     if (sortField === field) {

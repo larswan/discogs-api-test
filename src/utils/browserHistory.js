@@ -70,7 +70,12 @@ export const parseUrlHash = () => {
  * @param {object} metadata - Metadata
  * @param {object} cachedData - Cached fetched data (albumDetails, contributorData, etc.)
  */
-export const pushHistoryState = (type, data, metadata = {}, cachedData = {}) => {
+export const pushHistoryState = (
+  type,
+  data,
+  metadata = {},
+  cachedData = {}
+) => {
   const urlHash = generateUrlHash(type, metadata);
   const state = {
     type,

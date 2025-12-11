@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import TrackDisplay from "./TrackDisplay";
 import { queryByMasterId } from "./requestFunctions/queryByMasterId";
 
@@ -11,21 +11,29 @@ const AlbumDisplay = ({
 }) => {
   const [albumDetails, setAlbumDetails] = useState(cachedDetails || null);
   const [loading, setLoading] = useState(!cachedDetails);
+  const albumId = album?.master_id || album?.id;
+  const lastFetchedIdRef = useRef(null);
 
   useEffect(() => {
-    // If we have cached details, use them
+    // If we have cached details for this album, use them immediately
     if (cachedDetails) {
       setAlbumDetails(cachedDetails);
       setLoading(false);
+      lastFetchedIdRef.current = albumId;
+      return;
+    }
+
+    // If we already fetched data for this album ID, don't refetch
+    if (lastFetchedIdRef.current === albumId && albumDetails) {
       return;
     }
 
     // Otherwise, fetch the details
     const fetchAlbumDetails = async () => {
-      if (album.master_id) {
+      if (albumId) {
         try {
           setLoading(true);
-          const details = await queryByMasterId(album.master_id);
+          const details = await queryByMasterId(albumId);
 
           // Try to get cover image from main release if available
           if (details.main_release && !details.images?.[0]?.uri) {
@@ -46,6 +54,7 @@ const AlbumDisplay = ({
           }
 
           setAlbumDetails(details);
+          lastFetchedIdRef.current = albumId;
           // Notify parent to cache the fetched details
           if (onDetailsFetched) {
             onDetailsFetched(details);
@@ -59,7 +68,7 @@ const AlbumDisplay = ({
     };
 
     fetchAlbumDetails();
-  }, [album, cachedDetails, onDetailsFetched]);
+  }, [albumId, cachedDetails, onDetailsFetched]); // Depend on albumId, not whole album object
 
   if (loading) {
     return (
