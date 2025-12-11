@@ -18,7 +18,7 @@ const ContentContainer = ({
         if (!searchQuery && searchResults.length === 0) {
           return (
             <div className="welcomeMessage">
-              <h1>Welcome to Discogs Explorer</h1>
+              <h1>Find More Music from Musicians You Love</h1>
               <p className="welcomeDescription">
                 Discover and explore music albums from the Discogs database.
                 Search for any album to view its details, contributors, and
